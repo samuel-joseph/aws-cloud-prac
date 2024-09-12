@@ -1,0 +1,13 @@
+<div>
+  <h3>{{ currentQuestion.question }}</h3>
+  <div *ngFor="let option of currentQuestion.options">
+    <input
+      type="checkbox"
+      [checked]="selectedAnswers.includes(option)"
+      (change)="toggleAnswer(option)"
+    />
+    {{ option }}
+  </div>
+  
+  <button (click)="submitAnswers()">Submit Answers</button>
+</div>
