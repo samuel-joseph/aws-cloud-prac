@@ -1159,7 +1159,231 @@ export class QuestionService {
       ],
       answer: ["Your instances are already covered by reservations."],
       multipleAnswer: false
-    }
+    },
+    //chapter 7
+    {
+      question: "What is the function of an EC2 AMI?",
+      options: [
+        "To define the hardware profile used by an EC2 instance",
+        "To serve as an instance storage volume for high-volume data processing operations",
+        "To define the way data streams are managed by EC2 instances",
+        "To serve as a source image from which an instance's primary storage volume is built"
+      ],
+      answer: ["To serve as a source image from which an instance's primary storage volume is built"],
+      multipleAnswer: false
+    },
+    {
+      question: "Where can you find a wide range of verified AMIs from both AWS and third-party vendors?",
+      options: [
+        "AWS Marketplace",
+        "Quick Start",
+        "Community AMIs",
+        "My AMIs"
+      ],
+      answer: ["AWS Marketplace"],
+      multipleAnswer: false
+    },
+    {
+      question: "Which of the following could be included in an EC2 AMI? (Select TWO.)",
+      options: [
+        "A networking configuration",
+        "A software application stack",
+        "An operating system",
+        "An instance type definition"
+      ],
+      answer: ["A software application stack", "An operating system"],
+      multipleAnswer: true
+    },
+    {
+      question: "Which of the following are EC2 instance type families? (Select TWO.)",
+      options: [
+        "c5d.18xlarge",
+        "Compute optimized",
+        "t2.micro",
+        "Accelerated computing"
+      ],
+      answer: ["Compute optimized", "Accelerated computing"],
+      multipleAnswer: true
+    },
+    {
+      question: "When describing EC2 instance types, what is the role played by the vCPU metric?",
+      options: [
+        "vCPUs represent an instance's potential resilience against external network demands.",
+        "vCPUs represent an instance type's system memory compared to the class of memory modules on a physical machine.",
+        "vCPUs represent an AMI's processing power compared to the number of processors on a physical machine.",
+        "vCPUs represent an instance type's compute power compared to the number of processors on a physical machine."
+      ],
+      answer: ["vCPUs represent an instance type's compute power compared to the number of processors on a physical machine."],
+      multipleAnswer: false
+    },
+    {
+      question: "Which of the following describes an EC2 dedicated instance?",
+      options: [
+        "An EC2 instance running on a physical host reserved for the exclusive use of a single AWS account",
+        "An EC2 instance running on a physical host reserved for and controlled by a single AWS account",
+        "An EC2 AMI that can be launched only on an instance within a single AWS account.",
+        "An EC2 instance optimized for a particular compute role"
+      ],
+      answer: ["An EC2 instance running on a physical host reserved for the exclusive use of a single AWS account"],
+      multipleAnswer: false
+    },
+    {
+      question: "Which of the following describes an EBS volume?",
+      options: [
+        "A software stack archive packaged to make it easy to copy and deploy to an EC2",
+        "A virtualized partition of a physical storage drive that's directly connected to the EC2 instance it's associated with",
+        "A virtualized partition of a physical storage drive that's not directly connected to the EC2 instance it's associated with",
+        "A storage volume that's encrypted for greater security"
+      ],
+      answer: ["A virtualized partition of a physical storage drive that's directly connected to the EC2 instance it's associated with"],
+      multipleAnswer: false
+    },
+    {
+      question: "Why might you want to use an instance store volume with your EC2 instance rather than a volume from the more common EBS service? (Select TWO.)",
+      options: [
+        "Instance store volumes can be encrypted.",
+        "Instance store volumes' data will survive an instance shutdown.",
+        "Instance store volumes provide faster data read/write performance.",
+        "Instance store volumes are connected directly to your EC2 instance."
+      ],
+      answer: [
+        "Instance store volumes provide faster data read/write performance.",
+        "Instance store volumes are connected directly to your EC2 instance."
+      ],
+      multipleAnswer: true
+    },
+    {
+      question: "Your web application experiences periodic spikes in demand that require the provisioning of extra instances. Which of the following pricing models would make the most sense for those extra instances?",
+      options: [
+        "Spot",
+        "On-demand",
+        "Reserved",
+        "Dedicated"
+      ],
+      answer: ["On-demand"],
+      multipleAnswer: false
+    },
+    {
+      question: "Your web application experiences periodic spikes in demand that require the provisioning of extra instances. Which of the following pricing models would make the most sense for the 'base' instances that will run constantly?",
+      options: [
+        "Spot",
+        "On-demand",
+        "Spot fleet",
+        "Reserved"
+      ],
+      answer: ["Reserved"],
+      multipleAnswer: false
+    },
+    {
+      question: "Which of the following best describes what happens when you purchase an EC2 reserved instance?",
+      options: [
+        "Charges for any instances you run matching the reserved instance type will be covered",
+        "Capacity matching the reserved definition will be guaranteed to be available whenever you request it.",
+        "Your account will immediately and automatically be billed for the full reservation amount.",
+        "An EC2 instance matching your reservation will automatically be launched in the selected AWS Region."
+      ],
+      answer: ["Charges for any instances you run matching the reserved instance type will be covered"],
+      multipleAnswer: false
+    },
+    {
+      question: "Which of the following use cases are good candidates for spot instances? (Select TWO.)",
+      options: [
+        "Big data processing workloads",
+        "Ecommerce websites",
+        "Continuous integration development environments",
+        "Long-term, highly available, content-rich websites"
+      ],
+      answer: ["Big data processing workloads", "Continuous integration development environments"],
+      multipleAnswer: true
+    },
+    {
+      question: "Which AWS services simplify the process of bringing web applications to deployment? (Select TWO.)",
+      options: [
+        "Elastic Block Store",
+        "Elastic Compute Cloud",
+        "Elastic Beanstalk",
+        "Lightsail"
+      ],
+      answer: ["Elastic Beanstalk", "Lightsail"],
+      multipleAnswer: true
+    },
+    {
+      question: "Which of the following services bills at a flat rate regardless of how it's consumed?",
+      options: [
+        "Lightsail",
+        "Elastic Beanstalk",
+        "Elastic Compute Cloud",
+        "Relational Database Service"
+      ],
+      answer: ["Lightsail"],
+      multipleAnswer: false
+    },
+    {
+      question: "Which of these stacks are available from Lightsail blueprints? (Select TWO.)",
+      options: [
+        "Ubuntu",
+        "Gitlab",
+        "WordPress",
+        "LAMP"
+      ],
+      answer: ["WordPress", "LAMP"],
+      multipleAnswer: true
+    },
+    {
+      question: "Which of these AWS services use primarily EC2 resources under the hood? (Select TWO.)",
+      options: [
+        "Elastic Block Store",
+        "Lightsail",
+        "Elastic Beanstalk",
+        "Relational Database Service"
+      ],
+      answer: ["Lightsail", "Elastic Beanstalk"],
+      multipleAnswer: true
+    },
+    {
+      question: "Which of the following AWS services are designed to let you deploy Docker containers? (Select TWO.)",
+      options: [
+        "Elastic Container Service",
+        "Lightsail",
+        "Elastic Beanstalk",
+        "Elastic Compute Cloud"
+      ],
+      answer: ["Elastic Container Service", "Elastic Beanstalk"],
+      multipleAnswer: true
+    },
+    {
+      question: "Which of the following use container technologies? (Select TWO.)",
+      options: [
+        "Docker",
+        "Kubernetes",
+        "Lambda",
+        "Lightsail"
+      ],
+      answer: ["Docker", "Kubernetes"],
+      multipleAnswer: true
+    },
+    {
+      question: "What role can the Python programming language play in AWS Lambda?",
+      options: [
+        "Python cannot be used for Lambda.",
+        "It is the primary language for API calls to administrate Lambda remotely.",
+        "It is used as the underlying code driving the service.",
+        "It can be set as the runtime environment for a function."
+      ],
+      answer: ["It can be set as the runtime environment for a function."],
+      multipleAnswer: false
+    },
+    {
+      question: "What is the maximum time a Lambda function may run before timing out?",
+      options: [
+        "15 minutes",
+        "5 minutes",
+        "1 minute",
+        "1 hour"
+      ],
+      answer: ["15 minutes"],
+      multipleAnswer: false
+    } 
   ];
 
   constructor() { }
