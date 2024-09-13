@@ -698,6 +698,212 @@ export class QuestionService {
       options: ["AWS User Agreement Policy", "AWS Acceptable Use Policy", "AWS Acceptable Use Monitor", "AWS Acceptable Use Dashboard"],
       answer: ["AWS Acceptable Use Policy"],
       multipleAnswer: false
+    },
+    //chapter 5
+    {
+      question: "What is the primary function of the AWS IAM service?",
+      options: [
+        "Identity and access management",
+        "Access key management",
+        "SSH key pair management",
+        "Federated access management"
+      ],
+      answer: ["Identity and access management"],
+      multipleAnswer: false
+    },
+    {
+      question: "Which of the following are requirements you can include in an IAM password policy? (Select THREE.)",
+      options: [
+        "Require at least one uppercase letter.",
+        "Require at least one number.",
+        "Require at least one space or null character.",
+        "Require at least one nonalphanumeric character."
+      ],
+      answer: [
+        "Require at least one uppercase letter.",
+        "Require at least one number.",
+        "Require at least one nonalphanumeric character."
+      ],
+      multipleAnswer: true
+    },
+    {
+      question: "Which of the following should you do to secure your AWS root user? (Select TWO.)",
+      options: [
+        "Assign the root user to the 'admins' IAM group.",
+        "Use the root user for day-to-day administration tasks.",
+        "Enable MFA.",
+        "Create a strong password."
+      ],
+      answer: ["Enable MFA.", "Create a strong password."],
+      multipleAnswer: true
+    },
+    {
+      question: "How does multi-factor authentication work?",
+      options: [
+        "Instead of an access password, users authenticate via a physical MFA device.",
+        "In addition to an access password, users also authenticate via a physical MFA device.",
+        "Users authenticate using tokens sent to at least two MFA devices.",
+        "Users authenticate using a password and also either a physical or virtual MFA device."
+      ],
+      answer: ["Users authenticate using a password and also either a physical or virtual MFA device."],
+      multipleAnswer: false
+    },
+    {
+      question: "Which of the following SSH commands will successfully connect to an EC2 Amazon Linux instance with an IP address of 54.7.35.103 using a key named mykey.pem?",
+      options: [
+        'echo "mykey pem ubuntu@54.7.35.103" | ssh -i',
+        "ssh -i mykey-pem ec2-user@54.7.35.103",
+        "ssh -i mykey-pem@54.7.35.103",
+        "ssh ec2-user@mykey.pem:54.7.35.103 -i"
+      ],
+      answer: ["ssh -i mykey-pem ec2-user@54.7.35.103"],
+      multipleAnswer: false
+    },
+    {
+      question: "What's the most efficient method for managing permissions for multiple IAM users?",
+      options: [
+        "Assign users requiring similar permissions to IAM roles.",
+        "Assign users requiring similar permissions to IAM groups.",
+        "Assign IAM users permissions common to others with similar administration responsibilities.",
+        "Create roles based on IAM policies, and assign them to IAM users."
+      ],
+      answer: ["Assign users requiring similar permissions to IAM groups."],
+      multipleAnswer: false
+    },
+    {
+      question: "What is an IAM role?",
+      options: [
+        "A set of permissions allowing access to specified AWS resources",
+        "A set of IAM users given permission to access specified AWS resources",
+        "Permissions granted a trusted entity over specified AWS resources",
+        "Permissions granted an IAM user over specified AWS resources"
+      ],
+      answer: ["Permissions granted a trusted entity over specified AWS resources"],
+      multipleAnswer: false
+    },
+    {
+      question: "How can federated identities be incorporated into AWS workflows? (Select TWO.)",
+      options: [
+        "You can provide users authenticated through a third-party identity provider access to backend resources used by your mobile app.",
+        "You can use identities to guide your infrastructure design decisions.",
+        "You can use authenticated identities to import external data (like email records from Gmail) into AWS databases.",
+        "You can provide admins authenticated through AWS Microsoft AD with access to a Microsoft SharePoint farm running on AWS."
+      ],
+      answer: [
+        "You can provide users authenticated through a third-party identity provider access to backend resources used by your mobile app.",
+        "You can provide admins authenticated through AWS Microsoft AD with access to a Microsoft SharePoint farm running on AWS."
+      ],
+      multipleAnswer: true
+    },
+    {
+      question: "Which of the following are valid third-party federated identity standards? (Select TWO.)",
+      options: ["Secure Shell", "SSO", "SAML 2.0", "Active Directory"],
+      answer: ["SAML 2.0", "Active Directory"],
+      multipleAnswer: true
+    },
+    {
+      question: "What information does the IAM credential report provide?",
+      options: [
+        "A record of API requests against your account resources",
+        "A record of failed password account login attempts",
+        "The current state of your account security settings",
+        "The current state of security of your IAM users' access credentials"
+      ],
+      answer: ["The current state of security of your IAM users' access credentials"],
+      multipleAnswer: false
+    },
+    {
+      question: "What text format does the credential report use?",
+      options: ["JSON", "CSV", "ASCI", "XML"],
+      answer: ["CSV"],
+      multipleAnswer: false
+    },
+    {
+      question: "Which of the following IAM policies is the best choice for the admin user you create in order to replace the root user for day-to-day administration tasks?",
+      options: [
+        "AdministratorAccess",
+        "AmazonS3FullAccess",
+        "AmazonEC2FullAccess",
+        "AdminAccess"
+      ],
+      answer: ["AdministratorAccess"],
+      multipleAnswer: false
+    },
+    {
+      question: "What will you need to provide for a new IAM user you're creating who will use 'programmatic access' to AWS resources?",
+      options: [
+        "A password",
+        "A password and MFA",
+        "An access key ID",
+        "An access key ID and secret access key"
+      ],
+      answer: ["An access key ID and secret access key"],
+      multipleAnswer: false
+    },
+    {
+      question: "What will IAM users with AWS Management Console access need to successfully log in?",
+      options: [
+        "Their username, account_number, and a password",
+        "Their username and password",
+        "Their account number and secret access key",
+        "Their username, password, and secret access key"
+      ],
+      answer: ["Their username and password"],
+      multipleAnswer: false
+    },
+    {
+      question: "Which of the following will encrypt your data while in transit between your office and Amazon S3?",
+      options: ["DynamoDB", "SSE-S3", "A client-side master key", "SSE-KMS"],
+      answer: ["A client-side master key"],
+      multipleAnswer: false
+    },
+    {
+      question: "Which of the following AWS resources cannot be encrypted using KMS?",
+      options: ["Existing AWS Elastic Block Store volumes", "RDS databases", "S3 buckets", "DynamoDB databases"],
+      answer: ["Existing AWS Elastic Block Store volumes"],
+      multipleAnswer: false
+    },
+    {
+      question: "What does KMS use to encrypt objects stored on your AWS account?",
+      options: [
+        "SSH master key",
+        "KMS master key",
+        "Client-side master key",
+        "Customer master key"
+      ],
+      answer: ["Customer master key"],
+      multipleAnswer: false
+    },
+    {
+      question: "Which of the following standards governs AWS-based applications processing credit card transactions?",
+      options: ["SSE-KMS", "FedRAMP", "PCI DSS", "ARPA"],
+      answer: ["PCI DSS"],
+      multipleAnswer: false
+    },
+    {
+      question: "What is the purpose of the Service Organization Controls (SOC) reports found on AWS Artifact?",
+      options: [
+        "They can be used to help you design secure and reliable credit card transaction applications.",
+        "They attest to AWS infrastructure compliance with data accountability standards like Sarbanes-Oxley.",
+        "They guarantee that all AWS-based applications are, by default, compliant with Sarbanes-Oxley standards.",
+        "They're an official, ongoing risk-assessment profiler for AWS-based deployments."
+      ],
+      answer: ["They attest to AWS infrastructure compliance with data accountability standards like Sarbanes-Oxley."],
+      multipleAnswer: false
+    },
+    {
+      question: "What role can the documents provided by AWS Artifact play in your application planning? (Select TWO.)",
+      options: [
+        "They can help you confirm that your deployment infrastructure is compliant with regulatory standards.",
+        "They can provide insight into various regulatory and industry standards that represent best practices.",
+        "They can provide insight into the networking and storage design patterns your AWS applications use.",
+        "They represent AWS infrastructure design policy."
+      ],
+      answer: [
+        "They can help you confirm that your deployment infrastructure is compliant with regulatory standards.",
+        "They can provide insight into various regulatory and industry standards that represent best practices."
+      ],
+      multipleAnswer: true
     }
   ];
 
