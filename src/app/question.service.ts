@@ -1287,7 +1287,7 @@ export class QuestionService {
         "To define the way data streams are managed by EC2 instances",
         "To serve as a source image from which an instance's primary storage volume is built"
       ],
-      answer: ["To serve as a source image from which an instance's primary storage volume is built"],
+      answer: ["To define the way data streams are managed by EC2 instances"],
       multipleAnswer: false
     },
     {
@@ -1359,7 +1359,7 @@ export class QuestionService {
         "A virtualized partition of a physical storage drive that's not directly connected to the EC2 instance it's associated with",
         "A storage volume that's encrypted for greater security"
       ],
-      answer: ["A virtualized partition of a physical storage drive that's directly connected to the EC2 instance it's associated with"],
+      answer: ["A virtualized partition of a physical storage drive that's not directly connected to the EC2 instance it's associated with"],
       multipleAnswer: false
     },
     {
@@ -1458,7 +1458,7 @@ export class QuestionService {
         "WordPress",
         "LAMP"
       ],
-      answer: ["WordPress", "LAMP"],
+      answer: ["Gitlab", "LAMP"],
       multipleAnswer: true
     },
     {
@@ -1664,7 +1664,7 @@ export class QuestionService {
       ],
       answer: [
         "AWS Storage Gateway-file gateway",
-        "SMB",
+        "iSCSI",
         "AWS Storage Gateway-volume gateway",
         "The AWS CLI"
       ],
@@ -1976,7 +1976,7 @@ export class QuestionService {
         "Dense storage",
         "Dense memory"
       ],
-      answer: ["Dense storage"],
+      answer: ["Dense compute"],
       multipleAnswer: false
     },
     {
@@ -2306,7 +2306,7 @@ export class QuestionService {
         "build.general1.large",
         "build.windows1.small"
       ],
-      answer: ["build.general2.large", "build.windows1.small"],
+      answer: ["build.general.medium", "build.general1.large"],
       multipleAnswer: true
     },
     {
@@ -2481,7 +2481,7 @@ export class QuestionService {
       ],
       answer: [
         "Granting each AWS user their own IAM username and password",
-        "Creating a security group rule to deny access to unused ports"
+        "Enabling S3 versioning"
       ],
       multipleAnswer: true
     },
@@ -2495,7 +2495,7 @@ export class QuestionService {
         "Using CloudFront"
       ],
       answer: [
-        "Doubling the number of instances in the Auto Scaling group",
+        "Implementing policies to prevent the accidental termination of EC2 instances in the same Auto Scaling group",
         "Using CloudFront"
       ],
       multipleAnswer: true
@@ -2605,7 +2605,7 @@ export class QuestionService {
       ],
       answer: [
         "Objects in S3 are not public by default.",
-        "By default, S3 removes ACLs that allow public read access to objects."
+        "S3 removes public objects by default."
       ],
       multipleAnswer: true
     },

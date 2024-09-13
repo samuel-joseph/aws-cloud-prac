@@ -32,6 +32,8 @@
       {{ option }}
     </div>
   </div>
-  
-  <button (click)="submitAnswers()">Submit Answers</button>
+  <span class="button-parent">
+    <button (click)="submitAnswers()">Submit Answers</button>
+    <a class="refresh-page" (click)="refreshPage()">Refresh Page</a>
+  </span>
 </div>

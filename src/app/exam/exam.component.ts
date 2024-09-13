@@ -36,12 +36,20 @@ export class ExamComponent implements OnInit {
         this.questions = this.questionService.getQuestionsByChapter(chapter);
       }
       this.questions = this.shuffleArray(this.questions); // Shuffle questions after selection
+      this.shuffleOptions(); // Shuffle options for each question
       this.currentQuestionIndex = 0;
       this.currentQuestion = this.questions[this.currentQuestionIndex];
       this.isChapterSelected = true;
       this.updateProgress();
     }
   }
+
+    // Shuffle the options for each question
+    shuffleOptions() {
+      this.questions.forEach(question => {
+        question.options = this.shuffleArray(question.options);
+      });
+    }
 
   toggleAnswer(selectedAnswer: string) {
     if (this.selectedAnswers.includes(selectedAnswer)) {
@@ -98,5 +106,9 @@ export class ExamComponent implements OnInit {
       classList.add('background-image-hidden');
       classList.remove('background-image-visible');
     }
+  }
+
+    refreshPage() {
+    window.location.reload();
   }
 }
