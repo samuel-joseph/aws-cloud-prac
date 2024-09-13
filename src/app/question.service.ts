@@ -49,8 +49,8 @@ export class QuestionService {
         'Full-stack applications are possible without the need to invest in capital expenses.'
       ],
       answer: [
-        'Greater application security is now possible.',
-        'Experiments with multiple configuration options are now cost-effective.'
+        'Experiments with multiple configuration options are now cost-effective.',
+        'Full-stack applications are possible without the need to invest in capital expenses.'
       ],
       multipleAnswer: true
     },
@@ -383,8 +383,184 @@ export class QuestionService {
       ],
       answer: ["Cost Explorer"],
       multipleAnswer: false
-    }
+    },
     //chapter 3 Getting Support on AWS
+    //32-52
+    {
+      question: "Your company is planning a major deployment on AWS. While the design and testing stages are still in progress, which of the following plans will provide the best blend of support and cost savings?",
+      options: ["Basic", "Developer", "Business", "Enterprise"],
+      answer: ["Business"],
+      multipleAnswer: false
+    },
+    {
+      question: "Your web development team is actively gearing up for a deployment of an ecommerce site. During these early stages of the process, individual developers are running into frustrating conflicts and configuration problems that are highly specific to your situation. Which of the following plans will provide the best blend of support and cost savings?",
+      options: ["Basic", "Developer", "Business", "Enterprise"],
+      answer: ["Developer"],
+      multipleAnswer: false
+    },
+    {
+      question: "Your corporate website was offline last week for more than two hours— which caused serious consequences, including the early retirement of your CTO. Your engineers have been having a lot of trouble tracking down the source of the outage and admit that they need outside help. Which of the following will most likely meet that need?",
+      options: ["Basic", "Developer", "Business", "Enterprise"],
+      answer: ["Enterprise"],
+      multipleAnswer: false
+    },
+    {
+      question: "For which of the following will AWS provide direct 24/7 support to all users— even those on the Basic Support plan?",
+      options: [
+        "Help with infrastructure under a massive denial-of-service (DoS) attack",
+        "Help with failed and unavailable infrastructure",
+        "Help with making a bill payment to AWS",
+        "Help with accessing your infrastructure via the AWS CLI"
+      ],
+      answer: ["Help with making a bill payment to AWS"],
+      multipleAnswer: false
+    },
+    {
+      question: "The primary purpose of an AWS technical account manager is to:",
+      options: [
+        "Provide 24/7 customer service for your AWS account",
+        "Provide deployment guidance and advocacy for Enterprise Support customers",
+        "Provide deployment guidance and advocacy for Business Support customers",
+        "Provide strategic cost estimates for Enterprise Support customers"
+      ],
+      answer: ["Provide deployment guidance and advocacy for Enterprise Support customers"],
+      multipleAnswer: false
+    },
+    {
+      question: "Your Linux-based EC2 instance requires a patch to a Linux kernel module. The problem is that patching the module will, for some reason, break the connection between your instance and data in an S3 bucket. Your team doesn't know if it's possible to work around this problem. Which is the most cost-effective AWS plan through which support professionals will try to help you?",
+      options: ["Developer", "Business", "Enterprise", "No plan covers this kind of support"],
+      answer: ["Business"],
+      multipleAnswer: false
+    },
+    {
+      question: "Your company enrolled in the Developer Support plan and, through the course of one month, consumed $4,000 USD of AWS services. How much will the support plan cost the company for the month?",
+      options: ["$120", "$29", "$100", "$480"],
+      answer: ["$120"],
+      multipleAnswer: false
+    },
+    {
+      question: "Your company enrolled in the Business Support plan and, through the course of three months, consumed $33,000 of AWS services (the consumption was equally divided across the months). How much will the support plan cost the company for the full three months?",
+      options: ["$4,000", "$100", "$1,100", "$2,310"],
+      answer: ["$2,310"],
+      multipleAnswer: false
+    },
+    {
+      question: "Which of the following AWS support services does not offer free documentation of some sort?",
+      options: [
+        "AWS Professional Services",
+        "The Basic Support plan",
+        "AWS Partner Network",
+        "The Knowledge Center"
+      ],
+      answer: ["AWS Partner Network"],
+      multipleAnswer: false
+    },
+    {
+      question: "What is the key difference between the roles of AWS Professional Services and a technical account manager (TAM)?",
+      options: [
+        "The Professional Services product helps AWS Partner Network cloud professionals work alongside your own team to help you administrate your cloud infrastructure. The TAM is a cloud professional employed by AWS to guide you through the planning and execution of your infrastructure.",
+        "The TAM is a cloud professional employed by AWS to guide you through the planning and execution of your infrastructure. The Professional Services product provides cloud professionals to work alongside your own team to help you administrate your cloud infrastructure.",
+        "The TAM is a member of your team designated as the point person for all AWS projects. The Professional Services product provides consultants to work alongside your own team to help you administrate your cloud infrastructure.",
+        "The Professional Services product is a network appliance that AWS installs in your data center to test cloud-bound workloads for compliance with best practices. The TAM is a cloud professional employed by AWS to guide you through the planning and execution of your infrastructure."
+      ],
+      answer: [
+        "The Professional Services product helps AWS Partner Network cloud professionals work alongside your own team to help you administrate your cloud infrastructure. The TAM is a cloud professional employed by AWS to guide you through the planning and execution of your infrastructure."
+      ],
+      multipleAnswer: false
+    },
+    {
+      question: "AWS documentation is available in a number of formats, including which of the following? (Select TWO.)",
+      options: ["Microsoft Word (DOC)", "Kindle", "HTML", "DocBook"],
+      answer: ["Kindle", "HTML"],
+      multipleAnswer: true
+    },
+    {
+      question: "Which of the following documentation sites are most likely to contain code snippets for you to cut and (after making sure you understand exactly what they'll do) paste into your AWS operations? (Select TWO.)",
+      options: [
+        "https://aws.amazon.com/premiumsupport/knowledge-center",
+        "https://aws.amazon.com/premiumsupport/compare-plans",
+        "https://docs.aws.amazon.com",
+        "https://aws.amazon.com/professional-services"
+      ],
+      answer: [
+        "https://aws.amazon.com/premiumsupport/knowledge-center",
+        "https://docs.aws.amazon.com"
+      ],
+      multipleAnswer: true
+    },
+    {
+      question: "What is the primary function of the content linked from the Knowledge Center?",
+      options: [
+        "To introduce new users to the functionality of the core AWS services",
+        "To explain how AWS deployments can be more efficient and secure than on-premises",
+        "To provide a public forum where AWS users can ask their technical questions",
+        "To present solutions to commonly encountered technical problems using AWS Infrastructure"
+      ],
+      answer: ["To present solutions to commonly encountered technical problems using AWS Infrastructure"],
+      multipleAnswer: false
+    },
+    {
+      question: "On which of the following sites are you most likely to find information about encrypting your AWS resources?",
+      options: [
+        "https://aws.amazon.com/premiumsupport/knowledge-center",
+        "https://aws.amazon.com/security/security-resources",
+        "https://docs.aws.amazon.com",
+        "https://aws.amazon.com/security/encryption"
+      ],
+      answer: ["https://aws.amazon.com/security/security-resources"],
+      multipleAnswer: false
+    },
+    {
+      question: "When using AWS documentation pages, what is the best way to be sure the information you're reading is up-to-date?",
+      options: [
+        "The page URL will include the word latest.",
+        "The page URL will include the version number (i.e., 3.2).",
+        "The page will have the word Current at the top right.",
+        "There is no easy way to tell."
+      ],
+      answer: ["The page URL will include the word latest."],
+      multipleAnswer: false
+    },
+    {
+      question: "Which of the following is not a Trusted Advisor category?",
+      options: ["Performance", "Service Limits", "Replication", "Fault Tolerance"],
+      answer: ["Replication"],
+      multipleAnswer: false
+    },
+    {
+      question: "Data volumes that aren't properly backed up is an example of which of these Trusted Advisor categories?",
+      options: ["Fault Tolerance", "Performance", "Security", "Cost Optimization"],
+      answer: ["Fault Tolerance"],
+      multipleAnswer: false
+    },
+    {
+      question: "Instances that are running (mostly) idle should be identified by which of these Trusted Advisor categories?",
+      options: ["Performance", "Cost Optimization", "Service Limits", "Replication"],
+      answer: ["Cost Optimization"],
+      multipleAnswer: false
+    },
+    {
+      question: "Within the context of Trusted Advisor, what is a false positive?",
+      options: [
+        "An alert for a service state that was actually intentional",
+        "A green OK icon for a service state that is failed or failing",
+        "A single status icon indicating that your account is completely compliant",
+        "Textual indication of a failed state"
+      ],
+      answer: ["An alert for a service state that was actually intentional"],
+      multipleAnswer: false
+    },
+    {
+      question: "Which of the following Trusted Advisor alerts is available only for accounts on the Business or Enterprise Support plan? (Select TWO.)",
+      options: [
+        "MFA on Root Account",
+        "Load Balancer Optimization",
+        "Service Limits",
+        "IAM Access Key Rotation"
+      ],
+      answer: ["Load Balancer Optimization", "IAM Access Key Rotation"],
+      multipleAnswer: true
+    }
   ];
 
   constructor() { }
