@@ -2015,7 +2015,230 @@ export class QuestionService {
       ],
       answer: ["EC2 instance", "A public S3 bucket"],
       multipleAnswer: true
-    }    
+    },
+    //chapter 11
+    {
+      question: "Which of the following is an advantage of using CloudFormation?",
+      options: [
+        "It uses the popular Python programming language.",
+        "It prevents unauthorized manual changes to resources.",
+        "It lets you create multiple separate AWS environments using a single template.",
+        "It can create resources outside of AWS."
+      ],
+      answer: ["It lets you create multiple separate AWS environments using a single template."],
+      multipleAnswer: false
+    },
+    {
+      question: "What formats do CloudFormation templates support? (Select TWO.)",
+      options: ["XML", "YAML", "HTML", "JSON"],
+      answer: ["YAML", "JSON"],
+      multipleAnswer: true
+    },
+    {
+      question: "What's an advantage of using parameters in a CloudFormation template?",
+      options: [
+        "Allow customizing a stack without changing the template.",
+        "Prevent unauthorized users from using a template.",
+        "Prevent stack updates.",
+        "Allow multiple stacks to be created from the same template."
+      ],
+      answer: ["Allow customizing a stack without changing the template."],
+      multipleAnswer: false
+    },
+    {
+      question: "Why would you use CloudFormation to automatically create resources for a development environment instead of creating them using AWS CLI commands? (Select TWO.)",
+      options: [
+        "Resources CloudFormation creates are organized into stacks and can be managed as a single unit.",
+        "CloudFormation stack updates help ensure that changes to one resource won't break another.",
+        "Resources created by CloudFormation always work as expected.",
+        "CloudFormation can provision resources faster than the AWS CLI."
+      ],
+      answer: [
+        "Resources CloudFormation creates are organized into stacks and can be managed as a single unit.",
+        "CloudFormation stack updates help ensure that changes to one resource won't break another."
+      ],
+      multipleAnswer: true
+    },
+    {
+      question: "What are two features of CodeCommit? (Select TWO.)",
+      options: [
+        "Versioning",
+        "Automatic deployment",
+        "Differencing",
+        "Manual deployment"
+      ],
+      answer: ["Versioning", "Differencing"],
+      multipleAnswer: true
+    },
+    {
+      question: "In the context of CodeCommit, what can differencing accomplish?",
+      options: [
+        "Allowing reverting to an older version of a file",
+        "Understanding what code change introduced a bug",
+        "Deleting duplicate lines of code",
+        "Seeing when an application was last deployed"
+      ],
+      answer: ["Understanding what code change introduced a bug"],
+      multipleAnswer: false
+    },
+    {
+      question: "What software development practice regularly tests new code for bugs but doesn't do anything else?",
+      options: [
+        "Differencing",
+        "Continuous deployment",
+        "Continuous delivery",
+        "Continuous integration"
+      ],
+      answer: ["Continuous integration"],
+      multipleAnswer: false
+    },
+    {
+      question: "Which CodeBuild build environment compute types support Windows operating systems? (Select TWO.)",
+      options: [
+        "build.general2.large",
+        "build.general.medium",
+        "build.general1.small",
+        "build.general1.large",
+        "build.windows1.small"
+      ],
+      answer: ["build.general2.large", "build.windows1.small"],
+      multipleAnswer: true
+    },
+    {
+      question: "What does a CodeBuild environment always contain? (Select TWO.)",
+      options: [
+        "An operating system",
+        "A Docker image",
+        "The Python programming language",
+        ".NET Core",
+        "The PHP programming language"
+      ],
+      answer: ["An operating system", "A Docker image"],
+      multipleAnswer: true
+    },
+    {
+      question: "Which of the following can CodeDeploy do? (Select THREE.)",
+      options: [
+        "Deploy an application to an on-premises Windows instance.",
+        "Deploy a Docker container to the Elastic Container Service.",
+        "Upgrade an application on an EC2 instance running Red Hat Enterprise Linux.",
+        "Deploy an application to an Android smartphone.",
+        "Deploy a website to an S3 bucket."
+      ],
+      answer: [
+        "Deploy an application to an on-premises Windows instance.",
+        "Deploy a Docker container to the Elastic Container Service.",
+        "Upgrade an application on an EC2 instance running Red Hat Enterprise Linux."
+      ],
+      multipleAnswer: true
+    },
+    {
+      question: "What is the minimum number of actions in a CodePipeline pipeline?",
+      options: ["1", "2", "3", "4", "0"],
+      answer: ["2"],
+      multipleAnswer: false
+    },
+    {
+      question: "You want to predefine the configuration of EC2 instances that you plan to launch manually and using Auto Scaling. What resource must you use?",
+      options: [
+        "CloudFormation template",
+        "Instance role",
+        "Launch configuration",
+        "Launch template"
+      ],
+      answer: ["Launch template"],
+      multipleAnswer: false
+    },
+    {
+      question: "What Auto Scaling group parameters set the limit for the number of instances that Auto Scaling creates? (Select TWO.)",
+      options: [
+        "Maximum",
+        "Group size",
+        "Desired capacity",
+        "Minimum"
+      ],
+      answer: ["Maximum", "Minimum"],
+      multipleAnswer: true
+    },
+    {
+      question: "An Auto Scaling group has a desired capacity of 7 and a maximum size of 7. What will Auto Scaling do if someone manually terminates one of these instances?",
+      options: [
+        "It will not launch any new instances.",
+        "It will launch one new instance.",
+        "It will terminate one instance.",
+        "It will change the desired capacity to 6."
+      ],
+      answer: ["It will launch one new instance."],
+      multipleAnswer: false
+    },
+    {
+      question: "What Auto Scaling feature creates a scaling schedule based on past usage patterns?",
+      options: [
+        "Predictive scaling",
+        "Scheduled scaling",
+        "Dynamic scaling",
+        "Pattern scaling"
+      ],
+      answer: ["Predictive scaling"],
+      multipleAnswer: false
+    },
+    {
+      question: "What type of AWS Systems Manager document can run Bash or PowerShell scripts on an EC2 instance?",
+      options: [
+        "Run document",
+        "Command document",
+        "Automation document",
+        "Script document"
+      ],
+      answer: ["Command document"],
+      multipleAnswer: false
+    },
+    {
+      question: "What type of AWS Systems Manager document can take a snapshot of an EC2 instance?",
+      options: [
+        "Command document",
+        "Run document",
+        "Script document",
+        "Automation document"
+      ],
+      answer: ["Automation document"],
+      multipleAnswer: false
+    },
+    {
+      question: "Which of the following OpsWorks services uses Chef recipes?",
+      options: [
+        "AWS OpsWorks for Puppet Enterprise",
+        "AWS OpsWorks Stacks",
+        "AWS OpsWorks Layers",
+        "AWS OpsWorks for Automation"
+      ],
+      answer: ["AWS OpsWorks Stacks"],
+      multipleAnswer: false
+    },
+    {
+      question: "What configuration management platforms does OpsWorks support? (Select TWO.)",
+      options: [
+        "SaltStack",
+        "Puppet Enterprise",
+        "CFEngine",
+        "Chef",
+        "Ansible"
+      ],
+      answer: ["Puppet Enterprise", "Chef"],
+      multipleAnswer: true
+    },
+    {
+      question: "Which of the following OpsWorks Stacks layers contains at least one EC2 instance?",
+      options: [
+        "EC2 Auto Scaling layer",
+        "Elastic Container Service (ECS) cluster layer",
+        "OpsWorks layer",
+        "Relational Database Service (RDS) layer",
+        "Elastic Load Balancing (ELB) layer"
+      ],
+      answer: ["OpsWorks layer"],
+      multipleAnswer: false
+    }
   ];
 
   constructor() { }
