@@ -2238,6 +2238,236 @@ export class QuestionService {
       ],
       answer: ["OpsWorks layer"],
       multipleAnswer: false
+    },
+    //chapter 12
+    {
+      question: "Which of the following is not one of the pillars of the Well-Architected Framework?",
+      options: [
+        "Performance efficiency",
+        "Reliability",
+        "Resiliency",
+        "Security",
+        "Cost optimization"
+      ],
+      answer: ["Resiliency"],
+      multipleAnswer: false
+    },
+    {
+      question: "Which of the following are examples of applying the principles of the security pillar of the Well-Architected Framework? (Select TWO.)",
+      options: [
+        "Granting each AWS user their own IAM username and password",
+        "Creating a security group rule to deny access to unused ports",
+        "Deleting an empty S3 bucket",
+        "Enabling S3 versioning"
+      ],
+      answer: [
+        "Granting each AWS user their own IAM username and password",
+        "Creating a security group rule to deny access to unused ports"
+      ],
+      multipleAnswer: true
+    },
+    {
+      question: "You're hosting a web application on two EC2 instances in an Auto Scaling group. The performance of the application is consistently acceptable. Which of the following can help maintain or improve performance efficiency? (Select TWO.)",
+      options: [
+        "Monitoring for unauthorized access",
+        "Doubling the number of instances in the Auto Scaling group",
+        "Implementing policies to prevent the accidental termination of EC2 instances in the same Auto Scaling group",
+        "Using CloudFront"
+      ],
+      answer: [
+        "Doubling the number of instances in the Auto Scaling group",
+        "Using CloudFront"
+      ],
+      multipleAnswer: true
+    },
+    {
+      question: "Which of the following can help achieve cost optimization? (Select TWO.)",
+      options: [
+        "Deleting unused S3 objects",
+        "Deleting empty S3 buckets",
+        "Deleting unused application load balancers",
+        "Deleting unused VPCs"
+      ],
+      answer: [
+        "Deleting unused S3 objects",
+        "Deleting unused application load balancers"
+      ],
+      multipleAnswer: true
+    },
+    {
+      question: "Which of the following is a key component of operational excellence?",
+      options: [
+        "Adding more security personnel",
+        "Automating manual processes",
+        "Making minor improvements to bad processes",
+        "Making people work longer hours"
+      ],
+      answer: ["Automating manual processes"],
+      multipleAnswer: false
+    },
+    {
+      question: "Your default VPC in the us-west-1 Region has three default subnets. How many Availability Zones are in this Region?",
+      options: ["2", "3", "4", "5"],
+      answer: ["3"],
+      multipleAnswer: false
+    },
+    {
+      question: "Your organization is building a database-backed web application that will sit behind an application load balancer. You add an inbound security group rule to allow HTTP traffic on TCP port 80. Where should you apply this security group to allow users to access the application?",
+      options: [
+        "The application load balancer listener",
+        "The database instance",
+        "The subnets where the instances reside",
+        "None of these"
+      ],
+      answer: ["The application load balancer listener"],
+      multipleAnswer: false
+    },
+    {
+      question: "How does an application load balancer enable reliability?",
+      options: [
+        "By routing traffic away from failed instances",
+        "By replacing failed instances",
+        "By routing traffic to the least busy instances",
+        "By caching frequently accessed content"
+      ],
+      answer: ["By routing traffic away from failed instances"],
+      multipleAnswer: false
+    },
+    {
+      question: "Which of the following contains the configuration information for instances in an Auto Scaling group?",
+      options: [
+        "Launch directive",
+        "Dynamic scaling policy",
+        "CloudFormation template",
+        "Launch template"
+      ],
+      answer: ["Launch template"],
+      multipleAnswer: false
+    },
+    {
+      question: "You've created a target tracking policy for an Auto Scaling group. You want to ensure that the number of instances in the group never exceeds 5. How can you accomplish this?",
+      options: [
+        "Set the group size to 5.",
+        "Set the maximum group size to 5.",
+        "Set the minimum group size to 5.",
+        "Delete the target tracking policy."
+      ],
+      answer: ["Set the maximum group size to 5."],
+      multipleAnswer: false
+    },
+    {
+      question: "Which of the following is an example of a static website?",
+      options: [
+        "A WordPress blog",
+        "A website hosted on S3",
+        "A popular social media website",
+        "A web-based email application"
+      ],
+      answer: ["A website hosted on S3"],
+      multipleAnswer: false
+    },
+    {
+      question: "Which of the following features of S3 improve the security of data you store in an S3 bucket? (Select TWO.)",
+      options: [
+        "Objects in S3 are not public by default.",
+        "All objects are readable by all AWS users by default.",
+        "S3 removes public objects by default.",
+        "By default, S3 removes ACLs that allow public read access to objects."
+      ],
+      answer: [
+        "Objects in S3 are not public by default.",
+        "By default, S3 removes ACLs that allow public read access to objects."
+      ],
+      multipleAnswer: true
+    },
+    {
+      question: "Which of the following is required to enable S3 static website hosting on a bucket?",
+      options: [
+        "Enable bucket hosting in the S3 service console.",
+        "Disable default encryption.",
+        "Disable object versioning.",
+        "Enable object versioning.",
+        "Make all objects in the bucket public."
+      ],
+      answer: ["Enable bucket hosting in the S3 service console."],
+      multipleAnswer: false
+    },
+    {
+      question: "You've created a static website hosted on S3 and given potential customers the URL that consists of words and numbers. They're complaining that it's too hard to type in. How can you come up with a friendlier URL?",
+      options: [
+        "Re-create the bucket using only words in the name.",
+        "Use a custom domain name.",
+        "Re-create the bucket in a different Region.",
+        "Re-create the bucket using only numbers in the name."
+      ],
+      answer: ["Use a custom domain name."],
+      multipleAnswer: false
+    },
+    {
+      question: "Which of the following is true regarding static websites hosted in S3?",
+      options: [
+        "The content served is not encrypted in transit.",
+        "Anyone can modify the content.",
+        "You must use a custom domain name.",
+        "A website hosted on S3 is stored in multiple Regions."
+      ],
+      answer: ["The content served is not encrypted in transit."],
+      multipleAnswer: false
+    },
+    {
+      question: "Which of the following can impact the reliability of a web application running on EC2 instances?",
+      options: [
+        "Taking EBS snapshots of the instances.",
+        "The user interface is too difficult to use.",
+        "Not replacing a misconfigured resource that the application depends on.",
+        "Provisioning too many instances."
+      ],
+      answer: ["Not replacing a misconfigured resource that the application depends on."],
+      multipleAnswer: false
+    },
+    {
+      question: "You have a public web application running on EC2 instances. Which of the following factors affecting the performance of your application might be out of your control?",
+      options: [
+        "Storage",
+        "Compute",
+        "Network",
+        "Database"
+      ],
+      answer: ["Network"],
+      multipleAnswer: false
+    },
+    {
+      question: "An Auto Scaling group can use an EC2 system health check to determine whether an instance is healthy. What other type of health check can it use?",
+      options: [
+        "S3",
+        "SNS",
+        "VPC",
+        "ELB"
+      ],
+      answer: ["ELB"],
+      multipleAnswer: false
+    },
+    {
+      question: "You're hosting a static website on S3. Your web assets are stored under the Standard storage class. Which of the following is true regarding your site?",
+      options: [
+        "Someone may modify the content of your site without authorization.",
+        "You're responsible for S3 charges.",
+        "You're charged for any compute power used to host the site.",
+        "An Availability Zone outage may bring down the site."
+      ],
+      answer: ["You're responsible for S3 charges."],
+      multipleAnswer: false
+    },
+    {
+      question: "You're hosting a static website on S3. Your web assets are stored in the US East 1 Region in the bucket named mygreatwebsite. What is the URL of the website?",
+      options: [
+        "http://mygreatwebsite.s3-website-us-east-1.amazonaws.com",
+        "http://mygreatwebsite.s3.amazonaws.com",
+        "http://mygreatwebsite.s3-website-us-east.amazonaws.com",
+        "http://mygreatwebsite.s3-us-east-1.amazonaws.com"
+      ],
+      answer: ["http://mygreatwebsite.s3-website-us-east-1.amazonaws.com"],
+      multipleAnswer: false
     }
   ];
 

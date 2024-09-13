@@ -57,6 +57,6 @@ export class ExamComponent implements OnInit {
 
   // Display the final score when all questions are done
   showFinalScore() {
-    alert(`You scored ${this.score} out of ${this.questions.length}`);
+    alert(`You scored ${this.score} out of ${this.questions.length}: ${(this.score/this.questions.length)*100}%`);
   }
 }
