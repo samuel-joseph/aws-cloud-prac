@@ -1291,7 +1291,7 @@ export class QuestionService {
       multipleAnswer: false
     },
     {
-      chapter: "Chapter The Core Compute Services",
+      chapter: "Chapter 7 The Core Compute Services",
       question: "Where can you find a wide range of verified AMIs from both AWS and third-party vendors?",
       options: [
         "AWS Marketplace",
@@ -1303,7 +1303,7 @@ export class QuestionService {
       multipleAnswer: false
     },
     {
-      chapter: "Chapter The Core Compute Services",
+      chapter: "Chapter 7 The Core Compute Services",
       question: "Which of the following could be included in an EC2 AMI? (Select TWO.)",
       options: [
         "A networking configuration",
@@ -1315,7 +1315,7 @@ export class QuestionService {
       multipleAnswer: true
     },
     {
-      chapter: "Chapter The Core Compute Services",
+      chapter: "Chapter 7 The Core Compute Services",
       question: "Which of the following are EC2 instance type families? (Select TWO.)",
       options: [
         "c5d.18xlarge",
@@ -1327,7 +1327,7 @@ export class QuestionService {
       multipleAnswer: true
     },
     {
-      chapter: "Chapter The Core Compute Services",
+      chapter: "Chapter 7 The Core Compute Services",
       question: "When describing EC2 instance types, what is the role played by the vCPU metric?",
       options: [
         "vCPUs represent an instance's potential resilience against external network demands.",
@@ -1339,7 +1339,7 @@ export class QuestionService {
       multipleAnswer: false
     },
     {
-      chapter: "Chapter The Core Compute Services",
+      chapter: "Chapter 7 The Core Compute Services",
       question: "Which of the following describes an EC2 dedicated instance?",
       options: [
         "An EC2 instance running on a physical host reserved for the exclusive use of a single AWS account",
@@ -1351,7 +1351,7 @@ export class QuestionService {
       multipleAnswer: false
     },
     {
-      chapter: "Chapter The Core Compute Services",
+      chapter: "Chapter 7 The Core Compute Services",
       question: "Which of the following describes an EBS volume?",
       options: [
         "A software stack archive packaged to make it easy to copy and deploy to an EC2",
@@ -1363,7 +1363,7 @@ export class QuestionService {
       multipleAnswer: false
     },
     {
-      chapter: "Chapter The Core Compute Services",
+      chapter: "Chapter 7 The Core Compute Services",
       question: "Why might you want to use an instance store volume with your EC2 instance rather than a volume from the more common EBS service? (Select TWO.)",
       options: [
         "Instance store volumes can be encrypted.",
@@ -1378,7 +1378,7 @@ export class QuestionService {
       multipleAnswer: true
     },
     {
-      chapter: "Chapter The Core Compute Services",
+      chapter: "Chapter 7 The Core Compute Services",
       question: "Your web application experiences periodic spikes in demand that require the provisioning of extra instances. Which of the following pricing models would make the most sense for those extra instances?",
       options: [
         "Spot",
@@ -1390,7 +1390,7 @@ export class QuestionService {
       multipleAnswer: false
     },
     {
-      chapter: "Chapter The Core Compute Services",
+      chapter: "Chapter 7 The Core Compute Services",
       question: "Your web application experiences periodic spikes in demand that require the provisioning of extra instances. Which of the following pricing models would make the most sense for the 'base' instances that will run constantly?",
       options: [
         "Spot",
@@ -1402,7 +1402,7 @@ export class QuestionService {
       multipleAnswer: false
     },
     {
-      chapter: "Chapter The Core Compute Services",
+      chapter: "Chapter 7 The Core Compute Services",
       question: "Which of the following best describes what happens when you purchase an EC2 reserved instance?",
       options: [
         "Charges for any instances you run matching the reserved instance type will be covered",
@@ -1414,7 +1414,7 @@ export class QuestionService {
       multipleAnswer: false
     },
     {
-      chapter: "Chapter The Core Compute Services",
+      chapter: "Chapter 7 The Core Compute Services",
       question: "Which of the following use cases are good candidates for spot instances? (Select TWO.)",
       options: [
         "Big data processing workloads",
@@ -1426,7 +1426,7 @@ export class QuestionService {
       multipleAnswer: true
     },
     {
-      chapter: "Chapter The Core Compute Services",
+      chapter: "Chapter 7 The Core Compute Services",
       question: "Which AWS services simplify the process of bringing web applications to deployment? (Select TWO.)",
       options: [
         "Elastic Block Store",
@@ -1438,7 +1438,7 @@ export class QuestionService {
       multipleAnswer: true
     },
     {
-      chapter: "Chapter The Core Compute Services",
+      chapter: "Chapter 7 The Core Compute Services",
       question: "Which of the following services bills at a flat rate regardless of how it's consumed?",
       options: [
         "Lightsail",
@@ -1450,7 +1450,7 @@ export class QuestionService {
       multipleAnswer: false
     },
     {
-      chapter: "Chapter The Core Compute Services",
+      chapter: "Chapter 7 The Core Compute Services",
       question: "Which of these stacks are available from Lightsail blueprints? (Select TWO.)",
       options: [
         "Ubuntu",
@@ -1462,7 +1462,7 @@ export class QuestionService {
       multipleAnswer: true
     },
     {
-      chapter: "Chapter The Core Compute Services",
+      chapter: "Chapter 7 The Core Compute Services",
       question: "Which of these AWS services use primarily EC2 resources under the hood? (Select TWO.)",
       options: [
         "Elastic Block Store",
@@ -1474,7 +1474,7 @@ export class QuestionService {
       multipleAnswer: true
     },
     {
-      chapter: "Chapter The Core Compute Services",
+      chapter: "Chapter 7 The Core Compute Services",
       question: "Which of the following AWS services are designed to let you deploy Docker containers? (Select TWO.)",
       options: [
         "Elastic Container Service",
@@ -1486,7 +1486,7 @@ export class QuestionService {
       multipleAnswer: true
     },
     {
-      chapter: "Chapter The Core Compute Services",
+      chapter: "Chapter 7 The Core Compute Services",
       question: "Which of the following use container technologies? (Select TWO.)",
       options: [
         "Docker",
@@ -1498,7 +1498,7 @@ export class QuestionService {
       multipleAnswer: true
     },
     {
-      chapter: "Chapter The Core Compute Services",
+      chapter: "Chapter 7 The Core Compute Services",
       question: "What role can the Python programming language play in AWS Lambda?",
       options: [
         "Python cannot be used for Lambda.",
@@ -1510,7 +1510,7 @@ export class QuestionService {
       multipleAnswer: false
     },
     {
-      chapter: "Chapter The Core Compute Services",
+      chapter: "Chapter 7 The Core Compute Services",
       question: "What is the maximum time a Lambda function may run before timing out?",
       options: [
         "15 minutes",
@@ -2709,6 +2709,10 @@ export class QuestionService {
   ];
 
   constructor() { }
+
+    getAllQuestions(): Question[] {
+    return this.questions;
+  }
 
     // Natural sorting of chapters
     getChapters(): string[] {

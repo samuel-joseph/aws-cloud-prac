@@ -1,22 +1,74 @@
+
+
 /* Global container for centering the entire content */
 :host {
   display: flex;
-  justify-content: center; /* Horizontally center */
-  align-items: center; /* Vertically center */
-  min-height: 100vh; /* Full height of the viewport */
-  background-color: #1e1e1e; /* Dark background */
-  color: #ffffff; /* Light text for contrast */
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #1e1e1e;
+  color: #080808;
   font-family: Arial, sans-serif;
+  padding: 10px;
+}
+
+/* Background image control */
+:host(.background-image-visible) {
+  background-image: url('https://wallpapers.com/images/hd/hayabusa-experiment-21-in-mobile-legend-p1zybt5s80xah1zj.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Hide background image */
+:host(.background-image-hidden) {
+  background-image: none;
+}
+
+/* Outer container that wraps the question */
+.question-container {
+  max-width: 600px; /* Maximum width to avoid excessively large containers */
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: #2c2c2ce9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: width 0.3s ease; /* Smooth transition if the content size changes */
+}
+
+/* Question content itself */
+.question-content {
+  width: 95%; /* Takes the remaining space inside the question container */
+  font-size: 24px;
+  color: #ffffff;
+  text-align: left;
+  word-wrap: break-word; /* Ensures long words are wrapped */
 }
 
 /* Centered content inside the flex container */
 div {
   width: 100%;
-  max-width: 600px; /* Max width for readability */
-  padding: 20px;
+  max-width: 600px;
+  padding: 20px 10px;
   border-radius: 10px;
-  background-color: #2c2c2c; /* Darker box background */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Shadow for depth */
+  background-color: #2c2c2c;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Progress bar container */
+.progress-container {
+  width: 95%;
+  height: .5px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* Progress bar fill */
+.progress-bar {
+  height: 50%;
+  background-color: #00ff00;
+  border-radius: 10px;
+  transition: width 0.4s ease; /* Smooth transition as the progress updates */
 }
 
 /* Styling for the heading */
@@ -31,8 +83,8 @@ select {
   width: 100%;
   padding: 10px;
   margin-bottom: 20px;
-  background-color: #3b3b3b; /* Darker dropdown */
-  color: #ffffff; /* Light text for the dropdown */
+  background-color: #3b3b3b;
+  color: #ffffff;
   border: none;
   border-radius: 5px;
   outline: none;
@@ -64,8 +116,10 @@ button:disabled {
 
 /* Styling for checkboxes and aligning them to the left */
 .options-container {
-  text-align: left; /* Align the checkboxes and options to the left */
+  max-width: 90%;
+  text-align: left;
   margin-top: 10px;
+    color: #ffffff;
 }
 
 input[type="checkbox"] {
@@ -84,32 +138,97 @@ label {
   margin-bottom: 10px;
 }
 
+/* The switch - the box around the slider */
+.switch {
+  position: fixed; /* Fixed positioning to keep it in the same place on the page */
+  top: 10px; /* Distance from the top */
+  right: 10px; /* Distance from the right */
+  width: 60px; /* Width of the switch */
+  height: 34px; /* Height of the switch */
+}
 
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #6a222e;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #6a222e;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+
+/* Media Queries for Mobile View */
 @media (max-width: 768px) {
   div {
-    max-width: 100%; /* Full width for smaller screens */
+    max-width: 100%;
     padding: 15px;
-    border-radius: 0; /* Remove border-radius for mobile */
+    border-radius: 0;
   }
 
   h3 {
-    font-size: 20px; /* Smaller heading font size for mobile */
+    font-size: 20px;
   }
 
   select, button {
-    font-size: 14px; /* Smaller font size for buttons and dropdown */
-    padding: 10px; /* Adjust padding for smaller screens */
+    font-size: 14px;
+    padding: 10px;
   }
 
   button {
-    max-width: 100%; /* Make button full width on mobile */
+    max-width: 100%;
   }
 
   input[type="checkbox"] {
-    transform: scale(1.2); /* Make checkboxes slightly larger for mobile */
+    transform: scale(1.2);
   }
 
   .options-container label {
-    font-size: 16px; /* Slightly smaller font size for options on mobile */
+    font-size: 16px;
   }
 }

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, OnInit, Renderer2 } from '@angular/core';
 import { QuestionService, Question } from '../question.service';
 
 @Component({
@@ -8,34 +8,41 @@ import { QuestionService, Question } from '../question.service';
 })
 export class ExamComponent implements OnInit {
   questions: Question[] = [];
-  currentQuestionIndex = 0; // Tracks the current question
-  score = 0; // Global score
-  currentQuestion!: Question; // The current question to display
-  selectedAnswers: string[] = []; // Stores selected answers
-  chapters: string[] = []; // Available chapters for filtering
-  selectedChapter: string = ''; // The chapter selected by the user
-  isChapterSelected = false; // Indicates if a chapter has been selected
+  allQuestions: Question[] = []; // Store all questions to shuffle
+  currentQuestionIndex = 0;
+  score = 0;
+  currentQuestion!: Question;
+  selectedAnswers: string[] = [];
+  chapters: string[] = [];
+  selectedChapter: string = '';
+  isChapterSelected = false;
+  progress = 0;
+  showBackgroundImage = false;
 
-  constructor(private questionService: QuestionService) {}
+  constructor(private questionService: QuestionService, private renderer: Renderer2, private el: ElementRef) {}
 
   ngOnInit() {
-    // Load available chapters including "All" from the question service
-    this.chapters = this.questionService.getChapters();
+    this.allQuestions = this.questionService.getAllQuestions(); // Get all questions
+    this.chapters = this.questionService.getChapters(); // Get sorted chapters
   }
 
-  // Function to handle chapter selection from the dropdown
   selectChapter(event: any) {
     const chapter = event.target.value;
     if (chapter) {
       this.selectedChapter = chapter;
-      this.questions = this.questionService.getQuestionsByChapter(chapter);
+      if (chapter === 'All') {
+        this.questions = [...this.allQuestions]; // No shuffling if 'All' is selected
+      } else {
+        this.questions = this.questionService.getQuestionsByChapter(chapter);
+      }
+      this.questions = this.shuffleArray(this.questions); // Shuffle questions after selection
       this.currentQuestionIndex = 0;
       this.currentQuestion = this.questions[this.currentQuestionIndex];
-      this.isChapterSelected = true; // Mark chapter as selected
+      this.isChapterSelected = true;
+      this.updateProgress();
     }
   }
 
-  // Function to handle selecting an answer (toggle for multiple answers)
   toggleAnswer(selectedAnswer: string) {
     if (this.selectedAnswers.includes(selectedAnswer)) {
       this.selectedAnswers = this.selectedAnswers.filter(answer => answer !== selectedAnswer);
@@ -44,30 +51,52 @@ export class ExamComponent implements OnInit {
     }
   }
 
-  // Function to submit the current question's answers
   submitAnswers() {
     const correctAnswers = this.currentQuestion.answer.sort();
     const selectedAnswersSorted = this.selectedAnswers.sort();
 
     if (JSON.stringify(selectedAnswersSorted) === JSON.stringify(correctAnswers)) {
-      this.score++; // Increment the score if the answers are correct
+      this.score++;
     } else {
       alert('Incorrect! The correct answers are: ' + correctAnswers.join(', '));
     }
 
-    this.selectedAnswers = []; // Reset selected answers for the next question
-
-    // Move to the next question, or show the final score
+    this.selectedAnswers = [];
     this.currentQuestionIndex++;
     if (this.currentQuestionIndex < this.questions.length) {
       this.currentQuestion = this.questions[this.currentQuestionIndex];
+      this.updateProgress();
     } else {
       this.showFinalScore();
     }
   }
 
-  // Display the final score when all questions are done
   showFinalScore() {
     alert(`You scored ${this.score} out of ${this.questions.length}`);
+  }
+
+  updateProgress() {
+    this.progress = ((this.currentQuestionIndex + 1) / this.questions.length) * 100;
+  }
+
+  // Helper function to shuffle an array
+  shuffleArray(array: any[]): any[] {
+    for (let i = array.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [array[i], array[j]] = [array[j], array[i]];
+    }
+    return array;
+  }
+
+  toggleBackground() {
+    this.showBackgroundImage = !this.showBackgroundImage;
+    const classList = this.el.nativeElement.classList;
+    if (this.showBackgroundImage) {
+      classList.add('background-image-visible');
+      classList.remove('background-image-hidden');
+    } else {
+      classList.add('background-image-hidden');
+      classList.remove('background-image-visible');
+    }
   }
 }

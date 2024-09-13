@@ -1,3 +1,8 @@
+<!-- <button class="toggle-button" (click)="toggleBackground()">Toggle Background Image</button> -->
+<label class="switch">
+  <input (click)="toggleBackground()" type="checkbox">
+  <span class="slider round"></span>
+</label>
 <div *ngIf="!isChapterSelected">
   <h3>Select a Chapter</h3>
   <select (change)="selectChapter($event)">
@@ -6,15 +11,26 @@
   </select>
 </div>
 
-<div *ngIf="isChapterSelected">
-  <h3>{{ currentQuestion.question }}</h3>
-  <div *ngFor="let option of currentQuestion.options">
-    <input
-      type="checkbox"
-      [checked]="selectedAnswers.includes(option)"
-      (change)="toggleAnswer(option)"
-    />
-    {{ option }}
+<div class="question-container" *ngIf="isChapterSelected">
+  <!-- Progress bar -->
+  <div class="progress-container">
+    <div class="progress-bar" [style.width.%]="progress"></div>
+  </div>
+  <div class="question-content">
+    <h3>{{currentQuestion.chapter}}</h3>
+    <h5>{{ currentQuestion.question }}</h5>
+  </div>
+
+  <!-- Options for the current question -->
+  <div class="options-container">
+    <div *ngFor="let option of currentQuestion.options">
+      <input
+        type="checkbox"
+        [checked]="selectedAnswers.includes(option)"
+        (change)="toggleAnswer(option)"
+      />
+      {{ option }}
+    </div>
   </div>
   
   <button (click)="submitAnswers()">Submit Answers</button>
