@@ -1612,7 +1612,411 @@ export class QuestionService {
       ],
       answer: ["Snowball Edge with the Compute Optimized configuration"],
       multipleAnswer: false
-    }
+    },
+    //chapter 9
+    {
+      question: "Which type of database stores data in columns and rows?",
+      options: [
+        "Nonrelational",
+        "Relational",
+        "Key-value store",
+        "Document"
+      ],
+      answer: ["Relational"],
+      multipleAnswer: false
+    },
+    {
+      question: "Which of the following Structured Query Language (SQL) statements can you use to write data to a relational database table?",
+      options: [
+        "CREATE",
+        "INSERT",
+        "QUERY",
+        "WRITE"
+      ],
+      answer: ["INSERT"],
+      multipleAnswer: false
+    },
+    {
+      question: "Which of the following statements is true regarding nonrelational databases?",
+      options: [
+        "You can create only one table.",
+        "No primary key is required.",
+        "You can't store data with a fixed structure.",
+        "You don't have to define all the types of data that a table can store before adding data to it."
+      ],
+      answer: ["You don't have to define all the types of data that a table can store before adding data to it."],
+      multipleAnswer: false
+    },
+    {
+      question: "What is a no-SQL database?",
+      options: [
+        "A nonrelational database without primary keys",
+        "A schemaless relational database",
+        "A schemaless nonrelational database",
+        "A relational database with primary keys"
+      ],
+      answer: ["A schemaless nonrelational database"],
+      multipleAnswer: false
+    },
+    {
+      question: "What do new Relational Database Service (RDS) instances use for database storage?",
+      options: [
+        "Instance volumes",
+        "Elastic Block Store (EBS) volumes",
+        "Snapshots",
+        "Magnetic storage"
+      ],
+      answer: ["Elastic Block Store (EBS) volumes"],
+      multipleAnswer: false
+    },
+    {
+      question: "Which of the following are database engine options for Amazon Relational Database Service (RDS)? (Select TWO.)",
+      options: [
+        "IBM dBase",
+        "PostgreSQL",
+        "DynamoDB",
+        "Amazon Aurora",
+        "Redis"
+      ],
+      answer: ["PostgreSQL", "Amazon Aurora"],
+      multipleAnswer: true
+    },
+    {
+      question: "What two databases is Amazon Aurora compatible with? (Select TWO.)",
+      options: [
+        "MySQL",
+        "PostgreSQL",
+        "MariaDB",
+        "Oracle",
+        "Microsoft SQL Server"
+      ],
+      answer: ["MySQL", "PostgreSQL"],
+      multipleAnswer: true
+    },
+    {
+      question: "Which of the following features of Relational Database Service (RDS) can prevent data loss in the event of an Availability Zone failure? (Select TWO.)",
+      options: [
+        "Read replicas",
+        "Multi-AZ",
+        "Snapshots",
+        "IOPS",
+        "Vertical scaling"
+      ],
+      answer: ["Multi-AZ", "Snapshots"],
+      multipleAnswer: true
+    },
+    {
+      question: "Which RDS database engine offers automatically expanding database storage up to 64 TB?",
+      options: [
+        "Microsoft SQL Server",
+        "Amazon Aurora",
+        "Oracle",
+        "Amazon Athena"
+      ],
+      answer: ["Amazon Aurora"],
+      multipleAnswer: false
+    },
+    {
+      question: "Which of the following Relational Database Service (RDS) features can help you achieve a monthly availability of 99.95 percent?",
+      options: [
+        "Multi-AZ",
+        "Read replicas",
+        "Point-in-time recovery",
+        "Horizontal scaling"
+      ],
+      answer: ["Multi-AZ"],
+      multipleAnswer: false
+    },
+    {
+      question: "What is true regarding a DynamoDB partition? (Select TWO.)",
+      options: [
+        "It's stored within a table.",
+        "It's backed by solid-state drives.",
+        "It's a way to uniquely identify an item in a table.",
+        "It's replicated across multiple Availability Zones."
+      ],
+      answer: ["It's backed by solid-state drives.", "It's replicated across multiple Availability Zones."],
+      multipleAnswer: true
+    },
+    {
+      question: "What is the minimum monthly availability for DynamoDB in a single region?",
+      options: [
+        "99.99 percent",
+        "99.95 percent",
+        "99.9 percent",
+        "99.0 percent"
+      ],
+      answer: ["99.99 percent"],
+      multipleAnswer: false
+    },
+    {
+      question: "Which of the following statements is true regarding a DynamoDB table?",
+      options: [
+        "It can store only one data type.",
+        "When you create a table, you must define the maximum number of items that it can store.",
+        "Items in a table can have duplicate values for the primary key.",
+        "Items in a table don't have to have all the same attributes."
+      ],
+      answer: ["Items in a table don't have to have all the same attributes."],
+      multipleAnswer: false
+    },
+    {
+      question: "Which configuration parameters can you adjust to improve write performance against a DynamoDB table? (Select TWO.)",
+      options: [
+        "Decrease read capacity units (RCU)",
+        "Increase read capacity units",
+        "Increase write capacity units (WCU)",
+        "Decrease write capacity units",
+        "Enable DynamoDB Auto Scaling"
+      ],
+      answer: ["Increase write capacity units (WCU)", "Enable DynamoDB Auto Scaling"],
+      multipleAnswer: true
+    },
+    {
+      question: "Which DynamoDB operation is the most read-intensive?",
+      options: [
+        "Write",
+        "Query",
+        "Scan query",
+        "Update"
+      ],
+      answer: ["Scan query"],
+      multipleAnswer: false
+    },
+    {
+      question: "Which of the following would be appropriate to use for a primary key in a DynamoDB table that stores a customer list?",
+      options: [
+        "The customer's full name",
+        "The customer's phone number",
+        "The customer's city",
+        "A randomly generated customer ID number"
+      ],
+      answer: ["A randomly generated customer ID number"],
+      multipleAnswer: false
+    },
+    {
+      question: "Which type of Redshift node uses magnetic storage?",
+      options: [
+        "Cost-optimized",
+        "Dense compute",
+        "Dense storage",
+        "Dense memory"
+      ],
+      answer: ["Dense storage"],
+      multipleAnswer: false
+    },
+    {
+      question: "Which Redshift feature can analyze structured data stored in S3?",
+      options: [
+        "Redshift Spectrum",
+        "Redshift S3",
+        "Amazon Athena",
+        "Amazon RDS"
+      ],
+      answer: ["Redshift Spectrum"],
+      multipleAnswer: false
+    },
+    {
+      question: "What is the term for a relational database that stores large amounts of structured data from a variety of sources for reporting and analysis?",
+      options: [
+        "Data storehouse",
+        "Data warehouse",
+        "Report cluster",
+        "Dense storage node"
+      ],
+      answer: ["Data warehouse"],
+      multipleAnswer: false
+    },
+    {
+      question: "What's the maximum amount of data you can store in a Redshift cluster when using dense storage nodes?",
+      options: [
+        "2 PB",
+        "326 TB",
+        "2 TB",
+        "326 PB",
+        "236 TB"
+      ],
+      answer: ["2 PB"],
+      multipleAnswer: false
+    },
+    //chapter 10
+    const questions: Question[] = [
+      {
+        question: "Which of the following are true of a default VPC? (Select TWO.)",
+        options: [
+          "A default VPC spans multiple regions.",
+          "AWS creates a default VPC in each region.",
+          "AWS creates a default VPC in each Availability Zone.",
+          "By default, each default VPC is available to one AWS account."
+        ],
+        answer: ["AWS creates a default VPC in each region.", "By default, each default VPC is available to one AWS account."],
+        multipleAnswer: true
+      },
+      {
+        question: "Which of the following is a valid CIDR for a VPC or subnet?",
+        options: ["10.0.0.0/28", "10.0.0.0/29", "10.0.0.0/8", "10.0.0.0/15"],
+        answer: ["10.0.0.0/28"],
+        multipleAnswer: false
+      },
+      {
+        question: "Which of the following are true regarding subnets? (Select TWO.)",
+        options: [
+          "A VPC must have at least two subnets.",
+          "A subnet must have a CIDR that's a subset of the CIDR of the VPC in which it resides.",
+          "A subnet spans one Availability Zone.",
+          "A subnet spans multiple Availability Zones."
+        ],
+        answer: ["A subnet must have a CIDR that's a subset of the CIDR of the VPC in which it resides.", "A subnet spans one Availability Zone."],
+        multipleAnswer: true
+      },
+      {
+        question: "Which of the following is true of a new security group?",
+        options: [
+          "It contains an inbound rule denying access from public IP addresses.",
+          "It contains an outbound rule denying access to public IP addresses.",
+          "It contains an outbound rule allowing access to any IP address.",
+          "It contains an inbound rule allowing access from any IP address.",
+          "It contains an inbound rule denying access from any IP address."
+        ],
+        answer: ["It contains an outbound rule allowing access to any IP address."],
+        multipleAnswer: false
+      },
+      {
+        question: "What's the difference between a security group and a network access control list (NACL)? (Select TWO.)",
+        options: [
+          "A network access control list operates at the instance level.",
+          "A security group operates at the instance level.",
+          "A security group operates at the subnet level.",
+          "A network access control list operates at the subnet level."
+        ],
+        answer: ["A security group operates at the instance level.", "A network access control list operates at the subnet level."],
+        multipleAnswer: true
+      },
+      {
+        question: "Which of the following is true of a VPC peering connection?",
+        options: [
+          "It's a private connection that connects more than three VPCs.",
+          "It's a private connection between two VPCs.",
+          "It's a public connection between two VPCs.",
+          "It's a virtual private network (VPN) connection between two VPCs."
+        ],
+        answer: ["It's a private connection between two VPCs."],
+        multipleAnswer: false
+      },
+      {
+        question: "What are two differences between a virtual private network (VPN) connection and a Direct Connect connection? (Select TWO.)",
+        options: [
+          "A Direct Connect connection offers predictable latency because it doesn't traverse the internet.",
+          "A VPN connection uses the internet for transport.",
+          "A Direct Connect connection uses AES 128- or 256-bit encryption.",
+          "A VPN connection requires proprietary hardware."
+        ],
+        answer: ["A Direct Connect connection offers predictable latency because it doesn't traverse the internet.", "A VPN connection uses the internet for transport."],
+        multipleAnswer: true
+      },
+      {
+        question: "Which of the following are true about registering a domain name with Route 53? (Select TWO.)",
+        options: [
+          "The registrar you use to register a domain name determines who will host DNS for that domain.",
+          "You can register a domain name for a term of up to 10 years.",
+          "Route 53 creates a private hosted zone for the domain.",
+          "Route 53 creates a public hosted zone for the domain."
+        ],
+        answer: ["You can register a domain name for a term of up to 10 years.", "Route 53 creates a public hosted zone for the domain."],
+        multipleAnswer: true
+      },
+      {
+        question: "Which of the following Route 53 routing policies can return a set of randomly ordered values?",
+        options: ["Simple", "Multivalue Answer", "Failover", "Latency"],
+        answer: ["Multivalue Answer"],
+        multipleAnswer: false
+      },
+      {
+        question: "Which of the following Route 53 routing policies doesn't use health checks?",
+        options: ["Latency", "Multivalue Answer", "Simple", "Geolocation"],
+        answer: ["Simple"],
+        multipleAnswer: false
+      },
+      {
+        question: "Which of the following types of Route 53 health checks works by making a test connection to a TCP port?",
+        options: ["Simple", "CloudWatch alarm", "Endpoint", "Calculated"],
+        answer: ["Endpoint"],
+        multipleAnswer: false
+      },
+      {
+        question: "You have two EC2 instances hosting a web application. You want to distribute 20 percent of traffic to one instance and 80 percent to the other. Which of the following Route 53 routing policies should you use?",
+        options: ["Weighted", "Failover", "Multivalue Answer", "Simple"],
+        answer: ["Weighted"],
+        multipleAnswer: false
+      },
+      {
+        question: "Resources in a VPC need to be able to resolve internal IP addresses for other resources in the VPC. No one outside of the VPC should be able to resolve these addresses. Which of the following Route 53 resources can help you achieve this?",
+        options: [
+          "A public hosted zone",
+          "A private hosted zone",
+          "Domain name registration",
+          "Health checks"
+        ],
+        answer: ["A private hosted zone"],
+        multipleAnswer: false
+      },
+      {
+        question: "You want to provide private name resolution for two VPCs using the domain name company.pri. How many private hosted zones do you need to create?",
+        options: ["1", "2", "3", "4"],
+        answer: ["1"],
+        multipleAnswer: false
+      },
+      {
+        question: "On how many continents are CloudFront edge locations distributed?",
+        options: ["7", "6", "5", "4"],
+        answer: ["6"],
+        multipleAnswer: false
+      },
+      {
+        question: "From where does CloudFront retrieve content to store for caching?",
+        options: ["Regions", "Origins", "Distributions", "Edge locations"],
+        answer: ["Origins"],
+        multipleAnswer: false
+      },
+      {
+        question: "Which CloudFront distribution type requires you to provide a media player?",
+        options: ["Streaming", "RTMP", "Web", "Edge"],
+        answer: ["RTMP"],
+        multipleAnswer: false
+      },
+      {
+        question: "You need to deliver content to users in the United States and Canada. Which of the following edge location options will be the most cost-effective for your CloudFront distribution?",
+        options: [
+          "United States, Canada, and Europe",
+          "United States, Canada, Europe, and Asia",
+          "United States, Canada, Europe, Asia, and Africa",
+          "All edge locations"
+        ],
+        answer: ["United States, Canada, and Europe"],
+        multipleAnswer: false
+      },
+      {
+        question: "Approximately how many different CloudFront edge locations are there?",
+        options: [
+          "About 50",
+          "More than 150",
+          "More than 300",
+          "More than 500"
+        ],
+        answer: ["More than 150"],
+        multipleAnswer: false
+      },
+      {
+        question: "Which of the following are valid origins for a CloudFront distribution? (Select TWO.)",
+        options: [
+          "EC2 instance",
+          "A public S3 bucket",
+          "A private S3 bucket that you don't have access to",
+          "A private S3 bucket that you own"
+        ],
+        answer: ["EC2 instance", "A public S3 bucket"],
+        multipleAnswer: true
+      }    
   ];
 
   constructor() { }
