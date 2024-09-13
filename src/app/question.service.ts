@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 
 export interface Question {
+  chapter: string;
   question: string;
   options: string[];
   answer: string[];
@@ -13,9 +14,10 @@ export interface Question {
 export class QuestionService {
 
   questions: Question[] = [
-  //1-12
+  //0-11
   //chapter 1: the cloud
     {
+      chapter: "Chapter 1 The Cloud",
       question: 'Which of the following does not contribute significantly to the operational value of a late cloud provider like AWS??',
       options: [
         'Multiregional presence',
@@ -27,6 +29,7 @@ export class QuestionService {
       multipleAnswer: false
     },
     {
+      chapter: "Chapter 1 The Cloud",
       question: 'Which of the following are signs of a highly available application? (Select TWO.)',
       options: [
         'A failure in one geographic region will trigger an automatic failover to resources in a different region.',
@@ -41,6 +44,7 @@ export class QuestionService {
       multipleAnswer: true
     },
     {
+      chapter: "Chapter 1 The Cloud",
       question: 'How does the metered payment model make many benefits of cloud computing possible? (Select TWO.)',
       options: [
         'Greater application security is now possible.',
@@ -55,6 +59,7 @@ export class QuestionService {
       multipleAnswer: true
     },
     {
+      chapter: "Chapter 1 The Cloud",
       question: 'Which of the following are direct benefits of server virtualization? (Select TWO.)',
       options: [
         'Fast resource provisioning and launching',
@@ -69,6 +74,7 @@ export class QuestionService {
       multipleAnswer: true
     },
     {
+      chapter: "Chapter 1 The Cloud",
       question: 'What is a hypervisor?',
       options: [
         'Hardware device used to provide an interface between storage and compute modules',
@@ -80,6 +86,7 @@ export class QuestionService {
       multipleAnswer: false
     },
     {
+      chapter: "Chapter 1 The Cloud",
       question: 'Which of the following best describes server virtualization?',
       options: [
         '"Sharding" data from multiple sources into a single virtual data store',
@@ -91,6 +98,7 @@ export class QuestionService {
       multipleAnswer: false
     },
     {
+      chapter: "Chapter 1 The Cloud",
       question: 'Which of the following best describes Infrastructure as a Service products?',
       options: [
         'Services that hide infrastructure complexity behind a simple interface',
@@ -102,6 +110,7 @@ export class QuestionService {
       multipleAnswer: false
     },
     {
+      chapter: "Chapter 1 The Cloud",
       question: 'Which of the following best describes Platform as a Service products?',
       options: [
         'Services that hide infrastructure complexity behind a simple interface',
@@ -113,6 +122,7 @@ export class QuestionService {
       multipleAnswer: false
     },
     {
+      chapter: "Chapter 1 The Cloud",
       question: 'Which of the following best describes Software as a Service products?',
       options: [
         'Services that give you direct control over underlying compute and storage resources', 
@@ -124,6 +134,7 @@ export class QuestionService {
       multipleAnswer: false
     },
     {
+      chapter: "Chapter 1 The Cloud",
       question: 'Which of the following best describes scalability?',
       options: [
         'The ability of an application to automatically add preconfigured compute resources to meet increasing demand',
@@ -135,6 +146,7 @@ export class QuestionService {
       multipleAnswer: false
     },
     {
+      chapter: "Chapter 1 The Cloud",
       question: 'Which of the following best describes elasticity?',
       options: [
         'The ability to more densely pack virtualized resources onto a single physical server',
@@ -146,6 +158,7 @@ export class QuestionService {
       multipleAnswer: false
     },
     {
+      chapter: "Chapter 1 The Cloud",
       question: 'Which of the following characteristics most help AWS provide such scalable services? (Select TWO.)',
       options: [
         'The enormous number of servers it operates',
@@ -159,9 +172,10 @@ export class QuestionService {
       ],
       multipleAnswer: true
     },
-    //13-32
+    //12-31
     //chapter 2 Understanding you aws account
     {
+      chapter: "Chapter 2 Understanding you aws account",
       question: "Which of the following EC2 services can be used without charge under the Free Tier?",
       options: [
         "Any single EC2 instance type if it runs for less than one hour per day",
@@ -173,6 +187,7 @@ export class QuestionService {
       multipleAnswer: false
     },
     {
+      chapter: "Chapter 2 Understanding you aws account",
       question: "You want to experiment with deploying a web server on an EC2 instance. Which two of the following resources can you include to make that work while remaining within the Free Tier? (Select TWO.)",
       options: [
         "A 5 GB bucket on S3",
@@ -187,6 +202,7 @@ export class QuestionService {
       multipleAnswer: true
     },
     {
+      chapter: "Chapter 2 Understanding you aws account",
       question: "Which of the following usage will always be cost-free even after your account's Free Tier has expired? (Select TWO.)",
       options: [
         "One million API calls/month on Amazon API Gateway",
@@ -198,6 +214,7 @@ export class QuestionService {
       multipleAnswer: true
     },
     {
+      chapter: "Chapter 2 Understanding you aws account",
       question: "Which of the following tools are available to ensure you won't accidentally run past your Free Tier limit and incur unwanted costs? (Select TWO.)",
       options: [
         "Automated email alerts when activity approaches the Free Tier limits",
@@ -209,6 +226,7 @@ export class QuestionService {
       multipleAnswer: true
     },
     {
+      chapter: "Chapter 2 Understanding you aws account",
       question: "Which of the following is likely to be an accurate source of AWS pricing information?",
       options: [
         "Wikipedia pages relating to a particular service",
@@ -220,6 +238,7 @@ export class QuestionService {
       multipleAnswer: false
     },
     {
+      chapter: "Chapter 2 Understanding you aws account",
       question: "Which of the following will probably not affect the pricing for an AWS service?",
       options: [
         "Requests for raising the available service limit",
@@ -231,6 +250,7 @@ export class QuestionService {
       multipleAnswer: false
     },
     {
+      chapter: "Chapter 2 Understanding you aws account",
       question: "Which of the following is a limitation of the AWS Simple Monthly Calculator?",
       options: [
         "You can calculate resource use for only one service at a time.",
@@ -242,6 +262,7 @@ export class QuestionService {
       multipleAnswer: false
     },
     {
+      chapter: "Chapter 2 Understanding you aws account",
       question: "Which of the following Simple Monthly Calculator selections will likely have an impact on most other configuration choices on the page? (Select TWO.)",
       options: [
         "Calculate By Month Or Year",
@@ -253,6 +274,7 @@ export class QuestionService {
       multipleAnswer: true
     },
     {
+      chapter: "Chapter 2 Understanding you aws account",
       question: "Which of the following is not an included parameter in the AWS Total Cost of Ownership Calculator?",
       options: [
         "The tax implications of a cloud deployment",
@@ -264,6 +286,7 @@ export class QuestionService {
       multipleAnswer: false
     },
     {
+      chapter: "Chapter 2 Understanding you aws account",
       question: "Which of the following AWS Total Cost of Ownership Calculator parameters is likely to have the greatest impact on cost?",
       options: [
         "Currency",
@@ -275,6 +298,7 @@ export class QuestionService {
       multipleAnswer: false
     },
     {
+      chapter: "Chapter 2 Understanding you aws account",
       question: "Which of the following AWS documentation URLs points to the page containing an up-to-date list of service limits?",
       options: [
         "https://docs.aws.amazon.com/general/latest/gr/limits.html",
@@ -286,6 +310,7 @@ export class QuestionService {
       multipleAnswer: false
     },
     {
+      chapter: "Chapter 2 Understanding you aws account",
       question: "Which of the following best describes one possible reason for AWS service limits?",
       options: [
         "To prevent individual customers from accidentally launching a crippling level of resource consumption",
@@ -297,6 +322,7 @@ export class QuestionService {
       multipleAnswer: false
     },
     {
+      chapter: "Chapter 2 Understanding you aws account",
       question: "Is it always possible to request service limit increases from AWS?",
       options: [
         "Yes. All service limits can be increased.",
@@ -308,6 +334,7 @@ export class QuestionService {
       multipleAnswer: false
     },
     {
+      chapter: "Chapter 2 Understanding you aws account",
       question: "Which is the best place to get a quick summary of this month's spend for your account?",
       options: [
         "Budgets",
@@ -319,6 +346,7 @@ export class QuestionService {
       multipleAnswer: false
     },
     {
+      chapter: "Chapter 2 Understanding you aws account",
       question: "What is the main goal for creating a Usage budget type (in AWS Budgets)?",
       options: [
         "To correlate usage per unit cost to understand your account cost efficiency",
@@ -330,6 +358,7 @@ export class QuestionService {
       multipleAnswer: false
     },
     {
+      chapter: "Chapter 2 Understanding you aws account",
       question: "Which of the following is not a setting you can configure in a Cost budget?",
       options: [
         "Period (monthly, quarterly, etc.)",
@@ -341,6 +370,7 @@ export class QuestionService {
       multipleAnswer: false
     },
     {
+      chapter: "Chapter 2 Understanding you aws account",
       question: "What is the main difference between the goals of Cost Explorer and of cost and usage reports?",
       options: [
         "Cost Explorer displays visualizations of high-level historical and current account costs, while cost and usage reports generate granular usage reports in CSV format.",
@@ -352,6 +382,7 @@ export class QuestionService {
       multipleAnswer: false
     },
     {
+      chapter: "Chapter 2 Understanding you aws account",
       question: "What is the purpose of cost allocation tags?",
       options: [
         "To associate spend limits to automatically trigger resource shutdowns when necessary",
@@ -363,6 +394,7 @@ export class QuestionService {
       multipleAnswer: false
     },
     {
+      chapter: "Chapter 2 Understanding you aws account",
       question: "Which of the following scenarios would be a good use case for AWS Organizations? (Select TWO.)",
       options: [
         "A single company with multiple AWS accounts that wants a single place to administrate everything",
@@ -374,6 +406,7 @@ export class QuestionService {
       multipleAnswer: true
     },
     {
+      chapter: "Chapter 2 Understanding you aws account",
       question: "Which of these tools lets you design graphs within the browser interface to track your account spending?",
       options: [
         "Budgets",
@@ -385,26 +418,30 @@ export class QuestionService {
       multipleAnswer: false
     },
     //chapter 3 Getting Support on AWS
-    //32-52
+    //31-51
     {
+      chapter: "Chapter 3 Getting Support on AWS",
       question: "Your company is planning a major deployment on AWS. While the design and testing stages are still in progress, which of the following plans will provide the best blend of support and cost savings?",
       options: ["Basic", "Developer", "Business", "Enterprise"],
       answer: ["Business"],
       multipleAnswer: false
     },
     {
+      chapter: "Chapter 3 Getting Support on AWS",
       question: "Your web development team is actively gearing up for a deployment of an ecommerce site. During these early stages of the process, individual developers are running into frustrating conflicts and configuration problems that are highly specific to your situation. Which of the following plans will provide the best blend of support and cost savings?",
       options: ["Basic", "Developer", "Business", "Enterprise"],
       answer: ["Developer"],
       multipleAnswer: false
     },
     {
+      chapter: "Chapter 3 Getting Support on AWS",
       question: "Your corporate website was offline last week for more than two hours— which caused serious consequences, including the early retirement of your CTO. Your engineers have been having a lot of trouble tracking down the source of the outage and admit that they need outside help. Which of the following will most likely meet that need?",
       options: ["Basic", "Developer", "Business", "Enterprise"],
       answer: ["Enterprise"],
       multipleAnswer: false
     },
     {
+      chapter: "Chapter 3 Getting Support on AWS",
       question: "For which of the following will AWS provide direct 24/7 support to all users— even those on the Basic Support plan?",
       options: [
         "Help with infrastructure under a massive denial-of-service (DoS) attack",
@@ -416,6 +453,7 @@ export class QuestionService {
       multipleAnswer: false
     },
     {
+      chapter: "Chapter 3 Getting Support on AWS",
       question: "The primary purpose of an AWS technical account manager is to:",
       options: [
         "Provide 24/7 customer service for your AWS account",
@@ -427,24 +465,28 @@ export class QuestionService {
       multipleAnswer: false
     },
     {
+      chapter: "Chapter 3 Getting Support on AWS",
       question: "Your Linux-based EC2 instance requires a patch to a Linux kernel module. The problem is that patching the module will, for some reason, break the connection between your instance and data in an S3 bucket. Your team doesn't know if it's possible to work around this problem. Which is the most cost-effective AWS plan through which support professionals will try to help you?",
       options: ["Developer", "Business", "Enterprise", "No plan covers this kind of support"],
       answer: ["Business"],
       multipleAnswer: false
     },
     {
+      chapter: "Chapter 3 Getting Support on AWS",
       question: "Your company enrolled in the Developer Support plan and, through the course of one month, consumed $4,000 USD of AWS services. How much will the support plan cost the company for the month?",
       options: ["$120", "$29", "$100", "$480"],
       answer: ["$120"],
       multipleAnswer: false
     },
     {
+      chapter: "Chapter 3 Getting Support on AWS",
       question: "Your company enrolled in the Business Support plan and, through the course of three months, consumed $33,000 of AWS services (the consumption was equally divided across the months). How much will the support plan cost the company for the full three months?",
       options: ["$4,000", "$100", "$1,100", "$2,310"],
       answer: ["$2,310"],
       multipleAnswer: false
     },
     {
+      chapter: "Chapter 3 Getting Support on AWS",
       question: "Which of the following AWS support services does not offer free documentation of some sort?",
       options: [
         "AWS Professional Services",
@@ -456,6 +498,7 @@ export class QuestionService {
       multipleAnswer: false
     },
     {
+      chapter: "Chapter 3 Getting Support on AWS",
       question: "What is the key difference between the roles of AWS Professional Services and a technical account manager (TAM)?",
       options: [
         "The Professional Services product helps AWS Partner Network cloud professionals work alongside your own team to help you administrate your cloud infrastructure. The TAM is a cloud professional employed by AWS to guide you through the planning and execution of your infrastructure.",
@@ -469,12 +512,14 @@ export class QuestionService {
       multipleAnswer: false
     },
     {
+      chapter: "Chapter 3 Getting Support on AWS",
       question: "AWS documentation is available in a number of formats, including which of the following? (Select TWO.)",
       options: ["Microsoft Word (DOC)", "Kindle", "HTML", "DocBook"],
       answer: ["Kindle", "HTML"],
       multipleAnswer: true
     },
     {
+      chapter: "Chapter 3 Getting Support on AWS",
       question: "Which of the following documentation sites are most likely to contain code snippets for you to cut and (after making sure you understand exactly what they'll do) paste into your AWS operations? (Select TWO.)",
       options: [
         "https://aws.amazon.com/premiumsupport/knowledge-center",
@@ -489,17 +534,19 @@ export class QuestionService {
       multipleAnswer: true
     },
     {
+      chapter: "Chapter 3 Getting Support on AWS",
       question: "What is the primary function of the content linked from the Knowledge Center?",
       options: [
         "To introduce new users to the functionality of the core AWS services",
         "To explain how AWS deployments can be more efficient and secure than on-premises",
-        "To provide a public forum where AWS users can ask their technical questions",
+        "To provide a public forum where AWS users can ask their technical",
         "To present solutions to commonly encountered technical problems using AWS Infrastructure"
       ],
       answer: ["To present solutions to commonly encountered technical problems using AWS Infrastructure"],
       multipleAnswer: false
     },
     {
+      chapter: "Chapter 3 Getting Support on AWS",
       question: "On which of the following sites are you most likely to find information about encrypting your AWS resources?",
       options: [
         "https://aws.amazon.com/premiumsupport/knowledge-center",
@@ -511,6 +558,7 @@ export class QuestionService {
       multipleAnswer: false
     },
     {
+      chapter: "Chapter 3 Getting Support on AWS",
       question: "When using AWS documentation pages, what is the best way to be sure the information you're reading is up-to-date?",
       options: [
         "The page URL will include the word latest.",
@@ -522,24 +570,28 @@ export class QuestionService {
       multipleAnswer: false
     },
     {
+      chapter: "Chapter 3 Getting Support on AWS",
       question: "Which of the following is not a Trusted Advisor category?",
       options: ["Performance", "Service Limits", "Replication", "Fault Tolerance"],
       answer: ["Replication"],
       multipleAnswer: false
     },
     {
+      chapter: "Chapter 3 Getting Support on AWS",
       question: "Data volumes that aren't properly backed up is an example of which of these Trusted Advisor categories?",
       options: ["Fault Tolerance", "Performance", "Security", "Cost Optimization"],
       answer: ["Fault Tolerance"],
       multipleAnswer: false
     },
     {
+      chapter: "Chapter 3 Getting Support on AWS",
       question: "Instances that are running (mostly) idle should be identified by which of these Trusted Advisor categories?",
       options: ["Performance", "Cost Optimization", "Service Limits", "Replication"],
       answer: ["Cost Optimization"],
       multipleAnswer: false
     },
     {
+      chapter: "Chapter 3 Getting Support on AWS",
       question: "Within the context of Trusted Advisor, what is a false positive?",
       options: [
         "An alert for a service state that was actually intentional",
@@ -551,6 +603,7 @@ export class QuestionService {
       multipleAnswer: false
     },
     {
+      chapter: "Chapter 3 Getting Support on AWS",
       question: "Which of the following Trusted Advisor alerts is available only for accounts on the Business or Enterprise Support plan? (Select TWO.)",
       options: [
         "MFA on Root Account",
@@ -561,38 +614,44 @@ export class QuestionService {
       answer: ["Load Balancer Optimization", "IAM Access Key Rotation"],
       multipleAnswer: true
     },
-    //chapter 4
+    //chapter 4 Understanding the AWS Environment
     {
+      chapter: "Chapter 4 Understanding the AWS Environment",
       question: "Which of the following designations would refer to the AWS US West (Oregon) region?",
       options: ["us-east-1", "us-west-2", "us-west-2a", "us-west-2b"],
       answer: ["us-west-2"],
       multipleAnswer: false
     },
     {
+      chapter: "Chapter 4 Understanding the AWS Environment",
       question: "Which of the following is an AWS Region for which customer access is restricted?",
       options: ["AWS Admin", "US-DOD", "Asia Pacific (Tokyo)", "AWS GovCloud"],
       answer: ["AWS GovCloud"],
       multipleAnswer: false
     },
     {
+      chapter: "Chapter 4 Understanding the AWS Environment",
       question: "When you request a new virtual machine instance in EC2, your instance will automatically launch into the currently selected value of which of the following?",
       options: ["Service", "Subnet", "Availability Zone", "Region"],
       answer: ["Region"],
       multipleAnswer: false
     },
     {
+      chapter: "Chapter 4 Understanding the AWS Environment",
       question: "Which of the following are not globally based AWS services? (Select TWO.)",
       options: ["RDS", "Route 53", "EC2", "CloudFront"],
       answer: ["RDS", "EC2"],
       multipleAnswer: true
     },
     {
+      chapter: "Chapter 4 Understanding the AWS Environment",
       question: "Which of the following would be a valid endpoint your developers could use to access a particular Relational Database Service instance you're running in the Northern Virginia region?",
       options: ["us-east-1.amazonaws.com.rds", "ecs.eu-west-3.amazonaws.com", "rds.us-east-1.amazonaws.com", "rds.amazonaws.com.us-east-1"],
       answer: ["rds.us-east-1.amazonaws.com"],
       multipleAnswer: false
     },
     {
+      chapter: "Chapter 4 Understanding the AWS Environment",
       question: "What are the most significant architectural benefits of the way AWS designed its regions? (Select TWO.)",
       options: [
         "It can make infrastructure more fault tolerant.",
@@ -606,12 +665,14 @@ export class QuestionService {
       multipleAnswer: true
     },
     {
+      chapter: "Chapter 4 Understanding the AWS Environment",
       question: "Why is it that most AWS resources are tied to a single region?",
       options: ["Because those resources are run on a physical device, and that device must live somewhere", "Because security considerations are best served by restricting access to a single physical location", "Because access to any one digital resource must always occur through a single physical gateway", "Because spreading them too far afield would introduce latency issues"],
       answer: ["Because those resources are run on a physical device, and that device must live somewhere"],
       multipleAnswer: false
     },
     {
+      chapter: "Chapter 4 Understanding the AWS Environment",
       question: "You want to improve the resilience of your EC2 web server. Which of the following is the most effective and efficient approach?",
       options: [
         "Launch parallel, load-balanced instances in multiple AWS Regions.",
@@ -620,12 +681,14 @@ export class QuestionService {
       multipleAnswer: false
     },
     {
+      chapter: "Chapter 4 Understanding the AWS Environment",
       question: "Which of the following is the most accurate description of an AWS Availability Zone?",
       options: ["One or more independently powered data centers running a wide range of hardware host types", "One or more independently powered data centers running a uniform hardware host type", "All the data centers located within a broad geographic area", "The infrastructure running within a single physical data center"],
       answer: ["One or more independently powered data centers running a wide range of hardware host types"],
       multipleAnswer: false
     },
     {
+      chapter: "Chapter 4 Understanding the AWS Environment",
       question: "Which of the following most accurately describes a subnet within the AWS ecosystem?",
       options: [
         "The virtual limits imposed on the network access permitted to a resource instance",
@@ -635,48 +698,56 @@ export class QuestionService {
       multipleAnswer: false
     },
     {
+      chapter: "Chapter 4 Understanding the AWS Environment",
       question: "What determines the order by which subnets/AZ options are displayed in EC2 configuration dialogs?",
       options: ["Alphabetical order", "They (appear) to be displayed in random order.", "Numerical order", "By order of capacity, with largest capacity first"],
       answer: ["They (appear) to be displayed in random order."],
       multipleAnswer: false
     },
     {
+      chapter: "Chapter 4 Understanding the AWS Environment",
       question: "What is the primary goal of autoscaling?",
       options: ["To ensure the long-term reliability of a particular physical resource", "To ensure the long-term reliability of a particular virtual resource", "To orchestrate the use of multiple parallel resources to direct incoming user requests", "To ensure that a predefined service level is maintained regardless of external demand or instance failures"],
       answer: ["To ensure that a predefined service level is maintained regardless of external demand or instance failures"],
       multipleAnswer: false
     },
     {
+      chapter: "Chapter 4 Understanding the AWS Environment",
       question: "Which of the following design strategies is most effective for maintaining the reliability of a cloud application?",
       options: ["Resource isolation", "Resource automation", "Resource redundancy", "Resource geolocation"],
       answer: ["Resource redundancy"],
       multipleAnswer: false
     },
     {
+      chapter: "Chapter 4 Understanding the AWS Environment",
       question: "Which of the following AWS services are not likely to benefit from Amazon edge locations? (Select TWO.)",
       options: ["RDS", "EC2 load balancers", "Elastic Block Store (EBS)", "CloudFront"],
       answer: ["RDS", "Elastic Block Store (EBS)"],
       multipleAnswer: true
     },
     {
+      chapter: "Chapter 4 Understanding the AWS Environment",
       question: "Which of the following is the primary benefit of using CloudFront distributions?",
       options: ["Automated protection from mass email campaigns", "Greater availability through redundancy", "Greater security through data encryption", "Reduced latency access to your content no matter where your end users live"],
       answer: ["Reduced latency access to your content no matter where your end users live"],
       multipleAnswer: false
     },
     {
+      chapter: "Chapter 4 Understanding the AWS Environment",
       question: "What is the main purpose of Amazon Route 53?",
       options: ["Countering the threat of distributed denial-of-service (DDoS) attacks", "Managing domain name registration and traffic routing", "Protecting web applications from web-based threats", "Using the serverless power of Lambda to customize CloudFront behavior"],
       answer: ["Managing domain name registration and traffic routing"],
       multipleAnswer: false
     },
     {
+      chapter: "Chapter 4 Understanding the AWS Environment",
       question: "According to the AWS Shared Responsibility Model, which of the following are responsibilities of AWS? (Select TWO.)",
       options: ["The security of the cloud", "Patching underlying virtualization software running in AWS data centers", "Security of what's in the cloud", "Patching OSs running on EC2 instances"],
       answer: ["The security of the cloud", "Patching underlying virtualization software running in AWS data centers"],
       multipleAnswer: true
     },
     {
+      chapter: "Chapter 4 Understanding the AWS Environment",
       question: "According to the AWS Shared Responsibility Model, what's the best way to define the status of the software driving an AWS managed service?",
       options: [
         "Everything associated with an AWS managed service is the responsibility of AWS.",
@@ -688,19 +759,22 @@ export class QuestionService {
       multipleAnswer: false
     },
     {
+      chapter: "Chapter 4 Understanding the AWS Environment",
       question: "Which of the following is one of the first places you should look when troubleshooting a failing application?",
       options: ["AWS Acceptable Use Monitor", "Service Status Dashboard", "AWS Billing Dashboard", "Service Health Dashboard"],
       answer: ["Service Health Dashboard"],
       multipleAnswer: false
     },
     {
+      chapter: "Chapter 4 Understanding the AWS Environment",
       question: "Where will you find information on the limits AWS imposes on the ways you can use your account resources?",
       options: ["AWS User Agreement Policy", "AWS Acceptable Use Policy", "AWS Acceptable Use Monitor", "AWS Acceptable Use Dashboard"],
       answer: ["AWS Acceptable Use Policy"],
       multipleAnswer: false
     },
-    //chapter 5
+    //chapter 5 Securing Your AWS Resources
     {
+      chapter: "Chapter 5 Securing Your AWS Resources",
       question: "What is the primary function of the AWS IAM service?",
       options: [
         "Identity and access management",
@@ -712,6 +786,7 @@ export class QuestionService {
       multipleAnswer: false
     },
     {
+      chapter: "Chapter 5 Securing Your AWS Resources",
       question: "Which of the following are requirements you can include in an IAM password policy? (Select THREE.)",
       options: [
         "Require at least one uppercase letter.",
@@ -727,6 +802,7 @@ export class QuestionService {
       multipleAnswer: true
     },
     {
+      chapter: "Chapter 5 Securing Your AWS Resources",
       question: "Which of the following should you do to secure your AWS root user? (Select TWO.)",
       options: [
         "Assign the root user to the 'admins' IAM group.",
@@ -738,6 +814,7 @@ export class QuestionService {
       multipleAnswer: true
     },
     {
+      chapter: "Chapter 5 Securing Your AWS Resources",
       question: "How does multi-factor authentication work?",
       options: [
         "Instead of an access password, users authenticate via a physical MFA device.",
@@ -749,6 +826,7 @@ export class QuestionService {
       multipleAnswer: false
     },
     {
+      chapter: "Chapter 5 Securing Your AWS Resources",
       question: "Which of the following SSH commands will successfully connect to an EC2 Amazon Linux instance with an IP address of 54.7.35.103 using a key named mykey.pem?",
       options: [
         'echo "mykey pem ubuntu@54.7.35.103" | ssh -i',
@@ -760,6 +838,7 @@ export class QuestionService {
       multipleAnswer: false
     },
     {
+      chapter: "Chapter 5 Securing Your AWS Resources",
       question: "What's the most efficient method for managing permissions for multiple IAM users?",
       options: [
         "Assign users requiring similar permissions to IAM roles.",
@@ -771,6 +850,7 @@ export class QuestionService {
       multipleAnswer: false
     },
     {
+      chapter: "Chapter 5 Securing Your AWS Resources",
       question: "What is an IAM role?",
       options: [
         "A set of permissions allowing access to specified AWS resources",
@@ -782,6 +862,7 @@ export class QuestionService {
       multipleAnswer: false
     },
     {
+      chapter: "Chapter 5 Securing Your AWS Resources",
       question: "How can federated identities be incorporated into AWS workflows? (Select TWO.)",
       options: [
         "You can provide users authenticated through a third-party identity provider access to backend resources used by your mobile app.",
@@ -796,12 +877,14 @@ export class QuestionService {
       multipleAnswer: true
     },
     {
+      chapter: "Chapter 5 Securing Your AWS Resources",
       question: "Which of the following are valid third-party federated identity standards? (Select TWO.)",
       options: ["Secure Shell", "SSO", "SAML 2.0", "Active Directory"],
       answer: ["SAML 2.0", "Active Directory"],
       multipleAnswer: true
     },
     {
+      chapter: "Chapter 5 Securing Your AWS Resources",
       question: "What information does the IAM credential report provide?",
       options: [
         "A record of API requests against your account resources",
@@ -813,12 +896,14 @@ export class QuestionService {
       multipleAnswer: false
     },
     {
+      chapter: "Chapter 5 Securing Your AWS Resources",
       question: "What text format does the credential report use?",
       options: ["JSON", "CSV", "ASCI", "XML"],
       answer: ["CSV"],
       multipleAnswer: false
     },
     {
+      chapter: "Chapter 5 Securing Your AWS Resources",
       question: "Which of the following IAM policies is the best choice for the admin user you create in order to replace the root user for day-to-day administration tasks?",
       options: [
         "AdministratorAccess",
@@ -830,6 +915,7 @@ export class QuestionService {
       multipleAnswer: false
     },
     {
+      chapter: "Chapter 5 Securing Your AWS Resources",
       question: "What will you need to provide for a new IAM user you're creating who will use 'programmatic access' to AWS resources?",
       options: [
         "A password",
@@ -841,6 +927,7 @@ export class QuestionService {
       multipleAnswer: false
     },
     {
+      chapter: "Chapter 5 Securing Your AWS Resources",
       question: "What will IAM users with AWS Management Console access need to successfully log in?",
       options: [
         "Their username, account_number, and a password",
@@ -852,18 +939,21 @@ export class QuestionService {
       multipleAnswer: false
     },
     {
+      chapter: "Chapter 5 Securing Your AWS Resources",
       question: "Which of the following will encrypt your data while in transit between your office and Amazon S3?",
       options: ["DynamoDB", "SSE-S3", "A client-side master key", "SSE-KMS"],
       answer: ["A client-side master key"],
       multipleAnswer: false
     },
     {
+      chapter: "Chapter 5 Securing Your AWS Resources",
       question: "Which of the following AWS resources cannot be encrypted using KMS?",
       options: ["Existing AWS Elastic Block Store volumes", "RDS databases", "S3 buckets", "DynamoDB databases"],
       answer: ["Existing AWS Elastic Block Store volumes"],
       multipleAnswer: false
     },
     {
+      chapter: "Chapter 5 Securing Your AWS Resources",
       question: "What does KMS use to encrypt objects stored on your AWS account?",
       options: [
         "SSH master key",
@@ -875,12 +965,14 @@ export class QuestionService {
       multipleAnswer: false
     },
     {
+      chapter: "Chapter 5 Securing Your AWS Resources",
       question: "Which of the following standards governs AWS-based applications processing credit card transactions?",
       options: ["SSE-KMS", "FedRAMP", "PCI DSS", "ARPA"],
       answer: ["PCI DSS"],
       multipleAnswer: false
     },
     {
+      chapter: "Chapter 5 Securing Your AWS Resources",
       question: "What is the purpose of the Service Organization Controls (SOC) reports found on AWS Artifact?",
       options: [
         "They can be used to help you design secure and reliable credit card transaction applications.",
@@ -892,6 +984,7 @@ export class QuestionService {
       multipleAnswer: false
     },
     {
+      chapter: "Chapter 5 Securing Your AWS Resources",
       question: "What role can the documents provided by AWS Artifact play in your application planning? (Select TWO.)",
       options: [
         "They can help you confirm that your deployment infrastructure is compliant with regulatory standards.",
@@ -905,8 +998,9 @@ export class QuestionService {
       ],
       multipleAnswer: true
     },
-    //chapter 6
+    //chapter 6 Working with Your AWS Resources
     {
+      chapter: "Chapter 6 Working with Your AWS Resources",
       question: "Which of the following credentials can you use to log into the AWS Management Console?",
       options: [
         "Access key ID",
@@ -918,12 +1012,14 @@ export class QuestionService {
       multipleAnswer: false
     },
     {
+      chapter: "Chapter 6 Working with Your AWS Resources",
       question: "How long will your session with the AWS Management Console remain active?",
       options: ["6 hours", "12 hours", "8 hours", "24 hours", "15 minutes"],
       answer: ["12 hours"],
       multipleAnswer: false
     },
     {
+      chapter: "Chapter 6 Working with Your AWS Resources",
       question: "While looking at the EC2 service console in the AWS Management Console while logged in as the root user, you notice all of your instances are missing. What could be the reason?",
       options: [
         "You've selected the wrong region in the navigation bar.",
@@ -935,6 +1031,7 @@ export class QuestionService {
       multipleAnswer: false
     },
     {
+      chapter: "Chapter 6 Working with Your AWS Resources",
       question: "Which of the following is true regarding a resource tag?",
       options: [
         "It must be unique within an account.",
@@ -946,6 +1043,7 @@ export class QuestionService {
       multipleAnswer: false
     },
     {
+      chapter: "Chapter 6 Working with Your AWS Resources",
       question: "Which of the following is required to use the AWS Command Line Interface (CLI)?",
       options: [
         "A secret key",
@@ -957,6 +1055,7 @@ export class QuestionService {
       multipleAnswer: false
     },
     {
+      chapter: "Chapter 6 Working with Your AWS Resources",
       question: "Which of the following are options for installing the AWS CLI on Windows 10? (Select TWO.)",
       options: [
         "The MSI installer",
@@ -968,6 +1067,7 @@ export class QuestionService {
       multipleAnswer: true
     },
     {
+      chapter: "Chapter 6 Working with Your AWS Resources",
       question: "After installing the AWS Command Line Interface, what should you do before using it to securely manage your AWS resources?",
       options: [
         "Issue the aws --version command.",
@@ -979,6 +1079,7 @@ export class QuestionService {
       multipleAnswer: false
     },
     {
+      chapter: "Chapter 6 Working with Your AWS Resources",
       question: "Which output format does the AWS CLI support?",
       options: [
         "Tab-separated values (TSV)",
@@ -990,12 +1091,14 @@ export class QuestionService {
       multipleAnswer: false
     },
     {
+      chapter: "Chapter 6 Working with Your AWS Resources",
       question: "Which of the following programming languages are AWS software development kits available for? (Select THREE.)",
       options: ["Fortran", "JavaScript", "JSON", "Java", "PHP"],
       answer: ["JavaScript", "Java", "PHP"],
       multipleAnswer: true
     },
     {
+      chapter: "Chapter 6 Working with Your AWS Resources",
       question: "Which of the following software development kits (SDKs) enable developers to write mobile applications that run on both Apple and Android devices? (Select TWO.)",
       options: [
         "AWS Mobile SDK for Unity",
@@ -1007,12 +1110,14 @@ export class QuestionService {
       multipleAnswer: true
     },
     {
+      chapter: "Chapter 6 Working with Your AWS Resources",
       question: "Which of the following programming languages are AWS Internet of Things (IoT) device software development kits available for? (Select TWO.)",
       options: ["JavaScript", "C++", "Swift", "Ruby"],
       answer: ["JavaScript", "C++"],
       multipleAnswer: true
     },
     {
+      chapter: "Chapter 6 Working with Your AWS Resources",
       question: "What's the difference between the AWS Command Line Interface (CLI) and the AWS software development kits (SDK)? (Select TWO.)",
       options: [
         "The AWS SDKs allow you to use popular programming languages to write applications that interact with AWS services.",
@@ -1027,12 +1132,14 @@ export class QuestionService {
       multipleAnswer: true
     },
     {
+      chapter: "Chapter 6 Working with Your AWS Resources",
       question: "Which of the following CloudWatch features store performance data from AWS services?",
       options: ["Logs", "Metrics", "Events", "Metric filters", "Alarms"],
       answer: ["Metrics"],
       multipleAnswer: false
     },
     {
+      chapter: "Chapter 6 Working with Your AWS Resources",
       question: "For which of the following scenarios can you create a CloudWatch alarm to send a notification?",
       options: [
         "A metric that doesn't change for 24 hours",
@@ -1044,6 +1151,7 @@ export class QuestionService {
       multipleAnswer: false
     },
     {
+      chapter: "Chapter 6 Working with Your AWS Resources",
       question: "Which of the following Simple Notification Service (SNS) protocols can you use to send a notification? (Select TWO.)",
       options: [
         "Short Message Service (SMS) text message",
@@ -1055,6 +1163,7 @@ export class QuestionService {
       multipleAnswer: true
     },
     {
+      chapter: "Chapter 6 Working with Your AWS Resources",
       question: "Which of the following are true regarding CloudWatch Events? (Select TWO.)",
       options: [
         "It can reboot an EC2 instance when an error appears in a log file.",
@@ -1069,6 +1178,7 @@ export class QuestionService {
       multipleAnswer: true
     },
     {
+      chapter: "Chapter 6 Working with Your AWS Resources",
       question: "Which of the following trigger an API action? (Select TWO.)",
       options: [
         "Configuring the AWS Command Line Interface (CLI)",
@@ -1080,6 +1190,7 @@ export class QuestionService {
       multipleAnswer: true
     },
     {
+      chapter: "Chapter 6 Working with Your AWS Resources",
       question: "What's the most cost-effective way to view and search only the last 60 days of management API events on your AWS account?",
       options: [
         "Use CloudTrail event history.",
@@ -1091,6 +1202,7 @@ export class QuestionService {
       multipleAnswer: false
     },
     {
+      chapter: "Chapter 6 Working with Your AWS Resources",
       question: "You want to log every object downloaded from an S3 bucket in a specific region. You want to retain these logs indefinitely and search them easily. What's the most cost-effective way to do this? (Select TWO.)",
       options: [
         "Stream CloudTrail logs to CloudWatch Logs.",
@@ -1105,6 +1217,7 @@ export class QuestionService {
       multipleAnswer: true
     },
     {
+      chapter: "Chapter 6 Working with Your AWS Resources",
       question: "What is a benefit of using CloudTrail log file integrity validation?",
       options: [
         "It lets you assert that no CloudTrail log files have been deleted from CloudWatch.",
@@ -1116,6 +1229,7 @@ export class QuestionService {
       multipleAnswer: false
     },
     {
+      chapter: "Chapter 6 Working with Your AWS Resources",
       question: "Which of the following Cost Explorer report types can show you the monthly costs for your reserved EC2 instances?",
       options: [
         "Reserved instance recommendations",
@@ -1127,6 +1241,7 @@ export class QuestionService {
       multipleAnswer: false
     },
     {
+      chapter: "Chapter 6 Working with Your AWS Resources",
       question: "Which of the following services allow you to purchase reserved instances to save money?",
       options: [
         "Amazon Relational Database Service (RDS)",
@@ -1138,6 +1253,7 @@ export class QuestionService {
       multipleAnswer: false
     },
     {
+      chapter: "Chapter 6 Working with Your AWS Resources",
       question: "Which Cost Explorer report shows the amount of money you've saved using reserved instances?",
       options: [
         "Daily costs",
@@ -1149,6 +1265,7 @@ export class QuestionService {
       multipleAnswer: false
     },
     {
+      chapter: "Chapter 6 Working with Your AWS Resources",
       question: "You've been running several Elasticsearch instances continuously for the past three months. You check the reserved instance recommendations in Cost Explorer but see no recommendations. What could be a reason for this?",
       options: [
         "The recommendation parameters are based on the past seven days.",
@@ -1160,8 +1277,9 @@ export class QuestionService {
       answer: ["Your instances are already covered by reservations."],
       multipleAnswer: false
     },
-    //chapter 7
+    //chapter 7 The Core Compute Services
     {
+      chapter: "Chapter 7 The Core Compute Services",
       question: "What is the function of an EC2 AMI?",
       options: [
         "To define the hardware profile used by an EC2 instance",
@@ -1173,6 +1291,7 @@ export class QuestionService {
       multipleAnswer: false
     },
     {
+      chapter: "Chapter The Core Compute Services",
       question: "Where can you find a wide range of verified AMIs from both AWS and third-party vendors?",
       options: [
         "AWS Marketplace",
@@ -1184,6 +1303,7 @@ export class QuestionService {
       multipleAnswer: false
     },
     {
+      chapter: "Chapter The Core Compute Services",
       question: "Which of the following could be included in an EC2 AMI? (Select TWO.)",
       options: [
         "A networking configuration",
@@ -1195,6 +1315,7 @@ export class QuestionService {
       multipleAnswer: true
     },
     {
+      chapter: "Chapter The Core Compute Services",
       question: "Which of the following are EC2 instance type families? (Select TWO.)",
       options: [
         "c5d.18xlarge",
@@ -1206,6 +1327,7 @@ export class QuestionService {
       multipleAnswer: true
     },
     {
+      chapter: "Chapter The Core Compute Services",
       question: "When describing EC2 instance types, what is the role played by the vCPU metric?",
       options: [
         "vCPUs represent an instance's potential resilience against external network demands.",
@@ -1217,6 +1339,7 @@ export class QuestionService {
       multipleAnswer: false
     },
     {
+      chapter: "Chapter The Core Compute Services",
       question: "Which of the following describes an EC2 dedicated instance?",
       options: [
         "An EC2 instance running on a physical host reserved for the exclusive use of a single AWS account",
@@ -1228,6 +1351,7 @@ export class QuestionService {
       multipleAnswer: false
     },
     {
+      chapter: "Chapter The Core Compute Services",
       question: "Which of the following describes an EBS volume?",
       options: [
         "A software stack archive packaged to make it easy to copy and deploy to an EC2",
@@ -1239,6 +1363,7 @@ export class QuestionService {
       multipleAnswer: false
     },
     {
+      chapter: "Chapter The Core Compute Services",
       question: "Why might you want to use an instance store volume with your EC2 instance rather than a volume from the more common EBS service? (Select TWO.)",
       options: [
         "Instance store volumes can be encrypted.",
@@ -1253,6 +1378,7 @@ export class QuestionService {
       multipleAnswer: true
     },
     {
+      chapter: "Chapter The Core Compute Services",
       question: "Your web application experiences periodic spikes in demand that require the provisioning of extra instances. Which of the following pricing models would make the most sense for those extra instances?",
       options: [
         "Spot",
@@ -1264,6 +1390,7 @@ export class QuestionService {
       multipleAnswer: false
     },
     {
+      chapter: "Chapter The Core Compute Services",
       question: "Your web application experiences periodic spikes in demand that require the provisioning of extra instances. Which of the following pricing models would make the most sense for the 'base' instances that will run constantly?",
       options: [
         "Spot",
@@ -1275,6 +1402,7 @@ export class QuestionService {
       multipleAnswer: false
     },
     {
+      chapter: "Chapter The Core Compute Services",
       question: "Which of the following best describes what happens when you purchase an EC2 reserved instance?",
       options: [
         "Charges for any instances you run matching the reserved instance type will be covered",
@@ -1286,6 +1414,7 @@ export class QuestionService {
       multipleAnswer: false
     },
     {
+      chapter: "Chapter The Core Compute Services",
       question: "Which of the following use cases are good candidates for spot instances? (Select TWO.)",
       options: [
         "Big data processing workloads",
@@ -1297,6 +1426,7 @@ export class QuestionService {
       multipleAnswer: true
     },
     {
+      chapter: "Chapter The Core Compute Services",
       question: "Which AWS services simplify the process of bringing web applications to deployment? (Select TWO.)",
       options: [
         "Elastic Block Store",
@@ -1308,6 +1438,7 @@ export class QuestionService {
       multipleAnswer: true
     },
     {
+      chapter: "Chapter The Core Compute Services",
       question: "Which of the following services bills at a flat rate regardless of how it's consumed?",
       options: [
         "Lightsail",
@@ -1319,6 +1450,7 @@ export class QuestionService {
       multipleAnswer: false
     },
     {
+      chapter: "Chapter The Core Compute Services",
       question: "Which of these stacks are available from Lightsail blueprints? (Select TWO.)",
       options: [
         "Ubuntu",
@@ -1330,6 +1462,7 @@ export class QuestionService {
       multipleAnswer: true
     },
     {
+      chapter: "Chapter The Core Compute Services",
       question: "Which of these AWS services use primarily EC2 resources under the hood? (Select TWO.)",
       options: [
         "Elastic Block Store",
@@ -1341,6 +1474,7 @@ export class QuestionService {
       multipleAnswer: true
     },
     {
+      chapter: "Chapter The Core Compute Services",
       question: "Which of the following AWS services are designed to let you deploy Docker containers? (Select TWO.)",
       options: [
         "Elastic Container Service",
@@ -1352,6 +1486,7 @@ export class QuestionService {
       multipleAnswer: true
     },
     {
+      chapter: "Chapter The Core Compute Services",
       question: "Which of the following use container technologies? (Select TWO.)",
       options: [
         "Docker",
@@ -1363,6 +1498,7 @@ export class QuestionService {
       multipleAnswer: true
     },
     {
+      chapter: "Chapter The Core Compute Services",
       question: "What role can the Python programming language play in AWS Lambda?",
       options: [
         "Python cannot be used for Lambda.",
@@ -1374,6 +1510,7 @@ export class QuestionService {
       multipleAnswer: false
     },
     {
+      chapter: "Chapter The Core Compute Services",
       question: "What is the maximum time a Lambda function may run before timing out?",
       options: [
         "15 minutes",
@@ -1384,8 +1521,9 @@ export class QuestionService {
       answer: ["15 minutes"],
       multipleAnswer: false
     }, 
-    //chapter 8
+    //chapter 8 The Core Storage Services
     {
+      chapter: "Chapter 8 The Core Storage Services",
       question: "When trying to create an S3 bucket named documents, AWS informs you that the bucket name is already in use. What should you do in order to create a bucket?",
       options: [
         "Use a different region.",
@@ -1398,6 +1536,7 @@ export class QuestionService {
       multipleAnswer: false
     },
     {
+      chapter: "Chapter 8 The Core Storage Services",
       question: "Which S3 storage classes are most cost-effective for infrequently accessed data that can't be easily replaced? (Select TWO.)",
       options: [
         "STANDARD_IA",
@@ -1410,6 +1549,7 @@ export class QuestionService {
       multipleAnswer: true
     },
     {
+      chapter: "Chapter 8 The Core Storage Services",
       question: "What are the major differences between Simple Storage Service (S3) and Elastic Block Store (EBS)? (Select TWO.)",
       options: [
         "EBS stores volumes.",
@@ -1422,6 +1562,7 @@ export class QuestionService {
       multipleAnswer: true
     },
     {
+      chapter: "Chapter 8 The Core Storage Services",
       question: "Which tasks can S3 object lifecycle configurations perform automatically? (Select THREE.)",
       options: [
         "Deleting old object versions",
@@ -1434,6 +1575,7 @@ export class QuestionService {
       multipleAnswer: true
     },
     {
+      chapter: "Chapter 8 The Core Storage Services",
       question: "What methods can be used to grant anonymous access to an object in S3? (Select TWO.)",
       options: [
         "Bucket policies",
@@ -1445,6 +1587,7 @@ export class QuestionService {
       multipleAnswer: true
     },
     {
+      chapter: "Chapter 8 The Core Storage Services",
       question: "Your budget-conscious organization has a 5 TB database file it needs to retain off-site for at least 5 years. In the event the organization needs to access the database, it must be accessible within 8 hours. Which cloud storage option should you recommend, and why? (Select TWO.)",
       options: [
         "S3 has the most durable storage.",
@@ -1458,6 +1601,7 @@ export class QuestionService {
       multipleAnswer: true
     },
     {
+      chapter: "Chapter 8 The Core Storage Services",
       question: "Which of the following actions can you perform from the S3 Glacier service console?",
       options: [
         "Delete an archive",
@@ -1470,18 +1614,21 @@ export class QuestionService {
       multipleAnswer: false
     },
     {
+      chapter: "Chapter 8 The Core Storage Services",
       question: "Which Glacier retrieval option generally takes 3 to 5 hours to complete?",
       options: ["Provisioned", "Expedited", "Bulk", "Standard"],
       answer: ["Standard"],
       multipleAnswer: false
     },
     {
+      chapter: "Chapter 8 The Core Storage Services",
       question: "What's the minimum size for a Glacier archive?",
       options: ["1 byte", "40 TB", "5 TB", "0 bytes"],
       answer: ["1 byte"],
       multipleAnswer: false
     },
     {
+      chapter: "Chapter 8 The Core Storage Services",
       question: "Which types of AWS Storage Gateway let you connect your servers to block storage using the iSCSI protocol? (Select TWO.)",
       options: [
         "Cached gateway",
@@ -1493,6 +1640,7 @@ export class QuestionService {
       multipleAnswer: true
     },
     {
+      chapter: "Chapter 8 The Core Storage Services",
       question: "Where does AWS Storage Gateway primarily store data?",
       options: [
         "Glacier vaults",
@@ -1504,6 +1652,7 @@ export class QuestionService {
       multipleAnswer: false
     },
     {
+      chapter: "Chapter 8 The Core Storage Services",
       question: "You need an easy way to transfer files from a server in your data center to S3 without having to install any third-party software. Which of the following services and storage protocols could you use? (Select FOUR.)",
       options: [
         "AWS Storage Gateway-file gateway",
@@ -1522,6 +1671,7 @@ export class QuestionService {
       multipleAnswer: true
     },
     {
+      chapter: "Chapter 8 The Core Storage Services",
       question: "Which of the following are true regarding the AWS Storage Gateway-volume gateway configuration? (Select THREE.)",
       options: [
         "Stored volumes asynchronously back up data to S3 as EBS snapshots.",
@@ -1538,12 +1688,14 @@ export class QuestionService {
       multipleAnswer: true
     },
     {
+      chapter: "Chapter 8 The Core Storage Services",
       question: "What's the most data you can store on a single Snowball device?",
       options: ["42 TB", "50 TB", "72 TB", "80 TB"],
       answer: ["72 TB"],
       multipleAnswer: false
     },
     {
+      chapter: "Chapter 8 The Core Storage Services",
       question: "Which of the following are security features of AWS Snowball? (Select TWO.)",
       options: [
         "It enforces encryption at rest.",
@@ -1555,6 +1707,7 @@ export class QuestionService {
       multipleAnswer: true
     },
     {
+      chapter: "Chapter 8 The Core Storage Services",
       question: "Which of the following might AWS do after receiving a damaged Snowball device from a customer?",
       options: [
         "Copy the customer's data to Glacier",
@@ -1566,6 +1719,7 @@ export class QuestionService {
       multipleAnswer: false
     },
     {
+      chapter: "Chapter 8 The Core Storage Services",
       question: "Which of the following can you use to transfer data to AWS Snowball from a Windows machine without writing any code?",
       options: [
         "NFS",
@@ -1578,6 +1732,7 @@ export class QuestionService {
       multipleAnswer: false
     },
     {
+      chapter: "Chapter 8 The Core Storage Services",
       question: "How do the AWS Snowball and Snowball Edge devices differ? (Select TWO.)",
       options: [
         "Snowball Edge supports copying files using NFS.",
@@ -1592,6 +1747,7 @@ export class QuestionService {
       multipleAnswer: true
     },
     {
+      chapter: "Chapter 8 The Core Storage Services",
       question: "Which of the following Snowball Edge device options is the best for running machine learning applications?",
       options: [
         "Compute Optimized",
@@ -1603,6 +1759,7 @@ export class QuestionService {
       multipleAnswer: false
     },
     {
+      chapter: "Chapter 8 The Core Storage Services",
       question: "Which of the following hardware devices offers a network interface speed that supports up to 100 Gbps?",
       options: [
         "Snowball Edge with the Storage Optimized configuration",
@@ -1613,8 +1770,9 @@ export class QuestionService {
       answer: ["Snowball Edge with the Compute Optimized configuration"],
       multipleAnswer: false
     },
-    //chapter 9
+    //chapter 9 The Core Database Services
     {
+      chapter: "Chapter 9 The Core Database Services",
       question: "Which type of database stores data in columns and rows?",
       options: [
         "Nonrelational",
@@ -1626,6 +1784,7 @@ export class QuestionService {
       multipleAnswer: false
     },
     {
+      chapter: "Chapter 9 The Core Database Services",
       question: "Which of the following Structured Query Language (SQL) statements can you use to write data to a relational database table?",
       options: [
         "CREATE",
@@ -1637,6 +1796,7 @@ export class QuestionService {
       multipleAnswer: false
     },
     {
+      chapter: "Chapter 9 The Core Database Services",
       question: "Which of the following statements is true regarding nonrelational databases?",
       options: [
         "You can create only one table.",
@@ -1648,6 +1808,7 @@ export class QuestionService {
       multipleAnswer: false
     },
     {
+      chapter: "Chapter 9 The Core Database Services",
       question: "What is a no-SQL database?",
       options: [
         "A nonrelational database without primary keys",
@@ -1659,6 +1820,7 @@ export class QuestionService {
       multipleAnswer: false
     },
     {
+      chapter: "Chapter 9 The Core Database Services",
       question: "What do new Relational Database Service (RDS) instances use for database storage?",
       options: [
         "Instance volumes",
@@ -1670,6 +1832,7 @@ export class QuestionService {
       multipleAnswer: false
     },
     {
+      chapter: "Chapter 9 The Core Database Services",
       question: "Which of the following are database engine options for Amazon Relational Database Service (RDS)? (Select TWO.)",
       options: [
         "IBM dBase",
@@ -1682,6 +1845,7 @@ export class QuestionService {
       multipleAnswer: true
     },
     {
+      chapter: "Chapter 9 The Core Database Services",
       question: "What two databases is Amazon Aurora compatible with? (Select TWO.)",
       options: [
         "MySQL",
@@ -1694,6 +1858,7 @@ export class QuestionService {
       multipleAnswer: true
     },
     {
+      chapter: "Chapter 9 The Core Database Services",
       question: "Which of the following features of Relational Database Service (RDS) can prevent data loss in the event of an Availability Zone failure? (Select TWO.)",
       options: [
         "Read replicas",
@@ -1706,6 +1871,7 @@ export class QuestionService {
       multipleAnswer: true
     },
     {
+      chapter: "Chapter 9 The Core Database Services",
       question: "Which RDS database engine offers automatically expanding database storage up to 64 TB?",
       options: [
         "Microsoft SQL Server",
@@ -1717,6 +1883,7 @@ export class QuestionService {
       multipleAnswer: false
     },
     {
+      chapter: "Chapter 9 The Core Database Services",
       question: "Which of the following Relational Database Service (RDS) features can help you achieve a monthly availability of 99.95 percent?",
       options: [
         "Multi-AZ",
@@ -1728,6 +1895,7 @@ export class QuestionService {
       multipleAnswer: false
     },
     {
+      chapter: "Chapter 9 The Core Database Services",
       question: "What is true regarding a DynamoDB partition? (Select TWO.)",
       options: [
         "It's stored within a table.",
@@ -1739,6 +1907,7 @@ export class QuestionService {
       multipleAnswer: true
     },
     {
+      chapter: "Chapter 9 The Core Database Services",
       question: "What is the minimum monthly availability for DynamoDB in a single region?",
       options: [
         "99.99 percent",
@@ -1750,6 +1919,7 @@ export class QuestionService {
       multipleAnswer: false
     },
     {
+      chapter: "Chapter 9 The Core Database Services",
       question: "Which of the following statements is true regarding a DynamoDB table?",
       options: [
         "It can store only one data type.",
@@ -1761,6 +1931,7 @@ export class QuestionService {
       multipleAnswer: false
     },
     {
+      chapter: "Chapter 9 The Core Database Services",
       question: "Which configuration parameters can you adjust to improve write performance against a DynamoDB table? (Select TWO.)",
       options: [
         "Decrease read capacity units (RCU)",
@@ -1773,6 +1944,7 @@ export class QuestionService {
       multipleAnswer: true
     },
     {
+      chapter: "Chapter 9 The Core Database Services",
       question: "Which DynamoDB operation is the most read-intensive?",
       options: [
         "Write",
@@ -1784,6 +1956,7 @@ export class QuestionService {
       multipleAnswer: false
     },
     {
+      chapter: "Chapter 9 The Core Database Services",
       question: "Which of the following would be appropriate to use for a primary key in a DynamoDB table that stores a customer list?",
       options: [
         "The customer's full name",
@@ -1795,6 +1968,7 @@ export class QuestionService {
       multipleAnswer: false
     },
     {
+      chapter: "Chapter 9 The Core Database Services",
       question: "Which type of Redshift node uses magnetic storage?",
       options: [
         "Cost-optimized",
@@ -1806,6 +1980,7 @@ export class QuestionService {
       multipleAnswer: false
     },
     {
+      chapter: "Chapter 9 The Core Database Services",
       question: "Which Redshift feature can analyze structured data stored in S3?",
       options: [
         "Redshift Spectrum",
@@ -1817,6 +1992,7 @@ export class QuestionService {
       multipleAnswer: false
     },
     {
+      chapter: "Chapter 9 The Core Database Services",
       question: "What is the term for a relational database that stores large amounts of structured data from a variety of sources for reporting and analysis?",
       options: [
         "Data storehouse",
@@ -1828,6 +2004,7 @@ export class QuestionService {
       multipleAnswer: false
     },
     {
+      chapter: "Chapter 9 The Core Database Services",
       question: "What's the maximum amount of data you can store in a Redshift cluster when using dense storage nodes?",
       options: [
         "2 PB",
@@ -1839,8 +2016,9 @@ export class QuestionService {
       answer: ["2 PB"],
       multipleAnswer: false
     },
-    //chapter 10
+    //chapter 10 The Core Networking Services
     {
+      chapter: "Chapter 10 The Core Networking Services",
       question: "Which of the following are true of a default VPC? (Select TWO.)",
       options: [
         "A default VPC spans multiple regions.",
@@ -1852,12 +2030,14 @@ export class QuestionService {
       multipleAnswer: true
     },
     {
+      chapter: "Chapter 10 The Core Networking Services",
       question: "Which of the following is a valid CIDR for a VPC or subnet?",
       options: ["10.0.0.0/28", "10.0.0.0/29", "10.0.0.0/8", "10.0.0.0/15"],
       answer: ["10.0.0.0/28"],
       multipleAnswer: false
     },
     {
+      chapter: "Chapter 10 The Core Networking Services",
       question: "Which of the following are true regarding subnets? (Select TWO.)",
       options: [
         "A VPC must have at least two subnets.",
@@ -1869,6 +2049,7 @@ export class QuestionService {
       multipleAnswer: true
     },
     {
+      chapter: "Chapter 10 The Core Networking Services",
       question: "Which of the following is true of a new security group?",
       options: [
         "It contains an inbound rule denying access from public IP addresses.",
@@ -1881,6 +2062,7 @@ export class QuestionService {
       multipleAnswer: false
     },
     {
+      chapter: "Chapter 10 The Core Networking Services",
       question: "What's the difference between a security group and a network access control list (NACL)? (Select TWO.)",
       options: [
         "A network access control list operates at the instance level.",
@@ -1892,6 +2074,7 @@ export class QuestionService {
       multipleAnswer: true
     },
     {
+      chapter: "Chapter 10 The Core Networking Services",
       question: "Which of the following is true of a VPC peering connection?",
       options: [
         "It's a private connection that connects more than three VPCs.",
@@ -1903,6 +2086,7 @@ export class QuestionService {
       multipleAnswer: false
     },
     {
+      chapter: "Chapter 10 The Core Networking Services",
       question: "What are two differences between a virtual private network (VPN) connection and a Direct Connect connection? (Select TWO.)",
       options: [
         "A Direct Connect connection offers predictable latency because it doesn't traverse the internet.",
@@ -1914,6 +2098,7 @@ export class QuestionService {
       multipleAnswer: true
     },
     {
+      chapter: "Chapter 10 The Core Networking Services",
       question: "Which of the following are true about registering a domain name with Route 53? (Select TWO.)",
       options: [
         "The registrar you use to register a domain name determines who will host DNS for that domain.",
@@ -1925,30 +2110,35 @@ export class QuestionService {
       multipleAnswer: true
     },
     {
+      chapter: "Chapter 10 The Core Networking Services",
       question: "Which of the following Route 53 routing policies can return a set of randomly ordered values?",
       options: ["Simple", "Multivalue Answer", "Failover", "Latency"],
       answer: ["Multivalue Answer"],
       multipleAnswer: false
     },
     {
+      chapter: "Chapter 10 The Core Networking Services",
       question: "Which of the following Route 53 routing policies doesn't use health checks?",
       options: ["Latency", "Multivalue Answer", "Simple", "Geolocation"],
       answer: ["Simple"],
       multipleAnswer: false
     },
     {
+      chapter: "Chapter 10 The Core Networking Services",
       question: "Which of the following types of Route 53 health checks works by making a test connection to a TCP port?",
       options: ["Simple", "CloudWatch alarm", "Endpoint", "Calculated"],
       answer: ["Endpoint"],
       multipleAnswer: false
     },
     {
+      chapter: "Chapter 10 The Core Networking Services",
       question: "You have two EC2 instances hosting a web application. You want to distribute 20 percent of traffic to one instance and 80 percent to the other. Which of the following Route 53 routing policies should you use?",
       options: ["Weighted", "Failover", "Multivalue Answer", "Simple"],
       answer: ["Weighted"],
       multipleAnswer: false
     },
     {
+      chapter: "Chapter 10 The Core Networking Services",
       question: "Resources in a VPC need to be able to resolve internal IP addresses for other resources in the VPC. No one outside of the VPC should be able to resolve these addresses. Which of the following Route 53 resources can help you achieve this?",
       options: [
         "A public hosted zone",
@@ -1960,30 +2150,35 @@ export class QuestionService {
       multipleAnswer: false
     },
     {
+      chapter: "Chapter 10 The Core Networking Services",
       question: "You want to provide private name resolution for two VPCs using the domain name company.pri. How many private hosted zones do you need to create?",
       options: ["1", "2", "3", "4"],
       answer: ["1"],
       multipleAnswer: false
     },
     {
+      chapter: "Chapter 10 The Core Networking Services",
       question: "On how many continents are CloudFront edge locations distributed?",
       options: ["7", "6", "5", "4"],
       answer: ["6"],
       multipleAnswer: false
     },
     {
+      chapter: "Chapter 10 The Core Networking Services",
       question: "From where does CloudFront retrieve content to store for caching?",
       options: ["Regions", "Origins", "Distributions", "Edge locations"],
       answer: ["Origins"],
       multipleAnswer: false
     },
     {
+      chapter: "Chapter 10 The Core Networking Services",
       question: "Which CloudFront distribution type requires you to provide a media player?",
       options: ["Streaming", "RTMP", "Web", "Edge"],
       answer: ["RTMP"],
       multipleAnswer: false
     },
     {
+      chapter: "Chapter 10 The Core Networking Services",
       question: "You need to deliver content to users in the United States and Canada. Which of the following edge location options will be the most cost-effective for your CloudFront distribution?",
       options: [
         "United States, Canada, and Europe",
@@ -1995,6 +2190,7 @@ export class QuestionService {
       multipleAnswer: false
     },
     {
+      chapter: "Chapter 10 The Core Networking Services",
       question: "Approximately how many different CloudFront edge locations are there?",
       options: [
         "About 50",
@@ -2006,6 +2202,7 @@ export class QuestionService {
       multipleAnswer: false
     },
     {
+      chapter: "Chapter 10 The Core Networking Services",
       question: "Which of the following are valid origins for a CloudFront distribution? (Select TWO.)",
       options: [
         "EC2 instance",
@@ -2016,8 +2213,9 @@ export class QuestionService {
       answer: ["EC2 instance", "A public S3 bucket"],
       multipleAnswer: true
     },
-    //chapter 11
+    //chapter 11 Automating Your AWS Workloads
     {
+      chapter: "Chapter 11 Automating Your AWS Workloads",
       question: "Which of the following is an advantage of using CloudFormation?",
       options: [
         "It uses the popular Python programming language.",
@@ -2029,12 +2227,14 @@ export class QuestionService {
       multipleAnswer: false
     },
     {
+      chapter: "Chapter 11 Automating Your AWS Workloads",
       question: "What formats do CloudFormation templates support? (Select TWO.)",
       options: ["XML", "YAML", "HTML", "JSON"],
       answer: ["YAML", "JSON"],
       multipleAnswer: true
     },
     {
+      chapter: "Chapter 11 Automating Your AWS Workloads",
       question: "What's an advantage of using parameters in a CloudFormation template?",
       options: [
         "Allow customizing a stack without changing the template.",
@@ -2046,6 +2246,7 @@ export class QuestionService {
       multipleAnswer: false
     },
     {
+      chapter: "Chapter 11 Automating Your AWS Workloads",
       question: "Why would you use CloudFormation to automatically create resources for a development environment instead of creating them using AWS CLI commands? (Select TWO.)",
       options: [
         "Resources CloudFormation creates are organized into stacks and can be managed as a single unit.",
@@ -2060,6 +2261,7 @@ export class QuestionService {
       multipleAnswer: true
     },
     {
+      chapter: "Chapter 11 Automating Your AWS Workloads",
       question: "What are two features of CodeCommit? (Select TWO.)",
       options: [
         "Versioning",
@@ -2071,6 +2273,7 @@ export class QuestionService {
       multipleAnswer: true
     },
     {
+      chapter: "Chapter 11 Automating Your AWS Workloads",
       question: "In the context of CodeCommit, what can differencing accomplish?",
       options: [
         "Allowing reverting to an older version of a file",
@@ -2082,6 +2285,7 @@ export class QuestionService {
       multipleAnswer: false
     },
     {
+      chapter: "Chapter 11 Automating Your AWS Workloads",
       question: "What software development practice regularly tests new code for bugs but doesn't do anything else?",
       options: [
         "Differencing",
@@ -2093,6 +2297,7 @@ export class QuestionService {
       multipleAnswer: false
     },
     {
+      chapter: "Chapter 11 Automating Your AWS Workloads",
       question: "Which CodeBuild build environment compute types support Windows operating systems? (Select TWO.)",
       options: [
         "build.general2.large",
@@ -2105,6 +2310,7 @@ export class QuestionService {
       multipleAnswer: true
     },
     {
+      chapter: "Chapter 11 Automating Your AWS Workloads",
       question: "What does a CodeBuild environment always contain? (Select TWO.)",
       options: [
         "An operating system",
@@ -2117,6 +2323,7 @@ export class QuestionService {
       multipleAnswer: true
     },
     {
+      chapter: "Chapter 11 Automating Your AWS Workloads",
       question: "Which of the following can CodeDeploy do? (Select THREE.)",
       options: [
         "Deploy an application to an on-premises Windows instance.",
@@ -2133,12 +2340,14 @@ export class QuestionService {
       multipleAnswer: true
     },
     {
+      chapter: "Chapter 11 Automating Your AWS Workloads",
       question: "What is the minimum number of actions in a CodePipeline pipeline?",
       options: ["1", "2", "3", "4", "0"],
       answer: ["2"],
       multipleAnswer: false
     },
     {
+      chapter: "Chapter 11 Automating Your AWS Workloads",
       question: "You want to predefine the configuration of EC2 instances that you plan to launch manually and using Auto Scaling. What resource must you use?",
       options: [
         "CloudFormation template",
@@ -2150,6 +2359,7 @@ export class QuestionService {
       multipleAnswer: false
     },
     {
+      chapter: "Chapter 11 Automating Your AWS Workloads",
       question: "What Auto Scaling group parameters set the limit for the number of instances that Auto Scaling creates? (Select TWO.)",
       options: [
         "Maximum",
@@ -2161,6 +2371,7 @@ export class QuestionService {
       multipleAnswer: true
     },
     {
+      chapter: "Chapter 11 Automating Your AWS Workloads",
       question: "An Auto Scaling group has a desired capacity of 7 and a maximum size of 7. What will Auto Scaling do if someone manually terminates one of these instances?",
       options: [
         "It will not launch any new instances.",
@@ -2172,6 +2383,7 @@ export class QuestionService {
       multipleAnswer: false
     },
     {
+      chapter: "Chapter 11 Automating Your AWS Workloads",
       question: "What Auto Scaling feature creates a scaling schedule based on past usage patterns?",
       options: [
         "Predictive scaling",
@@ -2183,6 +2395,7 @@ export class QuestionService {
       multipleAnswer: false
     },
     {
+      chapter: "Chapter 11 Automating Your AWS Workloads",
       question: "What type of AWS Systems Manager document can run Bash or PowerShell scripts on an EC2 instance?",
       options: [
         "Run document",
@@ -2194,6 +2407,7 @@ export class QuestionService {
       multipleAnswer: false
     },
     {
+      chapter: "Chapter 11 Automating Your AWS Workloads",
       question: "What type of AWS Systems Manager document can take a snapshot of an EC2 instance?",
       options: [
         "Command document",
@@ -2205,6 +2419,7 @@ export class QuestionService {
       multipleAnswer: false
     },
     {
+      chapter: "Chapter 11 Automating Your AWS Workloads",
       question: "Which of the following OpsWorks services uses Chef recipes?",
       options: [
         "AWS OpsWorks for Puppet Enterprise",
@@ -2216,6 +2431,7 @@ export class QuestionService {
       multipleAnswer: false
     },
     {
+      chapter: "Chapter 11 Automating Your AWS Workloads",
       question: "What configuration management platforms does OpsWorks support? (Select TWO.)",
       options: [
         "SaltStack",
@@ -2228,6 +2444,7 @@ export class QuestionService {
       multipleAnswer: true
     },
     {
+      chapter: "Chapter 11 Automating Your AWS Workloads",
       question: "Which of the following OpsWorks Stacks layers contains at least one EC2 instance?",
       options: [
         "EC2 Auto Scaling layer",
@@ -2239,8 +2456,9 @@ export class QuestionService {
       answer: ["OpsWorks layer"],
       multipleAnswer: false
     },
-    //chapter 12
+    //chapter 12 Common Use-Case Scenarios
     {
+      chapter: "Chapter 12 Common Use-Case Scenarios",
       question: "Which of the following is not one of the pillars of the Well-Architected Framework?",
       options: [
         "Performance efficiency",
@@ -2253,6 +2471,7 @@ export class QuestionService {
       multipleAnswer: false
     },
     {
+      chapter: "Chapter 12 Common Use-Case Scenarios",
       question: "Which of the following are examples of applying the principles of the security pillar of the Well-Architected Framework? (Select TWO.)",
       options: [
         "Granting each AWS user their own IAM username and password",
@@ -2267,6 +2486,7 @@ export class QuestionService {
       multipleAnswer: true
     },
     {
+      chapter: "Chapter 12 Common Use-Case Scenarios",
       question: "You're hosting a web application on two EC2 instances in an Auto Scaling group. The performance of the application is consistently acceptable. Which of the following can help maintain or improve performance efficiency? (Select TWO.)",
       options: [
         "Monitoring for unauthorized access",
@@ -2281,6 +2501,7 @@ export class QuestionService {
       multipleAnswer: true
     },
     {
+      chapter: "Chapter 12 Common Use-Case Scenarios",
       question: "Which of the following can help achieve cost optimization? (Select TWO.)",
       options: [
         "Deleting unused S3 objects",
@@ -2295,6 +2516,7 @@ export class QuestionService {
       multipleAnswer: true
     },
     {
+      chapter: "Chapter 12 Common Use-Case Scenarios",
       question: "Which of the following is a key component of operational excellence?",
       options: [
         "Adding more security personnel",
@@ -2306,12 +2528,14 @@ export class QuestionService {
       multipleAnswer: false
     },
     {
+      chapter: "Chapter 12 Common Use-Case Scenarios",
       question: "Your default VPC in the us-west-1 Region has three default subnets. How many Availability Zones are in this Region?",
       options: ["2", "3", "4", "5"],
       answer: ["3"],
       multipleAnswer: false
     },
     {
+      chapter: "Chapter 12 Common Use-Case Scenarios",
       question: "Your organization is building a database-backed web application that will sit behind an application load balancer. You add an inbound security group rule to allow HTTP traffic on TCP port 80. Where should you apply this security group to allow users to access the application?",
       options: [
         "The application load balancer listener",
@@ -2323,6 +2547,7 @@ export class QuestionService {
       multipleAnswer: false
     },
     {
+      chapter: "Chapter 12 Common Use-Case Scenarios",
       question: "How does an application load balancer enable reliability?",
       options: [
         "By routing traffic away from failed instances",
@@ -2334,6 +2559,7 @@ export class QuestionService {
       multipleAnswer: false
     },
     {
+      chapter: "Chapter 12 Common Use-Case Scenarios",
       question: "Which of the following contains the configuration information for instances in an Auto Scaling group?",
       options: [
         "Launch directive",
@@ -2345,6 +2571,7 @@ export class QuestionService {
       multipleAnswer: false
     },
     {
+      chapter: "Chapter 12 Common Use-Case Scenarios",
       question: "You've created a target tracking policy for an Auto Scaling group. You want to ensure that the number of instances in the group never exceeds 5. How can you accomplish this?",
       options: [
         "Set the group size to 5.",
@@ -2356,6 +2583,7 @@ export class QuestionService {
       multipleAnswer: false
     },
     {
+      chapter: "Chapter 12 Common Use-Case Scenarios",
       question: "Which of the following is an example of a static website?",
       options: [
         "A WordPress blog",
@@ -2367,6 +2595,7 @@ export class QuestionService {
       multipleAnswer: false
     },
     {
+      chapter: "Chapter 12 Common Use-Case Scenarios",
       question: "Which of the following features of S3 improve the security of data you store in an S3 bucket? (Select TWO.)",
       options: [
         "Objects in S3 are not public by default.",
@@ -2381,6 +2610,7 @@ export class QuestionService {
       multipleAnswer: true
     },
     {
+      chapter: "Chapter 12 Common Use-Case Scenarios",
       question: "Which of the following is required to enable S3 static website hosting on a bucket?",
       options: [
         "Enable bucket hosting in the S3 service console.",
@@ -2393,6 +2623,7 @@ export class QuestionService {
       multipleAnswer: false
     },
     {
+      chapter: "Chapter 12 Common Use-Case Scenarios",
       question: "You've created a static website hosted on S3 and given potential customers the URL that consists of words and numbers. They're complaining that it's too hard to type in. How can you come up with a friendlier URL?",
       options: [
         "Re-create the bucket using only words in the name.",
@@ -2404,6 +2635,7 @@ export class QuestionService {
       multipleAnswer: false
     },
     {
+      chapter: "Chapter 12 Common Use-Case Scenarios",
       question: "Which of the following is true regarding static websites hosted in S3?",
       options: [
         "The content served is not encrypted in transit.",
@@ -2415,6 +2647,7 @@ export class QuestionService {
       multipleAnswer: false
     },
     {
+      chapter: "Chapter 12 Common Use-Case Scenarios",
       question: "Which of the following can impact the reliability of a web application running on EC2 instances?",
       options: [
         "Taking EBS snapshots of the instances.",
@@ -2426,6 +2659,7 @@ export class QuestionService {
       multipleAnswer: false
     },
     {
+      chapter: "Chapter 12 Common Use-Case Scenarios",
       question: "You have a public web application running on EC2 instances. Which of the following factors affecting the performance of your application might be out of your control?",
       options: [
         "Storage",
@@ -2437,6 +2671,7 @@ export class QuestionService {
       multipleAnswer: false
     },
     {
+      chapter: "Chapter 12 Common Use-Case Scenarios",
       question: "An Auto Scaling group can use an EC2 system health check to determine whether an instance is healthy. What other type of health check can it use?",
       options: [
         "S3",
@@ -2448,6 +2683,7 @@ export class QuestionService {
       multipleAnswer: false
     },
     {
+      chapter: "Chapter 12 Common Use-Case Scenarios",
       question: "You're hosting a static website on S3. Your web assets are stored under the Standard storage class. Which of the following is true regarding your site?",
       options: [
         "Someone may modify the content of your site without authorization.",
@@ -2459,6 +2695,7 @@ export class QuestionService {
       multipleAnswer: false
     },
     {
+      chapter: "Chapter 12 Common Use-Case Scenarios",
       question: "You're hosting a static website on S3. Your web assets are stored in the US East 1 Region in the bucket named mygreatwebsite. What is the URL of the website?",
       options: [
         "http://mygreatwebsite.s3-website-us-east-1.amazonaws.com",
@@ -2473,7 +2710,29 @@ export class QuestionService {
 
   constructor() { }
 
-  getQuestions(): Question[] {
-    return this.questions;
-  }
+    // Natural sorting of chapters
+    getChapters(): string[] {
+      const chapters = Array.from(new Set(this.questions.map(q => q.chapter)));
+      
+      // Sort chapters naturally by extracting numerical values
+      return chapters.sort((a, b) => {
+        const numA = this.extractChapterNumber(a);
+        const numB = this.extractChapterNumber(b);
+        return numA - numB;
+      }).concat('All'); // Add 'All' at the end
+    }
+  
+    // Extract the numeric value from the chapter name (e.g., "Chapter 10" => 10)
+    extractChapterNumber(chapter: string): number {
+      const match = chapter.match(/\d+/); // Find the number in the chapter string
+      return match ? parseInt(match[0], 10) : 0; // Return the number or 0 if no match
+    }
+  
+    // Fetch questions filtered by chapter, or return all questions if 'All' is selected
+    getQuestionsByChapter(chapter: string): Question[] {
+      if (chapter === 'All') {
+        return this.questions;
+      }
+      return this.questions.filter(q => q.chapter === chapter);
+    }
 }

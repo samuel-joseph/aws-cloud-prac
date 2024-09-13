@@ -1,4 +1,12 @@
-<div>
+<div *ngIf="!isChapterSelected">
+  <h3>Select a Chapter</h3>
+  <select (change)="selectChapter($event)">
+    <option value="">-- Select a Chapter --</option> <!-- Empty option to prevent default -->
+    <option *ngFor="let chapter of chapters" [value]="chapter">{{ chapter }}</option>
+  </select>
+</div>
+
+<div *ngIf="isChapterSelected">
   <h3>{{ currentQuestion.question }}</h3>
   <div *ngFor="let option of currentQuestion.options">
     <input

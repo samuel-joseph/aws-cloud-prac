@@ -12,22 +12,34 @@ export class ExamComponent implements OnInit {
   score = 0; // Global score
   currentQuestion!: Question; // The current question to display
   selectedAnswers: string[] = []; // Stores selected answers
+  chapters: string[] = []; // Available chapters for filtering
+  selectedChapter: string = ''; // The chapter selected by the user
+  isChapterSelected = false; // Indicates if a chapter has been selected
 
   constructor(private questionService: QuestionService) {}
 
   ngOnInit() {
-    // Load all the questions and start with the first one
-    this.questions = this.questionService.getQuestions();
-    this.currentQuestion = this.questions[this.currentQuestionIndex];
+    // Load available chapters including "All" from the question service
+    this.chapters = this.questionService.getChapters();
+  }
+
+  // Function to handle chapter selection from the dropdown
+  selectChapter(event: any) {
+    const chapter = event.target.value;
+    if (chapter) {
+      this.selectedChapter = chapter;
+      this.questions = this.questionService.getQuestionsByChapter(chapter);
+      this.currentQuestionIndex = 0;
+      this.currentQuestion = this.questions[this.currentQuestionIndex];
+      this.isChapterSelected = true; // Mark chapter as selected
+    }
   }
 
   // Function to handle selecting an answer (toggle for multiple answers)
   toggleAnswer(selectedAnswer: string) {
     if (this.selectedAnswers.includes(selectedAnswer)) {
-      // If the answer is already selected, remove it (toggle off)
       this.selectedAnswers = this.selectedAnswers.filter(answer => answer !== selectedAnswer);
     } else {
-      // Otherwise, add the selected answer to the array (toggle on)
       this.selectedAnswers.push(selectedAnswer);
     }
   }
@@ -43,8 +55,7 @@ export class ExamComponent implements OnInit {
       alert('Incorrect! The correct answers are: ' + correctAnswers.join(', '));
     }
 
-    // Reset selected answers for the next question
-    this.selectedAnswers = [];
+    this.selectedAnswers = []; // Reset selected answers for the next question
 
     // Move to the next question, or show the final score
     this.currentQuestionIndex++;
@@ -57,6 +68,6 @@ export class ExamComponent implements OnInit {
 
   // Display the final score when all questions are done
   showFinalScore() {
-    alert(`You scored ${this.score} out of ${this.questions.length}: ${(this.score/this.questions.length)*100}%`);
+    alert(`You scored ${this.score} out of ${this.questions.length}`);
   }
 }
