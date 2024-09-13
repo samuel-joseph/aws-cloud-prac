@@ -560,6 +560,144 @@ export class QuestionService {
       ],
       answer: ["Load Balancer Optimization", "IAM Access Key Rotation"],
       multipleAnswer: true
+    },
+    //chapter 4
+    {
+      question: "Which of the following designations would refer to the AWS US West (Oregon) region?",
+      options: ["us-east-1", "us-west-2", "us-west-2a", "us-west-2b"],
+      answer: ["us-west-2"],
+      multipleAnswer: false
+    },
+    {
+      question: "Which of the following is an AWS Region for which customer access is restricted?",
+      options: ["AWS Admin", "US-DOD", "Asia Pacific (Tokyo)", "AWS GovCloud"],
+      answer: ["AWS GovCloud"],
+      multipleAnswer: false
+    },
+    {
+      question: "When you request a new virtual machine instance in EC2, your instance will automatically launch into the currently selected value of which of the following?",
+      options: ["Service", "Subnet", "Availability Zone", "Region"],
+      answer: ["Region"],
+      multipleAnswer: false
+    },
+    {
+      question: "Which of the following are not globally based AWS services? (Select TWO.)",
+      options: ["RDS", "Route 53", "EC2", "CloudFront"],
+      answer: ["RDS", "EC2"],
+      multipleAnswer: true
+    },
+    {
+      question: "Which of the following would be a valid endpoint your developers could use to access a particular Relational Database Service instance you're running in the Northern Virginia region?",
+      options: ["us-east-1.amazonaws.com.rds", "ecs.eu-west-3.amazonaws.com", "rds.us-east-1.amazonaws.com", "rds.amazonaws.com.us-east-1"],
+      answer: ["rds.us-east-1.amazonaws.com"],
+      multipleAnswer: false
+    },
+    {
+      question: "What are the most significant architectural benefits of the way AWS designed its regions? (Select TWO.)",
+      options: [
+        "It can make infrastructure more fault tolerant.",
+        "It can make applications available to end users with lower latency.",
+        "It can make applications more compliant with local regulations.",
+        "It can bring down the price of running."],
+      answer: [
+        "It can make applications available to end users with lower latency.",
+        "It can make applications more compliant with local regulations."
+      ],
+      multipleAnswer: true
+    },
+    {
+      question: "Why is it that most AWS resources are tied to a single region?",
+      options: ["Because those resources are run on a physical device, and that device must live somewhere", "Because security considerations are best served by restricting access to a single physical location", "Because access to any one digital resource must always occur through a single physical gateway", "Because spreading them too far afield would introduce latency issues"],
+      answer: ["Because those resources are run on a physical device, and that device must live somewhere"],
+      multipleAnswer: false
+    },
+    {
+      question: "You want to improve the resilience of your EC2 web server. Which of the following is the most effective and efficient approach?",
+      options: [
+        "Launch parallel, load-balanced instances in multiple AWS Regions.",
+        "Launch parallel, load-balanced instances in multiple Availability Zones within a single AWS Region.", "Launch parallel, autoscaled instances in multiple AWS Regions.", "Launch parallel, autoscaled instances in multiple Availability Zones within a single AWS Region."],
+      answer: ["Launch parallel, load-balanced instances in multiple Availability Zones within a single AWS Region."],
+      multipleAnswer: false
+    },
+    {
+      question: "Which of the following is the most accurate description of an AWS Availability Zone?",
+      options: ["One or more independently powered data centers running a wide range of hardware host types", "One or more independently powered data centers running a uniform hardware host type", "All the data centers located within a broad geographic area", "The infrastructure running within a single physical data center"],
+      answer: ["One or more independently powered data centers running a wide range of hardware host types"],
+      multipleAnswer: false
+    },
+    {
+      question: "Which of the following most accurately describes a subnet within the AWS ecosystem?",
+      options: [
+        "The virtual limits imposed on the network access permitted to a resource instance",
+        "The block of IP addresses assigned for use within a single region",
+        "The block of IP addresses assigned for use within a single Availability Zone", "The networking hardware used within a single Availability Zone"],
+      answer: ["The block of IP addresses assigned for use within a single Availability Zone"],
+      multipleAnswer: false
+    },
+    {
+      question: "What determines the order by which subnets/AZ options are displayed in EC2 configuration dialogs?",
+      options: ["Alphabetical order", "They (appear) to be displayed in random order.", "Numerical order", "By order of capacity, with largest capacity first"],
+      answer: ["They (appear) to be displayed in random order."],
+      multipleAnswer: false
+    },
+    {
+      question: "What is the primary goal of autoscaling?",
+      options: ["To ensure the long-term reliability of a particular physical resource", "To ensure the long-term reliability of a particular virtual resource", "To orchestrate the use of multiple parallel resources to direct incoming user requests", "To ensure that a predefined service level is maintained regardless of external demand or instance failures"],
+      answer: ["To ensure that a predefined service level is maintained regardless of external demand or instance failures"],
+      multipleAnswer: false
+    },
+    {
+      question: "Which of the following design strategies is most effective for maintaining the reliability of a cloud application?",
+      options: ["Resource isolation", "Resource automation", "Resource redundancy", "Resource geolocation"],
+      answer: ["Resource redundancy"],
+      multipleAnswer: false
+    },
+    {
+      question: "Which of the following AWS services are not likely to benefit from Amazon edge locations? (Select TWO.)",
+      options: ["RDS", "EC2 load balancers", "Elastic Block Store (EBS)", "CloudFront"],
+      answer: ["RDS", "Elastic Block Store (EBS)"],
+      multipleAnswer: true
+    },
+    {
+      question: "Which of the following is the primary benefit of using CloudFront distributions?",
+      options: ["Automated protection from mass email campaigns", "Greater availability through redundancy", "Greater security through data encryption", "Reduced latency access to your content no matter where your end users live"],
+      answer: ["Reduced latency access to your content no matter where your end users live"],
+      multipleAnswer: false
+    },
+    {
+      question: "What is the main purpose of Amazon Route 53?",
+      options: ["Countering the threat of distributed denial-of-service (DDoS) attacks", "Managing domain name registration and traffic routing", "Protecting web applications from web-based threats", "Using the serverless power of Lambda to customize CloudFront behavior"],
+      answer: ["Managing domain name registration and traffic routing"],
+      multipleAnswer: false
+    },
+    {
+      question: "According to the AWS Shared Responsibility Model, which of the following are responsibilities of AWS? (Select TWO.)",
+      options: ["The security of the cloud", "Patching underlying virtualization software running in AWS data centers", "Security of what's in the cloud", "Patching OSs running on EC2 instances"],
+      answer: ["The security of the cloud", "Patching underlying virtualization software running in AWS data centers"],
+      multipleAnswer: true
+    },
+    {
+      question: "According to the AWS Shared Responsibility Model, what's the best way to define the status of the software driving an AWS managed service?",
+      options: [
+        "Everything associated with an AWS managed service is the responsibility of AWS.",
+        "Whatever is added by the customer (like application code) is the customer's responsibility.",
+        "Whatever the customer can control (application code and/or configuration settings) is the customer's responsibility.",
+        "Everything associated with an AWS managed service is the responsibility of the customer."
+      ],
+      answer: ["Whatever the customer can control (application code and/or configuration settings) is the customer's responsibility."],
+      multipleAnswer: false
+    },
+    {
+      question: "Which of the following is one of the first places you should look when troubleshooting a failing application?",
+      options: ["AWS Acceptable Use Monitor", "Service Status Dashboard", "AWS Billing Dashboard", "Service Health Dashboard"],
+      answer: ["Service Health Dashboard"],
+      multipleAnswer: false
+    },
+    {
+      question: "Where will you find information on the limits AWS imposes on the ways you can use your account resources?",
+      options: ["AWS User Agreement Policy", "AWS Acceptable Use Policy", "AWS Acceptable Use Monitor", "AWS Acceptable Use Dashboard"],
+      answer: ["AWS Acceptable Use Policy"],
+      multipleAnswer: false
     }
   ];
 
