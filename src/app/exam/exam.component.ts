@@ -23,6 +23,16 @@ export class ExamComponent implements OnInit {
   progress = 0;
   showBackgroundImage = false;
 
+    // Variables for tracking time
+  hours: number = 0;
+  minutes: number = 0;
+  seconds: number = 0;
+  timer: any;
+  timeElapsed: string = '';
+  
+  // Add variables to track the time remaining
+  timeRemaining: boolean = true;
+
   constructor(
     private questionService: QuestionService,
     private renderer: Renderer2, private el: ElementRef,
@@ -33,6 +43,35 @@ export class ExamComponent implements OnInit {
     this.allQuestions = this.questionService.getAllQuestions(); // Get all questions
     this.chapters = this.questionService.getChapters(); // Get sorted chapters
     this.totalQuestions = this.questions.length;
+    this.startTimer();
+  }
+
+  startTimer() {
+    this.timer = setInterval(() => {
+      this.seconds++;
+
+      if (this.seconds === 60) {
+        this.seconds = 0;
+        this.minutes++;
+      }
+
+      if (this.minutes === 60) {
+        this.minutes = 0;
+        this.hours++;
+      }
+    }, 1000); // Update every second
+  }
+
+  stopTimer() {
+    clearInterval(this.timer);
+  }
+
+  formatTime(): string {
+    return `${this.padNumber(this.hours)}:${this.padNumber(this.minutes)}:${this.padNumber(this.seconds)}`;
+  }
+
+  padNumber(num: number): string {
+    return num < 10 ? '0' + num : num.toString();
   }
 
   finishTest() {
@@ -102,7 +141,10 @@ export class ExamComponent implements OnInit {
   }
 
   showFinalScore() {
-    alert(`You scored ${this.score} out of ${this.questions.length}: ${(Math.floor(this.score/this.questions.length*100))}%`);
+    this.stopTimer();
+    this.timeElapsed = this.formatTime();
+    this.timeRemaining = false;
+    alert(`You scored ${this.score} out of ${this.questions.length}: ${(Math.floor(this.score / this.questions.length * 100))}%`);
   }
 
   updateProgress() {

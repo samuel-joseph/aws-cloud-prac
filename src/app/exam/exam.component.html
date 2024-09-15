@@ -14,6 +14,9 @@
   <!-- Progress bar -->
   <div class="progress-container">
     <div class="progress-bar" [style.width.%]="progress"></div>
+    <h6 class="timer" *ngIf="timeRemaining">
+      {{ hours }}:{{ minutes }}:{{ seconds }}
+    </h6>
   </div>
   <div class="question-content">
     <h3>{{currentQuestion.chapter}}</h3>
@@ -24,7 +27,7 @@
   <div class="options-container">
     <div *ngFor="let option of currentQuestion.options">
       <input
-        type="checkbox"
+        [attr.type]="currentQuestion.multipleAnswer ? 'checkbox' : 'radio'"
         [checked]="selectedAnswers.includes(option)"
         (change)="toggleAnswer(option)"
       />

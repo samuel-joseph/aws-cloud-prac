@@ -25,8 +25,20 @@
   background-image: none;
 }
 
+.timer {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffffff; /* Adjust color according to your theme */
+}
+
 /* Outer container that wraps the question */
 .question-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   max-width: 600px; /* Maximum width to avoid excessively large containers */
   padding: 20px;
   margin-bottom: 20px;
