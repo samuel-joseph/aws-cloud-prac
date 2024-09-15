@@ -40,6 +40,19 @@
     <h1 [ngStyle]="{'color': pass ? 'green' : 'red'}">{{pass?"PASS":"FAIL"}}</h1>
     <h2>Your score: {{percentageScore}}%</h2>
     <h3>You finished the test in {{ timeElapsed }}</h3>
+    <span *ngIf="mistakeRecord!==undefined">
+      <h6>Chapter/s that need review and the number of mistakes:</h6>
+      <span 
+      style="
+      display: flex; 
+      flex-direction: row; 
+      margin-bottom: 0px;
+      font-size: 8pt; 
+      justify-content: space-between;" 
+      *ngFor="let mistake of objectKeys(mistakeRecord)">
+        <span>{{ mistake }}:</span> <span>{{ mistakeRecord[mistake] }}</span>
+      </span>
+    </span>
   </div>  
   <span class="button-parent">
     <button (click)="submitAnswers()" *ngIf="timeRemaining">Submit Answers</button>

@@ -24,6 +24,8 @@ export class ExamComponent implements OnInit {
   isChapterSelected = false;
   progress = 0;
   showBackgroundImage = false;
+  mistakeRecord: { [key: string]: number } = {};
+
 
     // Variables for tracking time
   hours: number = 0;
@@ -144,6 +146,10 @@ export class ExamComponent implements OnInit {
     if (JSON.stringify(selectedAnswersSorted) === JSON.stringify(correctAnswers)) {
       this.score++;
     } else {
+      const chapter = this.currentQuestion.chapter
+      // record of mistakes categorized by chapter
+      this.mistakeRecord[chapter] !== undefined
+        ? this.mistakeRecord[chapter]++ : this.mistakeRecord[chapter] = 1;
       alert('Incorrect! The correct answers are: ' + correctAnswers.join(', '));
     }
 
@@ -156,6 +162,10 @@ export class ExamComponent implements OnInit {
       // this.finishTest()
       this.showFinalScore();
     }
+  }
+
+  objectKeys(obj: any): string[] {
+    return Object.keys(obj);
   }
 
   showFinalScore() {
