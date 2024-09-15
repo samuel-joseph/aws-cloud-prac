@@ -79,8 +79,7 @@ div {
 .progress-bar {
   height: 50%;
   background-color: #00ff00;
-  border-radius: 10px;
-  transition: width 0.4s ease; /* Smooth transition as the progress updates */
+  transition: width 1s ease; /* Smooth transition as the progress updates */
 }
 
 /* Styling for the heading */
