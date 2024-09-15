@@ -40,7 +40,7 @@
     <h1 [ngStyle]="{'color': pass ? 'green' : 'red'}">{{pass?"PASS":"FAIL"}}</h1>
     <h2>Your score: {{percentageScore}}%</h2>
     <h3>You finished the test in {{ timeElapsed }}</h3>
-    <span *ngIf="mistakeRecord!==undefined">
+    <span *ngIf="mistakeRecord && getMistakeKeys().length > 0">
       <h6>Chapter/s that need review and the number of mistakes:</h6>
       <span 
       style="

@@ -92,6 +92,7 @@ export class ExamComponent implements OnInit {
     this.percentageScore = 0
     this.pass = undefined
     this.timeRemaining = true
+    this.mistakeRecord = {}
     this.startTimer();
     const chapter = event.target.value;
     if (chapter) {
@@ -128,6 +129,11 @@ export class ExamComponent implements OnInit {
       this.questions.forEach(question => {
         question.options = this.shuffleArray(question.options);
       });
+    }
+  
+    // Method to return the keys of mistakeRecord
+    getMistakeKeys(): string[] {
+      return Object.keys(this.mistakeRecord);
     }
 
   toggleAnswer(selectedAnswer: string) {
