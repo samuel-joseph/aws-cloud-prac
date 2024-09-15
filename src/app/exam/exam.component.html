@@ -3,7 +3,7 @@
   <span class="slider round"></span>
 </label>
 <div *ngIf="!isChapterSelected">
-  <h3>Select a Chapter</h3>
+  <h3 style="text-align: center;">AWS CLOUD PRACTITIONER EXAM PREP</h3>
   <select (change)="selectChapter($event)">
     <option value="">-- Select a Chapter --</option> <!-- Empty option to prevent default -->
     <option *ngFor="let chapter of chapters" [value]="chapter">{{ chapter }}</option>
@@ -18,24 +18,31 @@
       {{ hours }}:{{ minutes }}:{{ seconds }}
     </h6>
   </div>
-  <div class="question-content">
+  <div class="question-content" *ngIf="timeRemaining">
     <h3>{{currentQuestion.chapter}}</h3>
     <h5>{{ currentQuestion.question }}</h5>
   </div>
 
   <!-- Options for the current question -->
-  <div class="options-container">
-    <div *ngFor="let option of currentQuestion.options">
-      <input
-        [attr.type]="currentQuestion.multipleAnswer ? 'checkbox' : 'radio'"
-        [checked]="selectedAnswers.includes(option)"
-        (change)="toggleAnswer(option)"
-      />
-      {{ option }}
+  <div class="options-container" *ngIf="timeRemaining">
+    <div *ngFor="let option of currentQuestion.options" class="option-wrapper">
+      <label>
+        <input
+          [attr.type]="'checkbox'"
+          [checked]="selectedAnswers.includes(option)"
+          (change)="toggleAnswer(option)"
+        />
+        {{ option }}
+      </label>
     </div>
   </div>
+  <div class="question-content" *ngIf="!timeRemaining">
+    <h1 [ngStyle]="{'color': pass ? 'green' : 'red'}">{{pass?"PASS":"FAIL"}}</h1>
+    <h2>Your score: {{percentageScore}}%</h2>
+    <h3>You finished the test in {{ timeElapsed }}</h3>
+  </div>  
   <span class="button-parent">
-    <button (click)="submitAnswers()">Submit Answers</button>
-    <a class="refresh-page" (click)="refreshPage()">Menu</a>
+    <button (click)="submitAnswers()" *ngIf="timeRemaining">Submit Answers</button>
+    <a class="refresh-page" (click)="backToMenu()">Menu</a>
   </span>
 </div>

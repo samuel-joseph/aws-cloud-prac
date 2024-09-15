@@ -14,9 +14,11 @@ export class ExamComponent implements OnInit {
   totalQuestions = 0;
   score = 0;
   mistakes = 0;
+  percentageScore = 0
   chapterWiseScores: { [key: string]: { correct: number; total: number } } = {};
   currentQuestion!: Question;
   selectedAnswers: string[] = [];
+  pass: boolean | undefined
   chapters: string[] = [];
   selectedChapter: string = '';
   isChapterSelected = false;
@@ -43,7 +45,6 @@ export class ExamComponent implements OnInit {
     this.allQuestions = this.questionService.getAllQuestions(); // Get all questions
     this.chapters = this.questionService.getChapters(); // Get sorted chapters
     this.totalQuestions = this.questions.length;
-    this.startTimer();
   }
 
   startTimer() {
@@ -86,12 +87,28 @@ export class ExamComponent implements OnInit {
 
   selectChapter(event: any) {
     this.score = 0;
+    this.percentageScore = 0
+    this.pass = undefined
+    this.timeRemaining = true
+    this.startTimer();
     const chapter = event.target.value;
     if (chapter) {
       this.selectedChapter = chapter;
       if (chapter === 'All') {
-        this.questions = [...this.allQuestions];
+        // this.questions = [...this.allQuestions];
         // this.questions = [...this.shuffleArray(this.allQuestions).splice(0,65)];
+        if (chapter === 'All') {
+          // Prompt the user to enter the number of questions they want to take
+          const numQuestions = parseInt(window.prompt('How many questions would you like to take?') || '0', 10);
+    
+          if (numQuestions > 0 && numQuestions <= this.allQuestions.length) {
+            // Shuffle all questions and slice based on user's input
+            this.questions = this.shuffleArray([...this.allQuestions]).slice(0, numQuestions);
+          } else {
+            alert('Invalid number of questions. Please enter a number between 1 and ' + this.allQuestions.length);
+            return;
+          }
+        }
       } else {
         this.questions = this.questionService.getQuestionsByChapter(chapter);
       }
@@ -118,6 +135,7 @@ export class ExamComponent implements OnInit {
       this.selectedAnswers.push(selectedAnswer);
     }
   }
+  
 
   submitAnswers() {
     const correctAnswers = this.currentQuestion.answer.sort();
@@ -142,9 +160,11 @@ export class ExamComponent implements OnInit {
 
   showFinalScore() {
     this.stopTimer();
+    this.percentageScore = Math.floor(this.score / this.questions.length * 100)
+    this.pass = this.percentageScore >= 70 ? true: false
     this.timeElapsed = this.formatTime();
     this.timeRemaining = false;
-    alert(`You scored ${this.score} out of ${this.questions.length}: ${(Math.floor(this.score / this.questions.length * 100))}%`);
+    alert(`You scored ${this.score} out of ${this.questions.length}`);
   }
 
   updateProgress() {
@@ -172,7 +192,11 @@ export class ExamComponent implements OnInit {
     }
   }
 
-  refreshPage() {
-      this.isChapterSelected = false
+  backToMenu() {
+    this.isChapterSelected = false
+    this.hours = 0
+    this.minutes = 0
+    this.seconds = 0
+    this.stopTimer()
   }
 }
