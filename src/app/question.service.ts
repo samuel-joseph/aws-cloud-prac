@@ -1552,10 +1552,10 @@ export class QuestionService {
       chapter: "Chapter 8 The Core Storage Services",
       question: "What are the major differences between Simple Storage Service (S3) and Elastic Block Store (EBS)? (Select TWO.)",
       options: [
-        "EBS stores volumes.",
+        "EBS stores volumes",
         "EBS stores snapshots.",
         "S3 stores volumes.",
-        "S3 stores objects.",
+        "S3 stores objects",
         "EBS stores objects."
       ],
       answer: ["EBS stores volumes", "S3 stores objects"],
@@ -1591,13 +1591,13 @@ export class QuestionService {
       question: "Your budget-conscious organization has a 5 TB database file it needs to retain off-site for at least 5 years. In the event the organization needs to access the database, it must be accessible within 8 hours. Which cloud storage option should you recommend, and why? (Select TWO.)",
       options: [
         "S3 has the most durable storage.",
-        "S3.",
-        "S3 Glacier.",
-        "Glacier is the most cost-effective.",
+        "S3",
+        "S3 Glacier",
+        "Glacier is the most cost-effective",
         "S3 has the fastest retrieval times.",
         "S3 doesn't support object sizes greater than 4 TB."
       ],
-      answer: ["S3 Glacier", "Glacier is the most cost-effective."],
+      answer: ["S3 Glacier", "Glacier is the most cost-effective"],
       multipleAnswer: true
     },
     {

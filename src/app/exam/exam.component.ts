@@ -1,5 +1,6 @@
 import { Component, ElementRef, OnInit, Renderer2 } from '@angular/core';
 import { QuestionService, Question } from '../question.service';
+import { Router } from '@angular/router'
 
 @Component({
   selector: 'app-exam',
@@ -10,7 +11,10 @@ export class ExamComponent implements OnInit {
   questions: Question[] = [];
   allQuestions: Question[] = []; // Store all questions to shuffle
   currentQuestionIndex = 0;
+  totalQuestions = 0;
   score = 0;
+  mistakes = 0;
+  chapterWiseScores: { [key: string]: { correct: number; total: number } } = {};
   currentQuestion!: Question;
   selectedAnswers: string[] = [];
   chapters: string[] = [];
@@ -19,19 +23,36 @@ export class ExamComponent implements OnInit {
   progress = 0;
   showBackgroundImage = false;
 
-  constructor(private questionService: QuestionService, private renderer: Renderer2, private el: ElementRef) {}
+  constructor(
+    private questionService: QuestionService,
+    private renderer: Renderer2, private el: ElementRef,
+    private router: Router
+  ) { }
 
   ngOnInit() {
     this.allQuestions = this.questionService.getAllQuestions(); // Get all questions
     this.chapters = this.questionService.getChapters(); // Get sorted chapters
+    this.totalQuestions = this.questions.length;
+  }
+
+  finishTest() {
+    this.router.navigate(['/results'], {
+      state: {
+        score: this.score,
+        mistakes: this.mistakes,
+        chapterWiseScores: this.chapterWiseScores
+      }
+    });
   }
 
   selectChapter(event: any) {
+    this.score = 0;
     const chapter = event.target.value;
     if (chapter) {
       this.selectedChapter = chapter;
       if (chapter === 'All') {
-        this.questions = [...this.allQuestions]; // No shuffling if 'All' is selected
+        this.questions = [...this.allQuestions];
+        // this.questions = [...this.shuffleArray(this.allQuestions).splice(0,65)];
       } else {
         this.questions = this.questionService.getQuestionsByChapter(chapter);
       }
@@ -75,12 +96,13 @@ export class ExamComponent implements OnInit {
       this.currentQuestion = this.questions[this.currentQuestionIndex];
       this.updateProgress();
     } else {
+      // this.finishTest()
       this.showFinalScore();
     }
   }
 
   showFinalScore() {
-    alert(`You scored ${this.score} out of ${this.questions.length}`);
+    alert(`You scored ${this.score} out of ${this.questions.length}: ${(Math.floor(this.score/this.questions.length*100))}%`);
   }
 
   updateProgress() {
@@ -108,7 +130,7 @@ export class ExamComponent implements OnInit {
     }
   }
 
-    refreshPage() {
-    window.location.reload();
+  refreshPage() {
+      this.isChapterSelected = false
   }
 }
