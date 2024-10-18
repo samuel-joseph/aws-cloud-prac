@@ -3,7 +3,7 @@
   <span class="slider round"></span>
 </label>
 <div *ngIf="!isChapterSelected">
-  <h3 style="text-align: center;">AWS CLOUD PRACTITIONER EXAM PREP</h3>
+  <h3 style="text-align: center;">CEN Review</h3>
   <select (change)="selectChapter($event)">
     <option value="">-- Select a Chapter --</option> <!-- Empty option to prevent default -->
     <option *ngFor="let chapter of chapters" [value]="chapter">{{ chapter }}</option>

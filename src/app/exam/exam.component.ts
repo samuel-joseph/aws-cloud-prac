@@ -156,7 +156,7 @@ export class ExamComponent implements OnInit {
       // record of mistakes categorized by chapter
       this.mistakeRecord[chapter] !== undefined
         ? this.mistakeRecord[chapter]++ : this.mistakeRecord[chapter] = 1;
-      alert('Incorrect! The correct answers are: ' + correctAnswers.join(', '));
+      alert('Incorrect! The correct answer is: ' + correctAnswers.join(', '));
     }
 
     this.selectedAnswers = [];
