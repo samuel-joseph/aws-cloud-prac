@@ -21,10 +21,12 @@ export class ExamComponent implements OnInit {
   pass: boolean | undefined
   chapters: string[] = [];
   selectedChapter: string = '';
-  isChapterSelected = false;
   progress = 0;
-  showBackgroundImage = false;
   mistakeRecord: { [key: string]: number } = {};
+
+
+  isChapterSelected = false;
+  shuffleQuestion = false;
 
 
     // Variables for tracking time
@@ -87,6 +89,11 @@ export class ExamComponent implements OnInit {
     });
   }
 
+  switchShuffle() {
+    this.shuffleQuestion = !this.shuffleQuestion
+    alert(`Questions are ${this.shuffleQuestion?'shuffled!':'unshuffled!'}`);
+  }
+
   selectChapter(event: any) {
     this.score = 0;
     this.percentageScore = 0
@@ -97,15 +104,12 @@ export class ExamComponent implements OnInit {
     const chapter = event.target.value;
     if (chapter) {
       this.selectedChapter = chapter;
-      if (chapter === 'All') {
-        // this.questions = [...this.allQuestions];
-        // this.questions = [...this.shuffleArray(this.allQuestions).splice(0,65)];
-        if (chapter === 'All') {
+      if (chapter === 'Custom') {
+        if (chapter === 'Custom') {
           // Prompt the user to enter the number of questions they want to take
           const numQuestions = parseInt(window.prompt('How many questions would you like to take?') || '0', 10);
     
           if (numQuestions > 0 && numQuestions <= this.allQuestions.length) {
-            // Shuffle all questions and slice based on user's input
             this.questions = this.shuffleArray([...this.allQuestions]).slice(0, numQuestions);
           } else {
             alert('Invalid number of questions. Please enter a number between 1 and ' + this.allQuestions.length);
@@ -125,7 +129,7 @@ export class ExamComponent implements OnInit {
   }
 
     // Shuffle the options for each question
-    shuffleOptions() {
+  shuffleOptions() {
       this.questions.forEach(question => {
         question.options = this.shuffleArray(question.options);
       });
@@ -189,23 +193,13 @@ export class ExamComponent implements OnInit {
 
   // Helper function to shuffle an array
   shuffleArray(array: any[]): any[] {
-    for (let i = array.length - 1; i > 0; i--) {
-      const j = Math.floor(Math.random() * (i + 1));
-      [array[i], array[j]] = [array[j], array[i]];
+    if (this.shuffleQuestion) {
+      for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+      }
     }
     return array;
-  }
-
-  toggleBackground() {
-    this.showBackgroundImage = !this.showBackgroundImage;
-    const classList = this.el.nativeElement.classList;
-    if (this.showBackgroundImage) {
-      classList.add('background-image-visible');
-      classList.remove('background-image-hidden');
-    } else {
-      classList.add('background-image-hidden');
-      classList.remove('background-image-visible');
-    }
   }
 
   backToMenu() {

@@ -1,13 +1,13 @@
-<label class="switch">
-  <input (click)="toggleBackground()" type="checkbox">
-  <span class="slider round"></span>
-</label>
 <div *ngIf="!isChapterSelected">
   <h3 style="text-align: center;">CEN Review</h3>
   <select (change)="selectChapter($event)">
     <option value="">-- Select a Chapter --</option> <!-- Empty option to prevent default -->
     <option *ngFor="let chapter of chapters" [value]="chapter">{{ chapter }}</option>
   </select>
+  <label class="switch">
+    <input (click)="switchShuffle()" type="checkbox">
+    <span class="slider round"></span>
+  </label>
 </div>
 
 <div class="question-container" *ngIf="isChapterSelected">
@@ -19,6 +19,7 @@
     </h6>
   </div>
   <div class="question-content" *ngIf="timeRemaining">
+    <p>{{currentQuestionIndex+1}} of {{questions.length}}</p>
     <h3>{{currentQuestion.chapter}}</h3>
     <h5>{{ currentQuestion.question }}</h5>
   </div>

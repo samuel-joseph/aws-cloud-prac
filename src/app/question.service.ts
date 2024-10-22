@@ -31,7 +31,7 @@ export class QuestionService {
         const numA = this.extractChapterNumber(a);
         const numB = this.extractChapterNumber(b);
         return numA - numB;
-      }).concat('All'); // Add 'All' at the end
+      }).concat('Custom'); // Add 'All' at the end
     }
   
     // Extract the numeric value from the chapter name (e.g., "Chapter 10" => 10)
@@ -42,7 +42,7 @@ export class QuestionService {
   
     // Fetch questions filtered by chapter, or return all questions if 'All' is selected
     getQuestionsByChapter(chapter: string): Question[] {
-      if (chapter === 'All') {
+      if (chapter === 'Custom') {
         return this.questions;
       }
       return this.questions.filter(q => q.chapter === chapter);
