@@ -8,305 +8,405 @@ export interface Question {
 
 export const questions: Question[] = [
   {
-    chapter: 'Chapter 6',
-    question: '1. A patient is noted to have red, painless spots on the palms and soles, red, painful nodes in the pad of the fingers and toes, and splinter hemorrhages under the nails, as well as an elevated body temperature and elevated white blood cell (WBC) count. The emergency nurse suspects the patient has:',
-    options: ['Endocarditis', 'Pericarditis', 'Myocarditis', 'Leukemia'],
-    answer: ['Endocarditis'],
-    multipleAnswer: false
-  },
-  {
-    chapter: 'Chapter 6',
-    question: '2. A conscious pulseless patient with a continuous-flow left ventricular assist device and a history of end-stage heart failure presents to the emergency department because of a "low-flow" alarm. Which of the following interventions would be appropriate in this scenario?',
-    options: ['Obtain an automatic blood pressure', 'Exchange the controller', 'Administer intravenous fluids', 'Begin chest compressions'],
-    answer: ['Administer intravenous fluids'],
-    multipleAnswer: false
-  },
-  {
-    chapter: 'Chapter 6',
-    question: '3. A nurse is preparing to assist with drug-assisted intubation (DAI) for a patient in severe respiratory distress with a pulse oximetry reading of 91%. Which of the following is the priority intervention for preoxygenating the patient?',
-    options: ['Place the patient in reverse Trendelenburg', 'Administer an opioid', 'Use positive pressure ventilation', 'Provide high-flow oxygen'],
-    answer: ['Provide high-flow oxygen'],
-    multipleAnswer: false
-  },
-  {
-    chapter: 'Chapter 6',
-    question: '4. A patient presents complaining of lower abdominal pain and the inability to void in the past 24 hours. Which of the following is the priority intervention for this patient?',
-    options: ['Obtaining a full set of vital signs', 'Preparing the patient for an abdominal radiograph', 'Inserting a urinary catheter', 'Administering an intravenous fluid bolus of 500 mL'],
-    answer: ['Inserting a urinary catheter'],
-    multipleAnswer: false
-  },
-  {
-    chapter: 'Chapter 6',
-    question: '5. An emergency department patient has been diagnosed with a subarachnoid hemorrhage (SAF). Which medication is the priority for this patient?',
-    options: ['Antiemetic', 'Antiepileptic', 'Antihypertensive', 'Calcium channel blocker'],
-    answer: ['Antihypertensive'],
-    multipleAnswer: false
-  },
-  {
-    chapter: 'Chapter 6',
-    question: '6. A patient has experienced an acute psychotic episode and states, “I’m coming back here when I get released from the hospital, and I am going to kill Jane Smith." Which of the following interventions would be most appropriate for a nurse to perform?',
-    options: ['Ignore the threat because this is normal behavior in patients who are psychotic', 'Alert the proper law enforcement authorities', 'Tell the patient that it is inappropriate to make this statement', 'Request that the hospital chaplain come and talk to the patient'],
-    answer: ['Alert the proper law enforcement authorities'],
-    multipleAnswer: false
-  },
-  {
-    chapter: 'Chapter 6',
-    question: '7. Heparin may be administered to prevent the formation of clots in disseminated intravascular coagulation (DIC) associated with which of the following conditions?',
-    options: ['Retained placenta', 'Gastrointestinal bleeding', 'Recent hip surgery', 'Ruptured cerebral aneurysm'],
-    answer: ['Retained placenta'],
-    multipleAnswer: false
-  },
-  {
-    chapter: 'Chapter 6',
-    question: '8. The nurse is preparing to discharge a female geriatric patient who presented for severe "heartburn." Medication reconciliation reveals that the patient is on alendronate (Fosamax). What information should the nurse provide to the patient with the discharge instructions?',
-    options: ['Always take alendronate with food', 'Sit or stand upright for 30 minutes after taking alendronate', 'Have calcium blood levels monitored monthly', 'Take alendronate at bedtime'],
-    answer: ['Sit or stand upright for 30 minutes after taking alendronate'],
-    multipleAnswer: false
-  },
-  {
-    chapter: 'Chapter 6',
-    question: '9. A patient presents to triage with complaints of a severe throbbing-type headache pain above the left eye and the left side of the face. The patient has a history of polymyalgia rheumatica. The nurse suspects that the patient\'s current discomfort is related to the presence of which of the following?',
-    options: ['Temporomandibular joint (TM) dislocation', 'Temporal arteritis', 'Cluster headache', 'Sinusitis'],
-    answer: ['Temporal arteritis'],
-    multipleAnswer: false
-  },
-  {
-    chapter: 'Chapter 6',
-    question: '10. An unresponsive patient arrives at the ED with upper-and midfacial injuries after involvement in a high-speed motor vehicle collision. Which of the following interventions should be used initially to maintain an open airway for this patient?',
-    options: ['Intubate with an uncuffed endotracheal tube', 'Insert an oropharyngeal airway', 'Place the patient in a left lateral position', 'Use the head tilt-chin lift maneuver'],
-    answer: ['Insert an oropharyngeal airway'],
-    multipleAnswer: false
-  },
-  {
-    chapter: 'Chapter 6',
-    question: '11. A patient is being treated in the emergency department for suicidal ideation. The patient lives alone, recently lost their job, and will soon lose their apartment. The patient has been talking to friends about not being around and admits to having a plan. Which of the following is the most appropriate disposition for this patient?',
-    options: ['Inpatient admission to a psychiatric unit', 'Discharge to home and follow up with primary care', 'Inpatient admission to an intensive care unit', 'Discharge to a friend\'s home with outpatient counseling'],
-    answer: ['Discharge to home and follow up with primary care'],
-    multipleAnswer: false
-  },
-  {
-    chapter: 'Chapter 6',
-    question: '12. A patient involved in a motor vehicle collision is diagnosed with an unstable pelvic ring fracture. Which classification of hypovolemic shock would most likely occur as a result of this injury?',
-    options: ['Class IV', 'Class III', 'Class II', 'Class I'],
-    answer: ['Class IV'],
-    multipleAnswer: false
-  },
-  {
-    chapter: 'Chapter 6',
-    question: '13. A nurse is caring for a patient in asystole during cardiopulmonary resuscitation, and intravenous access cannot be obtained. The physician orders intravenous epinephrine. What is the most appropriate nursing action at this time?',
-    options: ['Recommend administering the epinephrine via the intraosseous route', 'Wait until intravenous access is obtained before preparing the dose', 'Prepare to deliver an unsynchronized defibrillation at 120 joules', 'Recommend administering the epinephrine via the intramuscular route'],
-    answer: ['Recommend administering the epinephrine via the intraosseous route'],
-    multipleAnswer: false
-  },
-  {
-    chapter: 'Chapter 6',
-    question: '14. A trauma patient has penetrating injuries to the anterior chest and abdomen. Further assessment reveals muffled heart sounds and distended neck veins. What is the most appropriate intervention at this time?',
-    options: ['Prepare for a needle aspiration to be inserted 1 cm left of the xiphocostal angle', 'Decrease the intravenous flow rate to avoid hypervolemia', 'Prepare for a needle decompression at the second intercostal space midclavicular line', 'Prepare for chest tube insertion at the fifth intercostal space'],
-    answer: ['Prepare for a needle aspiration to be inserted 1 cm left of the xiphocostal angle'],
-    multipleAnswer: false
-  },
-  {
-    chapter: 'Chapter 6',
-    question: '15. What is the best position to place a patient in order to auscultate for the presence of a pericardial friction rub?',
-    options: ['Ask the patient to stand up and then squat, and then place the stethoscope at the left sternal border and listen at midsystole', 'Ask the patient to lie or sit quietly, and then place the stethoscope at the right sternal border and listen for radiation to the neck', 'Ask the patient to lean forward, and then place the stethoscope at the left sternal border and listen at end-expiration', 'Ask the patient to lie or sit quietly, and then place the stethoscope at the apex of the heart and listen for radiation to the axilla'],
-    answer: ['Ask the patient to lean forward, and then place the stethoscope at the left sternal border and listen at end-expiration'],
-    multipleAnswer: false
-  },
-  {
-    chapter: 'Chapter 6',
-    question: '16. Which of the following statements made by a patient recently diagnosed with peripheral vascular disease indicates that they have an accurate understanding of the disease?',
-    options: ['"When my leg starts to cramp, I should stop walking and rest."', '"When pain develops in my leg, I should apply an ice pack."', '"The pain in my legs may be a sign of worsening arterial disease."', '"I should walk as little as possible to avoid cramping my legs."'],
-    answer: ['"When my leg starts to cramp, I should stop walking and rest."'],
-    multipleAnswer: false
-  },
-  {
-    chapter: 'Chapter 6',
-    question: '17. Which of the following patients would be most at risk for developing a deep vein thrombosis (DVT) and pulmonary embolus (PE)?',
-    options: ['A 57-year-old male with controlled hypertension', 'A 48-year-old diabetic', 'A 35-year-old female who smokes and is taking birth control pills', 'A 29-year-old male with a recent leg injury'],
-    answer: ['A 35-year-old female who smokes and is taking birth control pills'],
-    multipleAnswer: false
-  },
-  {
-    chapter: 'Chapter 6',
-    question: '18. A patient with a stab wound to the left parasternal anterior chest is intubated and becomes pulseless shortly after arrival. Cardiopulmonary resuscitation is initiated. What is the priority intervention for this patient?',
-    options: ['Point-of-care cardiac ultrasound', 'Chest radiograph', 'Open thoracotomy', 'Needle pericardiocentesis'],
-    answer: ['Open thoracotomy'],
-    multipleAnswer: false
-  },
-  {
-    chapter: 'Chapter 6',
-    question: '19. Following the insertion of an intraosseous (IO) device, which of the following findings would indicate that the IO has been properly placed?',
-    options: ['The needle has slight movement after insertion.','Bright red blood is noted in the cannula after insertion.','The fluid infusion is halted when the tissue around the IO device is compressed','A reddish frothy aspirate is noted after insertion.'],
-    answer: ['A reddish frothy aspirate is noted after insertion.'],
-    multipleAnswer: false
-  },
-  {
-    chapter: 'Chapter 6',
-    question: '20. A nurse is discharging a child with asthma with a peak expiratory flow meter. What instructions should be included in the teaching plan?',
-    options: ['Blow forcefully into the mouthpiece','Inhale slowly and consistently', 'Use only in times of symptoms','Perform the test only once per day'],
-    answer: ['Blow forcefully into the mouthpiece'],
-    multipleAnswer: false
-  },
-  {
-    chapter: 'Chapter 6',
-    question: '21. An adult patient with a history of asthma presents to triage, stating that they are experiencing an acute asthma exacerbation. The emergency care provider orders an electrocardiogram (ECG). The patient asks the nurse why this procedure is necessary. What is the most appropriate response from the nurse?',
-    options: ["Respiratory complaints may be due to cardiac problems.",
-      "It is a part of our order set for patients with respiratory complaints.",
-      "ECGs can show us how well you are breathing.",
-      "I don't know. I just do what the provider orders."],
-    answer: ["Respiratory complaints may be due to cardiac problems."],
-    multipleAnswer: false
-  },
-  {
-    chapter: 'Chapter 6',
-    question: '22. The nurse would expect arterial blood gas values from a patient in a severe chronic obstructive pulmonary disease exacerbation to illustrate what finding?',
-    options: ['Respiratory acidosis',
-      'Respiratory alkalosis',
-      'Metabolic acidosis',
-      'Metabolic alkalosis'],
-    answer: ['Respiratory acidosis'],
-    multipleAnswer: false
-  },
-  {
-    chapter: 'Chapter 6',
-    question: "23. A patient arrives via emergency medical services following a house fire. The patient has a Glasgow Coma Scale score of 15. What is the most appropriate method to assess current patency of the patient's airway?",
-    options: ['Ask the patient to state their name',
-      'Obtain an oxygen saturation',
-      'Count the respiratory rate',
-      'Visualize the oropharynx with a pen light'],
-    answer: ['Ask the patient to state their name'],
-    multipleAnswer: false
-  },
-  {
-    chapter: 'Chapter 6',
-    question: "24. A patient with severe respiratory distress has been intubated with an endotracheal tube (ETT), and mechanical ventilation has been initiated. The ventilator alarm is sounding, indicating high airway pressures. What should the nurse's priority assessment be?",
-    options: ['Assess for airway secretions',
-      'Check all connections on the ETT and ventilator',
-      'Assess the oxygen saturation',
-      'Auscultate bilateral breath sounds'],
-    answer: ['Assess for airway secretions'],
-    multipleAnswer: false
-  },
-  {
-    chapter: 'Chapter 6',
-    question: '25. A patient with a history of heart failure presents with complaints of difficulty breathing, presence of a nonproductive cough, and "stabbing" chest pain. On assessment, the nurse auscultates diminished breath sounds bilaterally. What additional information would be the most pertinent to obtain from the patient?',
-    options: ['Medication compliance',
-    'Recent sick contacts',
-    'Vaccination history',
-    'Recent travel history'],
-    answer: ['Medication compliance'],
-    multipleAnswer: false
-  },
-  {
-    chapter: 'Chapter 6',
-    question: '26. Which assessment finding would best indicate that chest tube insertion has been successful in relieving a tension pneumothorax?',
-    options: ['Improvement in hemodynamics',
-    'Immediate rush of air',
-    'Bloody drainage in the chest tube',
-    'Improved ability to deep breathe'],
-    answer: ['Improvement in hemodynamics'],
-    multipleAnswer: true
-  },
-  {
-    chapter: 'Chapter 6',
-    question: '27. A tube thoracostomy has been placed for a patient with a hemothorax. Immediately after placement, what output amount would alert the nurse to anticipate that the patient would be taken to the operating room for an emergency thoracotomy?',
-    options: ['1000 mL',
-      '750 mL',
-      '500 mL',
-      '200 mL'],
-    answer: ['1000 mL'],
-    multipleAnswer: false
-  },
-  {
-    chapter: 'Chapter 6',
-    question: '28. A patient arrives complaining of a sudden onset of chest pain. The patient is anxious and tachypneic. Oxygen saturation is 89%. What is the priority intervention for this patient?',
-    options: ['Obtain an echocardiogram',
-      'Initiate intravenous access',
-      'Obtain arterial blood gas',
-      'Administer supplemental oxygen'],
-    answer: ['Administer supplemental oxygen'],
-    multipleAnswer: false
-  },
-  {
-    chapter: 'Chapter 6',
-    question: "29. Intravenous nicardipine (Cardene) has been ordered for blood pressure reduction in a patient with a hypertensive emergency. The patient's blood pressure is 280/124 mm Hg with a mean arterial pressure (MAP) of 176 mm Hg. When titrating the nicardipine for this patient, which order has the safest parameter to follow?",
-    options: ["Titrate nicardipine to a MAP of 124 mm Hg over the next hour",
-      "Titrate nicardipine to a MAP of 106 mm Hg over the next hour",
-      "Titrate nicardipine to a MAP of 158 mm Hg over the next hour",
-      "Titrate nicardipine to a MAP of 132 mm Hg over the next hour"],
-    answer: ["Titrate nicardipine to a MAP of 132 mm Hg over the next hour"],
-    multipleAnswer: false
-  },
-  //1 to 29 is fixed
-  {
-    chapter: "Chapter 6",
-    question: "30. Which term is used to describe the form of shock that results from a large pulmonary embolism causing unstable patient hemodynamics and decreased tissue perfusion?",
-    options: ["Obstructive shock", "Distributive shock", "Hypovolemic shock", "Cardiogenic shock"],
-    answer: ["Obstructive shock"],
-    multipleAnswer: false,
-  },
-  {
-    chapter: "Chapter 6",
-    question: "31. What is the most appropriate initial treatment for acute respiratory distress syndrome (ARDS)?",
+    chapter: 'Anatomy and Physiology',
+    question: '1. Subarachnoid hemorrhage is most commonly caused by',
     options: [
-      "Maintain adequate ventilation and oxygenation",
-      "Maintain the patient in the supine position",
-      "Limit fluid intake to avoid risk of pulmonary edema",
-      "Administer prophylactic antibiotics"
-    ],
-    answer: ["Maintain adequate ventilation and oxygenation"],
-    multipleAnswer: false,
+      'Aneurysmal rupture',
+      'Arteriosclerotic vascular disease', 'Arteriovenous vascular malformation rupture',
+      'Amyloid angiopathy'],
+    answer: ['Aneurysmal rupture'],
+    multipleAnswer: false
   },
   {
-    chapter: "Chapter 6",
-    question: "32. A patient presents via private vehicle after a motorcycle crash involving a low-hanging tree limb. The patient complains of anterior neck pain. The nurse also notes a hoarseness in the patient's voice and subcutaneous emphysema at the anterior inferior neck. What is the priority nursing action?",
+    chapter: 'Anatomy and Physiology',
+    question: '2. The dural fold that separates the cerebrum from the cerebellum is the',
     options: [
-      "Apply a hard cervical collar",
-      "Prepare for a neck CT",
-      "Prepare for chest tube insertion",
-      "Position the patient supine"
-    ],
-    answer: ["Apply a hard cervical collar"],
-    multipleAnswer: false,
+      'Corpus callosum',
+      'Tentorium',
+      'Falx',
+      'Posterior fossa'],
+    answer: ['Tentorium'],
+    multipleAnswer: false
   },
   {
-    chapter: "Chapter 6",
-    question: "33. A patient with a history of chronic obstructive pulmonary disease (COPD) presents with complaints of a runny nose, headache, and nonproductive cough for 3 days. The patient is able to speak without difficulty. Vital signs are BP 158/88 mm Hg, HR 106 beats/minute, RR 22 breaths/minute, SpO2 88% room air, T 37.1°C (98.8°F). The priority intervention for the nurse to implement for this patient is which of the following?",
+    chapter: 'Anatomy and Physiology',
+    question: '3. The innermost meningeal layer that fits the brain like a latex glove fits the hand is the',
     options: [
-      "Apply low-flow supplemental oxygen",
-      "Administer methylprednisolone",
-      "Obtain a chest radiograph",
-      "Obtain an arterial blood gas analysis"
-    ],
-    answer: ["Apply low-flow supplemental oxygen"],
-    multipleAnswer: false,
+      'Dura mater',
+      'Arachnoid mater',
+      'Central mater',
+      'Pia mater'],
+    answer: ['Pia mater'],
+    multipleAnswer: false
   },
   {
-    chapter: "Chapter 6",
-    question: "34. A patient presents with an uncomplicated episode of migraine. The nurse has an order for diphenhydramine, ketorolac, and metoclopramide. The patient asks the reason for the diphenhydramine. What is the most appropriate response?",
+    chapter: 'Anatomy and Physiology',
+    question: '4. The frontal lobe contains which of the following?',
     options: [
-      "The diphenhydramine can help prevent side effects from another medication in the regimen.",
-      "The diphenhydramine works with the other medications to reduce your symptoms.",
-      "The diphenhydramine induces sleep to allow you to rest while your pain subsides.",
-      "The diphenhydramine reduces the chance of itching associated with the other medications."
+      'Wernicke\'s area',
+      'Motor strip',
+      'Sensory strip',
+      'Globus pallidus'],
+    answer: ['Motor strip'],
+    multipleAnswer: false
+  },
+  {
+    chapter: 'Anatomy and Physiology',
+    question: '5. The postcentral gyrus is located in the',
+    options: [
+      'Parietal lobe',
+      'Occipital lobe',
+      'Pons',
+      'Cerebellum'],
+    answer: ['Parietal lobe'],
+    multipleAnswer: false
+  },
+  {
+    chapter: 'Anatomy and Physiology',
+    question: '6. Which of the following best describes the homunculus?',
+    options: [
+      'Portion of midbrain responsible for being awake and aware',
+      'Another n a m e for the large third ventricle',
+      'Diagram that represents the optic path from frontal to occipital lobe',
+      'Diagram that depicts what body parts are controlled by the motor/ sensory strips'],
+    answer: ['Diagram that depicts what body parts are controlled by the motor/ sensory strips'],
+    multipleAnswer: false
+  },
+  {
+    chapter: 'Anatomy and Physiology',
+    question: '7. The ______ is the relay station between the cerebral cortex and brainstem',
+    options: [
+      'Thalamus',
+      'Hypothalamus',
+      'Putamen',
+      'Circle of Willis'],
+    answer: ['Thalamus'],
+    multipleAnswer: false
+  },
+  {
+    chapter: 'Anatomy and Physiology',
+    question: '8. The diencephalon refers to which structures?',
+    options: [
+      'Midbrain, pons, medulla',
+      'Basal ganglia, putamen, internal capsule',
+      'Thalamus, hypothalamus, pineal gland',
+      'Thalamus, globus pallidus, caudate nucleus'],
+    answer: ['Thalamus, hypothalamus, pineal gland'],
+    multipleAnswer: false
+  },
+  {
+    chapter: 'Anatomy and Physiology',
+    question: '9. Someone who cannot understand what is said to them has had an infarct of tbe',
+    options: [
+      'Frontal lobe',
+      'Occipital lobe',
+      'Temporal lobe',
+      'Brainstem'],
+    answer: ['Temporal lobe'],
+    multipleAnswer: false
+  },
+  {
+    chapter: 'Anatomy and Physiology',
+    question: '10. Which brainstem structure connects to the spinal cord and controls respiratory and heart rates?',
+    options: [
+      'Medulla oblongata',
+      'Pons',
+      'Midbrain',
+      'Cerebellum'],
+    answer: ['Medulla oblongata'],
+    multipleAnswer: false
+  },
+  {
+    chapter: 'Anatomy and Physiology',
+    question: '11. You are an emergency department (ED) nurse whose patient presented with staggering gait and slurred speech. The patient denies having been drinking and the alcohol level is normal, but the CT scan is positive for an infarct in the',
+    options: [
+      'Midbrain',
+      'Right parietal lobe',
+      'Occipital lobe',
+      'Cerebellum'],
+    answer: ['Cerebellum'],
+    multipleAnswer: false
+  },
+  {
+    chapter: 'Anatomy and Physiology',
+    question: '12. The most common cardioembolic source for stroke is',
+    options: [
+      'Mitral valve insufficiency',
+      'Endocarditis of the tricuspid valve',
+      'Atrial fibrillation',
+      'Supraventricular tachycardia'],
+    answer: ['Atrial fibrillation'],
+    multipleAnswer: false
+  },
+  {
+    chapter: 'Anatomy and Physiology',
+    question: '13.  Which of these is not part of the circle of Willis?',
+    options: [
+      'Middle cerebral arteries',
+      'Internal carotid arteries',
+      'Posterior communicating arteries',
+      'Posterior cerebral arteries'],
+    answer: ['Middle cerebral arteries'],
+    multipleAnswer: false
+  },
+  {
+    chapter: 'Anatomy and Physiology',
+    question: '14. Patients with adequate blood supply around the borders of their infarct zone have good',
+    options: [
+      'Communicating circulation',
+      'Cerebral perfusion pressure',
+      'Collateral circulation',
+      'Borderline circulation'],
+    answer: ['Collateral circulation'],
+    multipleAnswer: false
+  },
+  {
+    chapter: 'Anatomy and Physiology',
+    question: '15. Which statement is true?',
+    options: [
+      'The vertebral arteries connect the subclavian arteries and the posterior brain',
+      'The basilar arteries connect the common carotids with t h e circle of Willis',
+      'The posterior cerebral arteries connect to the cerebellum via the posterior inferior cerebellar artery',
+      'The cerebellar arteries connect the vertebral arteries to the spinal arteries'],
+    answer: ['The vertebral arteries connect the subclavian arteries and the posterior brain'],
+    multipleAnswer: false
+  },
+  {
+    chapter: 'Anatomy and Physiology',
+    question: '16. A deep vein thrombosis can cause a stroke only if there is a presence what cardiac structure?',
+    options: [
+      'Atrial fibrillation', 
+      'Endocarditis',
+      'Mitral valve regurgitation',
+      'Patent foramen ovale'],
+    answer: ['Patent foramen ovale'],
+    multipleAnswer: false
+  },
+  {
+    chapter: 'Anatomy and Physiology',
+    question: '17. Your patient with an anterior cerebral artery territory stroke is acting "frontal". What is the patient doing?',
+    options: [
+      'Having trouble hearing',
+      'Exhibiting left arm weakness',
+      'Behaving inappropriately',
+      'Seeing double'],
+    answer: ['Behaving inappropriately'],
+    multipleAnswer: false
+  },
+  {
+    chapter: 'Anatomy and Physiology',
+    question: '18. Which syndrome would you think of for a patient who presents with acute right-sided weakness; that is, right facial droop, right arm = 2/5 strength, right leg = 4/5 strength?',
+    options: [
+      'Middle cerebral artery syndrome',
+      'Anterior cerebral artery syndrome',
+      'Internal carotid artery syndrome',
+      'Lacunar syndrome'],
+    answer: ['Middle cerebral artery syndrome'],
+    multipleAnswer: false
+  },
+  {
+    chapter: 'Anatomy and Physiology',
+    question: '19. Which of the following is not a lacunar syndrome?',
+    options: [
+      'Disconjugate gaze syndrome',
+      'Pure motor syndrome',
+      'Pure sensory syndrome',
+      'Dysarthria-clumsy hand syndrome'],
+    answer: ['Disconjugate gaze syndrome'],
+    multipleAnswer: false
+  },
+  {
+    chapter: 'Anatomy and Physiology',
+    question: '20. Intraparenchymal hemorrhage is synonymous with',
+    options: [
+      'Intradural hemorrhage',
+      'Subarachnoid hemorrhage',
+      'Intracerebral hemorrhage',
+      'Intraventricular hemorrhage'],
+    answer: ['Intracerebral hemorrhage'],
+    multipleAnswer: false
+  },
+  {
+    chapter: 'Anatomy and Physiology',
+    question: '21. Ondine`s Curse refers to a syndrome characterized by cessation of respiration during sleep owing to failure of the automatic respiratory center in the',
+    options: [
+      'Medulla oblongata',
+      'Pons',
+      'Limbic lobe',
+      'Thalamus'],
+    answer: ['Medulla oblongata'],
+    multipleAnswer: false
+  },
+  {
+    chapter: 'Anatomy and Physiology',
+    question: '22. Locked-in syndrome refers to a stroke in which area of the brain?',
+    options: [
+      'Central occipital lobe',
+      'Pons',
+      'Thalamus',
+      'Right cerebellum'],
+    answer: ['Pons'],
+    multipleAnswer: false
+  },
+  {
+    chapter: 'Anatomy and Physiology',
+    question: '23. Which symptom is characteristic in a patient with damage to the Broca`s area?',
+    options: [
+      'Dysarthria',
+      'Dysphagia',
+      'Expressive aphasia',
+      'Inability to understand instructions'],
+    answer: ['Expressive aphasia'],
+    multipleAnswer: false
+  },
+  {
+    chapter: 'Anatomy and Physiology',
+    question: '24. The most common cause of intracerebral hemorrhage (ICH) is',
+    options: [
+      'Extreme hyperthermia causing capillary leakage',
+      'Extreme hyperglycemia damaging the blood-brain barrier',
+      'Aneurysmal rupture causing high intracranial pressure (ICP)',
+      'Hypertension causing arterial wall rupture'],
+    answer: ['Hypertension causing arterial wall rupture'],
+    multipleAnswer: false
+  },
+  {
+    chapter: 'Anatomy and Physiology',
+    question: '25. Which area is affected in patients with extinction, formally known as neglect?',
+    options: [
+    'Parietal lobe',
+    'Medial frontal lobe',
+    'Occipital lobe',
+    'Basal ganglia'],
+    answer: ['Parietal lobe'],
+    multipleAnswer: false
+  },
+  {
+    chapter: 'Anatomy and Physiology',
+    question: '26. A stroke between t w o adjacent cerebral arteries is known as a/an',
+    options: [
+    'Lacunar infarct',
+    'Watershed infarct',
+    'Subacute infarct',
+    'Associated infarct'],
+    answer: ['Watershed infarct'],
+    multipleAnswer: false
+  },
+  {
+    chapter: 'Anatomy and Physiology',
+    question: '27. Which of the following best describes the cerebral cortex?',
+    options: [
+      'Folds of gray matter playing an important role in consciousnes',
+      'Folds of white matter playing an important role in consciousnes',
+      'Tracts of white matter playing an important role in autonomic function',
+      'Tracts of gray matter playing an important role in motor function'],
+    answer: ['Folds of gray matter playing an important role in consciousnes'],
+    multipleAnswer: false
+  },
+  {
+    chapter: 'Anatomy and Physiology',
+    question: '28. The corpus callosum is best described by which of the following statements?',
+    options: [
+      'A band of gray matter fibers that facilitates communication between the cerebral cortex and the brainstem',
+      'A band of white matter fibers that facilitates communication between the left and right hemispheres',
+      'The posterior portion of the petrosal sinus that facilitates drainage between transverse sinus and jugular vein',
+      'The sixth ventricle present in approximately 20% of the population'],
+    answer: ['A band of white matter fibers that facilitates communication between the left and right hemispheres'],
+    multipleAnswer: false
+  },
+  {
+    chapter: 'Anatomy and Physiology',
+    question: '29. The vascular wall structure that is impacted by uncontrolled diabetes and hypertension is the',
+    options: [
+      'Tunica media',
+      'Tunica adventitia',
+      'Tunica intima',
+      'Tunica lateralis'],
+    answer: ['Tunica intima'],
+    multipleAnswer: false
+  },
+  {
+    chapter: "Anatomy and Physiology",
+    question: "30. Arteriovenous malformations ( AV M s ) can result in an hemorrohage stroke. This is due to which of the following reasons?",
+    options: [
+      "Arteries and veins connecting directly rather than the usual route of arteries to arterioles, to capillaries, to venules, to veins",
+      "Connection of arteries to veins is underdeveloped",
+      "Circle of Willis anomalies",
+      "Arteries and veins become fused as a result of chronic hypertension"],
+    answer: ["Arteries and veins connecting directly rather than the usual route of arteries to arterioles, to capillaries, to venules, to veins"],
+    multipleAnswer: false,
+  },
+  {
+    chapter: "Anatomy and Physiology",
+    question: "31. Name the condition that is related to a hypercoagulable state, but can present as intracerebral hemorrhage (ICH) and is treated with heparinization.",
+    options: [
+      "Subacute bacterial endocarditis",
+      "Horner's syndrome",
+      "Moya Moya disease",
+      "Venous sinus thrombosis"
     ],
-    answer: ["The diphenhydramine can help prevent side effects from another medication in the regimen."],
+    answer: ["Venous sinus thrombosis"],
     multipleAnswer: false,
   },
   {
-    chapter: "Chapter 6",
-    question: "35. A 3-week-old infant presents with a temperature of 38.3°C (101.2°F). The caregivers report fever at home for a few days, with the child acting sleepier than usual. During the assessment, the nurse notes petechia to the anterior trunk and abnormal posturing with the head tilted posteriorly. What is the most appropriate diagnostic test to anticipate at this time?",
-    options: ["Lumbar puncture", "Chest x-ray", "Urinalysis", "Complete blood count"],
-    answer: ["Lumbar puncture"],
+    chapter: "Anatomy and Physiology",
+    question: "32. The blood-brain barrier plays what role in an acute ischemic stroke?",
+    options: [
+      "Disruption results in locked-in syndrome",
+      "An intact blood-brain barrier provides protection from hyperthermia",
+      "Disruption allows the influx of inflammatory cells resulting in edema and hemorrhagic transformation",
+      "Partial disruption results in homonymous hemianopia secondary to optic tract irritation"
+    ],
+    answer: ["Disruption allows the influx of inflammatory cells resulting in edema and hemorrhagic transformation"],
     multipleAnswer: false,
   },
   {
-    chapter: "Chapter 6",
-    question: "36. A patient presents following a bar fight. The patient reports being punched in the face and having their neck forced backward. A few hours later, the patient began noticing upper extremity weakness with associated sensory loss. The patient also reports an inability to urinate, and the bladder scan reveals 300 mL of urine in their bladder. What is the most likely cause of the patient's symptoms?",
-    options: ["Central cord syndrome", "Anterior cord syndrome", "Brown-Séquard syndrome", "Posterior cord syndrome"],
-    answer: ["Central cord syndrome"],
+    chapter: "Anatomy and Physiology",
+    question: "33. Multiple tiny infarcts in the same hemisphere is a clue to which condition?",
+    options: [
+      "Binswanger's disease",
+      "Incomplete circle of Willis",
+      "Vertebral dissection",
+      "Carotid dissection"
+    ],
+    answer: ["Carotid dissection"],
     multipleAnswer: false,
   },
+  {
+    chapter: "Anatomy and Physiology",
+    question: "34. Normal cerebral blood flow is 45 to 60 mL/100 g/min. At what flow rate does irreversible brain damage occur?",
+    options: [
+      "Less than 40 mL/100 g/min",
+      "Less than 30 mL/100 g/min",
+      "Less than 20 mL/100 g/min",
+      "Less than 10 mL/100 g/min"
+    ],
+    answer: ["Less than 10 mL/100 g/min"],
+    multipleAnswer: false,
+  },
+  {
+    chapter: "Anatomy and Physiology",
+    question: "35. Under conditions of hyperthermia, what changes occur in the brain?",
+    options: [
+      "Increase in metabolic needs",
+      "Decrease in metabolic needs",
+      "Mitochondrial suppression",
+      "Cessation of adenosine release"],
+    answer: ["Increase in metabolic needs"],
+    multipleAnswer: false,
+  },
+  {
+    chapter: "Anatomy and Physiology",
+    question: "36. Name the circumstance in which thrombolysis might be administered in a hemorrhagic stroke patient.",
+    options: [
+      "There is no circumstance for thrombolysis in hemorrhagic stroke",
+      "Small subarachnoid hemorrhage", "Intraventricular hemorrhage",
+      "Interosseous hemorrhage"],
+    answer: ["Intraventricular hemorrhage"],
+    multipleAnswer: false,
+  },
+
+  // to be continued starting here
   {
     chapter: "Chapter 6",
     question: "37. A patient with a history of heart failure presents with dyspnea and pink frothy sputum. Crackles are noted bilaterally on auscultation. The patient is placed on bilevel positive airway pressure (BIPAP) at an inspiratory pressure of 10 cm H₂O and an end-expiratory pressure of 5 cm H₂O. What hemodynamic change is expected to occur as a result of noninvasive positive pressure ventilation (NIPPV)?",
