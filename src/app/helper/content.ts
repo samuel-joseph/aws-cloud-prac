@@ -1297,5 +1297,1000 @@ export const questions: Question[] = [
     ],
     answer: ["Perform further neurologic assessment and notify provider of suspected hypoperfusion"],
     multipleAnswer: false,
+  },{
+    chapter: "Stroke Diagnosticss",
+    question: "1. What is the only blood test you must have results of in order to safely administer IV tissue plasminogen activator (tPA)-besides international normalized ratio (INR), which is required for patients on Coumadin?",
+    options: [
+      "Liver enzymes",
+      "Cardiac enzymes",
+      "Creatinine to know if CT angiography is safe",
+      "Blood sugar"
+    ],
+    answer: ["Blood sugar"],
+    multipleAnswer: false,
+  },{
+    chapter: "Stroke Diagnosticss",
+    question: "2. Patient X presents to the emergency department (ED) with right-sided weakness and speech difficulty at 10:00 a.m., reporting onset at 8:30 a.m. The CT was unremarkable. The wife says the only medication her husband takes is Coumadin. The international normalized ratio (INR) result is 1.9. What can you expect to do next?",
+    options: [
+      "Mix and administer tissue plasminogen activator (PA) according to the patient's actual weight",
+      "Repeat the INR",
+      "Continue to monitor vital signs and neurologic checks according to ED policy",
+      "Prepare to discharge the patient from the ED"
+    ],
+    answer: ["Continue to monitor vital signs and neurologic checks according to ED policy"],
+    multipleAnswer: false,
+  },{
+    chapter: "Stroke Diagnosticss",
+    question: "3. Identify the main reason why a CT scan is the first imaging study done in acute stroke.",
+    options: [
+      "Most hospitals only have CT scan capability",
+      "While not completely reliable, it is least expensive and the one insurance will cover",
+      "There is less radiation involved than MRI",
+      "CT is last and reliable in ruling out cerebral hemorrhage"
+    ],
+    answer: ["CT is last and reliable in ruling out cerebral hemorrhage"],
+    multipleAnswer: false,
+  },{
+    chapter: "Stroke Diagnosticss",
+    question: "4. The consulting neurologist recommends vascular imaging in order to determite if there is a large vessel occlusion. What test would you expect to see done next?",
+    options: [
+      "PET scan",
+      "CT angiogram (CTA)",
+      "MRI",
+      "Transcranial Doppler (TCD)"
+    ],
+    answer: ["CT angiogram (CTA)"],
+    multipleAnswer: false,
+  },{
+    chapter: "Stroke Diagnosticss",
+    question: "5. Patient Y presents to your emergency department (ED) at 3:00 p.m. with left-sided weakness onset at 10:30 a.m. The CT software is out of service so a stat MRI/magnetic resonance angiography (MRA) package is done that shows a perfusion-diffusion mismatch. This indicates which of the following?",
+    options: [
+      "Presence of salvageable brain tissue, so thrombectomy should be considered",
+      "Absence of salvageable brain tissue, so thrombectomy is not an option",
+      "Technical error by imaging staff",
+      "Presence of an uncommon cerebral anomaly"
+    ],
+    answer: ["Presence of salvageable brain tissue, so thrombectomy should be considered"],
+    multipleAnswer: false,
+  },{
+    chapter: "Stroke Diagnosticss",
+    question: "6. Why is an echocardiogram done during acute hospital stays?",
+    options: [
+      "The cause of up to 30% of stokes is cardiac related",
+      "Itis only required on patients older than 80 years",
+      "To rule out incidental cardiomyopathy",
+      "All patients with stroke are at risk for cardiomy opathy within 10 year"
+    ],
+    answer: ["The cause of up to 30% of stokes is cardiac related"],
+    multipleAnswer: false,
+  },{
+    chapter: "Stroke Diagnosticss",
+    question: "7. Why would the neurologist order a transesophageal echocardiogram (TEE) ater the patient has already had a transthorace echocandiogram (TTE)?",
+    options: [
+      "Patient would not lie still for the TTE",
+      "TEE offers superior visualization as there is no impedance from chest muscles or rib cage",
+      "Latest guidelines recommend both be done for confirmed stroke patients",
+      "The neurologist made a mistake and should be reminded that an echocardiogram was already done"
+    ],
+    answer: ["TEE offers superior visualization as there is no impedance from chest muscles or rib cage"],
+    multipleAnswer: false,
+  },{
+    chapter: "Stroke Diagnosticss",
+    question: "8. Your stroke patient has just been ordered to have a video fluoroscopic svallowing exam. What is the provider looking for?",
+    options: [
+      "A. Confirmation of successful bedside swallow screen",
+      "B. Evaluation of swallowing function",
+      "C. Evidence of aspiration",
+      "D. Both B and C"
+    ],
+    answer: ["D. Both B and C"],
+    multipleAnswer: false,
+  },{
+    chapter: "Stroke Diagnosticss",
+    question: "9. What further diagnostic tool might be used for a patient with crypto-genic stroke prior to or shortly after discharge from the hospital?",
+    options: [
+      "Serial cardiac enzymes",
+      "Genetic mapping",
+      "Repeat CT in 1 month",
+      "Implantable cardiac monitor to check for atrial fibrillation"
+    ],
+    answer: ["Implantable cardiac monitor to check for atrial fibrillation"],
+    multipleAnswer: false,
+  },{
+    chapter: "Stroke Diagnosticss",
+    question: "10. Your patient was told that she had a stroke at some time in the past, but she insists she has never had symptoms. How did her neurologist know this?",
+    options: [
+      "Presence of encephalomacia on CT scan",
+      "Presence of positive Babinski's sign during neurologic exam",
+      "Prolonged QT interval on 12-lead EKG",
+      "Information from the spouse during history taking"
+    ],
+    answer: ["Presence of encephalomacia on CT scan"],
+    multipleAnswer: false,
+  },{
+    chapter: "Stroke Diagnosticss",
+    question: "11. A patient is brought to the emergency department (ED) by emergency medical services (EMS) with an original complaint of the worst headache of the patient's life, and is sleepy on arrival. You look to your ED colleague and say, 'T'll bet you it sa.ubarachnoid hemorrhage (SAH).' What diagnostic test would you expect to be ordered first?",
+    options: [
+      "Left middle cerebral artery (MCA) stroke",
+      "Lacunar stroke in the right basal ganglia",
+      "Complex migraine",
+      "Subarachnoid hemorrhage"
+    ],
+    answer: ["Subarachnoid hemorrhage"],
+    multipleAnswer: false,
+  },{
+    chapter: "Stroke Diagnosticss",
+    question: "12. Your patient's CT is negative for blood and there is high suspicion fot subarachnoid hemorrhage (SAH). What other diagnostic test might you be told to set up for?",
+    options: [
+      "Lumbar puncture",
+      "Repeat CT",
+      "Blood cultures",
+      "Caloric testing"
+    ],
+    answer: ["Lumbar puncture"],
+    multipleAnswer: false,
+  },{
+    chapter: "Stroke Diagnosticss",
+    question: "13. Which diagnostic tool has been proven to not only diagnose and monitor enhance IV tissue plasminogen activator (tPA) outcomes? vasospasm in subarachnoid hemorrhage (SAH) but also to predict and",
+    options: [
+      "EEG",
+      "Diffusion-weighted MRI",
+      "PET scan",
+      "Transcranial Doppler (TCD)"
+    ],
+    answer: ["Transcranial Doppler (TCD)"],
+    multipleAnswer: false,
+  },{
+    chapter: "Stroke Diagnosticss",
+    question: "14. Your patient has just had a diagnostic cerebral angiography. What are the most common complications you will monitor over the next 24 hours?",
+    options: [
+      "Insertion site hematoma, stroke, and adverse reaction to contrast",
+      "Insertion site hematoma, deep vein thrombosis (DVI), and adverse reaction to contrast dye",
+      "Fever, headache, and insertion site hematoma",
+      "Vessel wall tear, stroke, and DVT"
+    ],
+    answer: ["Insertion site hematoma, stroke, and adverse reaction to contrast"],
+    multipleAnswer: false,
+  },{
+    chapter: "Stroke Diagnosticss",
+    question: "15. The Brain Attack Coalition set separate standards for door-to-CT scan initiation and results. Which of the following is correct?",
+    options: [
+      "Door to CT in 35 minutes, results in 45 minutes",
+      "Door to CT in 25 minutes, results in 45 minutes",
+      "Door to CT in 10 minutes, results in 45 minutes",
+      "No completion standard timeframe; just results within 60 minutes"
+    ],
+    answer: ["Door to CT in 25 minutes, results in 45 minutes"],
+    multipleAnswer: false,
+  },{
+    chapter: "Stroke Diagnosticss",
+    question: "16. You are a stroke unit nurse and your new stroke patient has arrived from the emergency department (ED) without having a carotid ultrasound done. You call the provider to order one stat. Which would be the correct response by the provider?",
+    options: [
+      "Get a carotid ultrasound done stat",
+      "ACT angiogram was done that provided carotid imaging",
+      "The patient has an allergy to contrast dye, so a carotid ultrasound cannot be done",
+      "Carotid disease is so rare that it is not necessary to do carotid imaging in stroke patients"
+    ],
+    answer: ["ACT angiogram was done that provided carotid imaging"],
+    multipleAnswer: false,
+  },{
+    chapter: "Stroke Diagnosticss",
+    question: "17. More sensitive brain imaging bas contributed to the change in definiton of which of the following?",
+    options: [
+      "Cerebral edema",
+      "Acute ischemic stroke",
+      "Subarachnoid hemorrhage",
+      "Transient ischemic attack (TIA)"
+    ],
+    answer: ["Transient ischemic attack (TIA)"],
+    multipleAnswer: false,
+  },{
+    chapter: "Stroke Diagnosticss",
+    question: "18. You are working on a stroke unit with an assignment of four patients today On which of them would you expect to see a hypercoagulable work-up?",
+    options: [
+      "An 80-year-old male with right basal ganglia stroke",
+      "A 45-year-old female with subarachnoid hemorrhage (SAH)",
+      "A 28-year-old male with right middle cerebral artery (MCA) stroke",
+      "A 58-year-old female with lock-in syndrome"
+    ],
+    answer: ["A 28-year-old male with right middle cerebral artery (MCA) stroke"],
+    multipleAnswer: false,
+  },{
+    chapter: "Stroke Diagnosticss",
+    question: "19. Which of the following is true of CT imaging?",
+    options: [
+      "Bone and blood appear white and cerebrospinal fluid (CSE) appears black",
+      "Substances with increased density appear darker, while substances of less density appear lighter",
+      "It uses same radiologic technology as MRI imaging",
+      "Subarachnoid hemorrhage (SAH) classically has a white diamond shape in the center of the brain"
+    ],
+    answer: ["Bone and blood appear white and cerebrospinal fluid (CSE) appears black"],
+    multipleAnswer: false,
+  },{
+    chapter: "Stroke Diagnosticss",
+    question: "20. Which of the following is the recommended initial imaging for suspected subarachnoid hemorrhage (SAH)?",
+    options: [
+      "MRI scan with contrast",
+      "Cerebral angiography",
+      "Noncontrast CT scan",
+      "CT angiogram"
+    ],
+    answer: ["Noncontrast CT scan"],
+    multipleAnswer: false,
+  },{
+    chapter: "Stroke Diagnosticss",
+    question: "21. Early neurologic deterioration with a decrease in the Glasgow Coma Scale (GCS) score of 2 or more points is a hallmark of which type of stroke?",
+    options: [
+      "Spontaneous intracerebral hemorrhage (ICH)",
+      "Infratentorial shift",
+      "Vertebrobasilar syndrome",
+      "Basal ganglia stroke"
+    ],
+    answer: ["Spontaneous intracerebral hemorrhage (ICH)"],
+    multipleAnswer: false,
+  },{
+    chapter: "Stroke Diagnosticss",
+    question: "22. The presence of a 'spot sign' on a CT angiogram (CTA) and contri ethanced CT likely indicates which of the following?",
+    options: [
+      "Accidental additional pathology",
+      "Presence of contrast within a hematoma and increased risk of expansion",
+      "Absence of contrast within a large vessel clot",
+      "None of the above"
+    ],
+    answer: ["Presence of contrast within a hematoma and increased risk of expansion"],
+    multipleAnswer: false,
+  },{
+    chapter: "Stroke Diagnosticss",
+    question: "23. Which of the following are early CT imaging predictors of cerebral edema?",
+    options: [
+      "Frank hypodensity within the first 6 hours",
+      "Involvement of one third or more of the middle cerebral artery (MCA) territory",
+      "Early midline shift",
+      "All of the above"
+    ],
+    answer: ["All of the above"],
+    multipleAnswer: false,
+  },{
+    chapter: "Stroke Diagnosticss",
+    question: "24. Transcranial Doppler (TCD) ultrasonography has proven to be useful in detecting intracranial vessel abnormalities. Which of the following air-cumstances will produce the most useful results?",
+    options: [
+      "Posterior circulation strokes",
+      "Middle cerebral artery (MCA) strokes",
+      "Patients with poor bony windows",
+      "Moya Moya disease"
+    ],
+    answer: ["Middle cerebral artery (MCA) strokes"],
+    multipleAnswer: false,
+  },{
+    chapter: "Stroke Diagnosticss",
+    question: "25. In the hyperacute workup of acute ischemic stroke, what priority would you place on completion of a chest x-ray for most patients?",
+    options: [
+      "Immediately following noncontrast CT of brain",
+      "Immediately following lab work, prior to EKG",
+      "Following CT, lab work, and EKG",
+      "Following lab work, prior to EKG"
+    ],
+    answer: ["Following CT, lab work, and EKG"],
+    multipleAnswer: false,
+  },{
+    chapter: "Stroke Diagnosticss",
+    question: "26. The emergency medical services (EMS) personnel report that a 70-year old male with new onset left-sided weakness is taking dabigatran, an effect of this medication? oral anticoagulant. Which blood test will be helpful in determining the",
+    options: [
+      "Prothrombin time (PT)/INR",
+      "Partial thromboplastin time (PTT)",
+      "Platelet count",
+      "None of the above"
+    ],
+    answer: ["None of the above"],
+    multipleAnswer: false,
+  },{
+    chapter: "Stroke Diagnosticss",
+    question: "27. Dr. West, the stroke neurologist, mentions that a malignant middle cerebral artery (MCA) sign was noted on Mrs. Bender's CT. What did the neurologist see?",
+    options: [
+      "Malignant tumor in the area of the MCA territory causing mass effect",
+      "Ischemic infarct involving more than 50% of the MCA territory with a midline shift",
+      "Hemorrhagic infarct involving more than 30% of the MCA territory with a midline shift",
+      "Vasospasm of the proximal MCA resulting in 50% reduced perfusion to territory"
+    ],
+    answer: ["Ischemic infarct involving more than 50% of the MCA territory with a midline shift"],
+    multipleAnswer: false,
+  },{
+    chapter: "Stroke Diagnosticss",
+    question: "28. When President Dwight D. Eisenhower had a stroke in 1957, his diagnosis was left middle cerebral artery (MCA) infarct. Which diagnostic test would have contributed to his stroke diagnosis?",
+    options: [
+      "Noncontrast CT",
+      "MRI",
+      "Echocardiogram",
+      "None of the above"
+    ],
+    answer: ["None of the above"],
+    multipleAnswer: false,
+  },{
+    chapter: "Stroke Diagnosticss",
+    question: "29. A patient who had a cerebral angiogram this morning has become dia-phoretic and is complaining of lower abdominal pain and back pain. You suspect which of the following?",
+    options: [
+      "Arterial thrombosis with restricted perfusion pattern",
+      "Muscle spasm from prolonged immobility",
+      "Arterial dissection with retroperitoneal hemorrhage",
+      "Unintentional migration of the closure device"
+    ],
+    answer: ["Arterial dissection with retroperitoneal hemorrhage"],
+    multipleAnswer: false,
+  },{
+    chapter: "Stroke Diagnosticss",
+    question: "30. Your patient is headed to radiology for a CT angiogram and you do a quick review of reported allergies knowing that the patient will be getting contrast. Which of the following allergies will you immediately report?",
+    options: [
+      "Shellfish",
+      "Red dye #5",
+      "Eggs",
+      "Nickel alloy"
+    ],
+    answer: ["Shellfish"],
+    multipleAnswer: false,
+  },{
+    chapter: "Acute Care - Neurological Assessment",
+    question: "1. During National Institutes of Health Stroke Scale (NIHS) scoring, your patient has intact sensation when each side is stimulated individually, but is unaware of being touched on the left side when both sides are stimulated simultaneously. What condition is apparent?",
+    options: [
+      "Neuropathy",
+      "Apraxia",
+      "Extinction",
+      "Paresthesia"
+    ],
+    answer: ["Extinction"],
+    multipleAnswer: false,
+  },{
+    chapter: "Acute Care - Neurological Assessment",
+    question: "2. Which is true of subarachnoid hemorrhage (SAH) scoring?",
+    options: [
+      "The Hunt and Hess score is based on symptoms, and the Fisher scale score is based on amount/location of blood",
+      "The Hunt and Hess score is based on amount/location of blood, and the Fisher scale score is based on symptoms",
+      "The World Federation of Neurological Surgeons (WFNS) score is based on amount/location of blood on CT",
+      "The WENS score is based on age and symptoms"
+    ],
+    answer: ["The Hunt and Hess score is based on symptoms, and the Fisher scale score is based on amount/location of blood"],
+    multipleAnswer: false,
+  },{
+    chapter: "Acute Care - Neurological Assessment",
+    question: "3. The ABCD, score is used for which of the following situations?",
+    options: [
+      "Calculating risk of vasospasm in subarachnoid hemorrhage (SAH)",
+      "Determining eligibility for acute rehabilitation admission",
+      "Predicting short-term risk of stroke in patients with transient ischemic attack (TIA)",
+      "Calculating appropriate antithrombotic dose in nonvalvular atrial fibrillation"
+    ],
+    answer: ["Predicting short-term risk of stroke in patients with transient ischemic attack (TIA)"],
+    multipleAnswer: false,
+  },{
+    chapter: "Acute Care - Neurological Assessment",
+    question: "4. The neurologist completes a neurologic exam and tells you that the patient has the four Ds with crossed findings. Where is the patient's stroke?",
+    options: [
+      "Tentorium",
+      "Basal ganglia",
+      "Midbrain",
+      "Brainstem"
+    ],
+    answer: ["Brainstem"],
+    multipleAnswer: false,
+  },{
+    chapter: "Acute Care - Neurological Assessment",
+    question: "5, Which of the following correctly represents the loss of half of the field of view on the same side in both eyes?",
+    options: [
+      "Amaurosis fugax",
+      "Bitemporal hemianopia",
+      "Lateral hemianopia",
+      "Homonymous hemianopia"
+    ],
+    answer: ["Homonymous hemianopia"],
+    multipleAnswer: false,
+  },{
+    chapter: "Acute Care - Neurological Assessment",
+    question: "6. When utilizing the Glasgow Coma Scale (GCS) to assess a stroke patient, which of the following is true?",
+    options: [
+      "It is the most widely studied coma scale with high reliability in the stroke population",
+      "Like the National Institutes of Health Stroke Scale (NIHSS), a low score is indicative of less deficit",
+      "A normal motor score is possible for patients with hemiparesis",
+      "Intubated patients are automatically scored a 2 for verbal response"
+    ],
+    answer: ["A normal motor score is possible for patients with hemiparesis"],
+    multipleAnswer: false,
+  },{
+    chapter: "Acute Care - Neurological Assessment",
+    question: "7. Which cranial nerve (CN) is being assessed when you ask your patient to smile and raise his or her eyebrows?",
+    options: [
+      "CN III",
+      "CN VII",
+      "CN I",
+      "CN XII"
+    ],
+    answer: ["CN VII"],
+    multipleAnswer: false,
+  },{
+    chapter: "Acute Care - Neurological Assessment",
+    question: "8. Which cranial nerve (CN) is being assessed when you ask your patient to follow your finger with his or her eyes as you move it laterally/side to side?",
+    options: [
+      "CN III",
+      "CN II",
+      "CN VI",
+      "CN IV"
+    ],
+    answer: ["CN III"],
+    multipleAnswer: false,
+  },{
+    chapter: "Acute Care - Neurological Assessment",
+    question: "9. In the National Institutes of Health Stroke Scale (NIHSS) score of a right middle cerebral artery (MCA) ischemic stroke patient, the patient scored O for motor arm bilaterally, 4 for motor leg on the left side, and was unable to perform the limb ataxia test successfully on the left leg. The patient was able to do it successfully on the right (unaffected) side. What total score does the patient get for limb ataxia?",
+    options: [
+      "Present in both upper and lower limbs",
+      "0-Absent",
+      "1-Present in upper or lower limb",
+      "Calculating NIHSS score does not apply to this patient"
+    ],
+    answer: ["0-Absent"],
+    multipleAnswer: false,
+  },{
+    chapter: "Acute Care - Neurological Assessment",
+    question: "10. The National Institutes of Health Stroke Scale (NIHSS) admission score has been proven valid as a predictor of discharge disposition. Which of the following is true of admission NIHSS scores?",
+    options: [
+      "Score 1 to 5: anticipate discharge to home",
+      "Score 6 to 13: anticipate discharge to acute rehabilitation facility",
+      "Score higher than 13: anticipate discharge to extended care facility",
+      "All of the above"
+    ],
+    answer: ["All of the above"],
+    multipleAnswer: false,
+  },{
+    chapter: "Acute Care - Neurological Assessment",
+    question: "11. A patient with a preadmission modified Rankin Scale (mRS) score of 1 was",
+    options: [
+      "Independent in activities of daily living (ADL)",
+      "Required some help, but was able to walk independently",
+      "Required moderate assistance, and walked with walker",
+      "Completely dependent for all ADL"
+    ],
+    answer: ["Independent in activities of daily living (ADL)"],
+    multipleAnswer: false,
+  },{
+    chapter: "Acute Care - Neurological Assessment",
+    question: "12 Which is true of the Barthel Index (BI) score?",
+    options: [
+      "It is a required functional score calculated daily by the bedside nurse",
+      "The higher the score, the better the functional ability",
+      "It has 100% correlative value with ischemic and hemorrhagic patients",
+      "It is synonymous with FIM® score"
+    ],
+    answer: ["The higher the score, the better the functional ability"],
+    multipleAnswer: false,
+  },{
+    chapter: "Acute Care - Neurological Assessment",
+    question: "13. Which of the following is a late finding in the neurologic assessment of a stroke patient?",
+    options: [
+      "Headache",
+      "Increased blood pressure (BP)",
+      "Hippus response to light",
+      "Decerebrate posturing"
+    ],
+    answer: ["Decerebrate posturing"],
+    multipleAnswer: false,
+  },{
+    chapter: "Acute Care - In the Intensive Care Unit",
+    question: "1. Patients with subarachnoid hemorrhage (SAH) should be monitored tor which common complications of hemorrhagic stroke? Select all that are correct.",
+    options: [
+        "Hyperactivity",
+        "Hydrocephalus",
+        "Cerebral vasospasm",
+        "Seizure activity"
+    ],
+    answer: [
+      "Hydrocephalus",
+      "Cerebral vasospasm",
+      "Seizure activity"
+    ],
+    multipleAnswer: true,
+  },{
+    chapter: "Acute Care - In the Intensive Care Unit",
+    question: "2. Your patient just returned from having endovascular embolization of an arteriovenous malformation (AVM). Your nursing care for the next hour will include which of the following?",
+    options: [
+      "Vital signs and neurologic checks q 15 minutes along with groin site checks",
+      "Vital signs and neurologic checks q 15 minutes along with scalp incision checks",
+      "Therapeutic hypothermia with goal of 35°C",
+      "Education about the procedure and possible complications"
+    ],
+    answer: ["Vital signs and neurologic checks q 15 minutes along with groin site checks"],
+    multipleAnswer: false,
+  },{
+    chapter: "Acute Care - In the Intensive Care Unit",
+    question: "3. Why is constipation prevented in the intensive care unit (ICU)?",
+    options: [
+      "A. Neurologic ICU patients are prone to constipation secondary to cerebral edema",
+      "B. Patients with constipation are more likely to develop Sundowner's syndrome",
+      "D. Both A and B",
+      "C. Straining as a result of constipation causes blood pressure (BP) spikes"
+    ],
+    answer: ["C. Straining as a result of constipation causes blood pressure (BP) spikes"],
+    multipleAnswer: false,
+  },{
+    chapter: "Acute Care - In the Intensive Care Unit",
+    question: "4. Hypoxia in the intensive care unit (ICU) may be indicative of what condition?",
+    options: [
+      "Aspiration pneumonia",
+      "Hypoventilation",
+      "Airway obstruction",
+      "All of the above"
+    ],
+    answer: ["All of the above"],
+    multipleAnswer: false,
+  },{
+    chapter: "Acute Care - In the Intensive Care Unit",
+    question: "5. Your intubated intracerebral hemorrhage patient is restless, despite seda-tion; the patient's blood pressure (BP) has risen to 176/90. What is your first action?",
+    options: [
+      "Assess the patient for respiratory distress or other causes of pain",
+      "Increase the dose of sedative within parameters and monitor for response",
+      "Tell the patient care assistant (PCA) to notify the nurse who is going to cover for you while you go to lunch",
+      "Document the change in your notes so that if further deterioration occurs, there will be clear trending of events"
+    ],
+    answer: ["Assess the patient for respiratory distress or other causes of pain"],
+    multipleAnswer: false,
+  },{
+    chapter: "Acute Care - In the Intensive Care Unit",
+    question: "6. You are orienting a new intensive care unit (ICU) nurse who asks you why a 69-year-old ischemic stroke patient with no history of diabetes needs to have every 4 hours glucose checks. Your best response would be which of the following?",
+    options: [
+      "I have no idea either, but it's ordered, so we do it.",
+      "Hyperglycemia is common in ischemic stroke, even without a diabetes history, and can worsen outcomes if not controlled.",
+      "Hypoglycemia can occur suddenly after ischemic stroke as a result of increased intracranial pressure, and can worsen outcomes if not controlled.",
+      "Patients are known to deny a history of diabetes, so we test all our stroke patients."
+    ],
+    answer: ["Hyperglycemia is common in ischemic stroke, even without a diabetes history, and can worsen outcomes if not controlled."],
+    multipleAnswer: false,
+  },{
+    chapter: "Acute Care - In the Intensive Care Unit",
+    question: "7. Fever is common among stroke patients; what other complication should be anticipated for these patients as a result of fever?",
+    options: [
+      "Urinary tract infection",
+      "Aspiration pneumonia",
+      "Cerebral edema",
+      "Hypervolemia"
+    ],
+    answer: ["Cerebral edema"],
+    multipleAnswer: false,
+  },{
+    chapter: "Acute Care - In the Intensive Care Unit",
+    question: "8. While providing therapeutic cooling with an external cooling device, what condition will you be monitoring closely?",
+    options: [
+      "Constipation",
+      "Shivering",
+      "Cognitive decline",
+      "None of the above"
+    ],
+    answer: ["Shivering"],
+    multipleAnswer: false,
+  },{
+    chapter: "Acute Care - In the Intensive Care Unit",
+    question: "9. In the report from the emergency department (ED) nurse, you are told that your stroke patient passed the swallow screen and took baby aspirin orally, along with a cup of decaf coffee. In what circumstance might the swallow screen be repeated during this patient's hospital stay?",
+    options: [
+      "If there is no documentation of the swallow screen in the patient's medical record",
+      "If there is a change in the National Institutes of Health Stroke Scale (NIHSS) score of 4 points or more, or clinical deterioration",
+      "If the patient is noted to be drooling",
+      "All of the above"
+    ],
+    answer: ["All of the above"],
+    multipleAnswer: false,
+  },{
+    chapter: "Acute Care - In the Intensive Care Unit",
+    question: "10. You are caring for two ischemic stroke patients. Both had repeat imaging today. Patient A's was scheduled; patient B's was done as a result of new-onset headache and drowsiness. Both showed hemorrhagic transformar tion. Which of the following would most likely be true?",
+    options: [
+      "Patient A had petechial hemorrhage and patient B had parenchymal hemorrhage",
+      "Patient A had parenchymal hemorrhage and patient B had petechial hemorrhage",
+      "Both had intraventricular hemorrhage",
+      "There is need for a second opinion on patient A's imaging as the patient was asymptomatic so could not have hemorrhagic transformation"
+    ],
+    answer: ["Patient A had petechial hemorrhage and patient B had parenchymal hemorrhage"],
+    multipleAnswer: false,
+  },{
+    chapter: "Acute Care - In the Intensive Care Unit",
+    question: "11. What is the difference between cerebral salt wasting (CSW) and syne drome of inappropriate antidiuretic hormone (SIADH)?",
+    options: [
+      "There is no difference; CSW is the older term for SIADH",
+      "CSW symptom is hyponatremia; SIADH symptom is hypernatremia",
+      "CSW is often seen with subarachnoid hemorrhage (SAH) patients and SIADH is often seen with ischemic stroke patients",
+      "CSW is treated with sodium replacement and SIADH is treated with fluid restriction"
+    ],
+    answer: ["CSW is treated with sodium replacement and SIADH is treated with fluid restriction"],
+    multipleAnswer: false,
+  },{
+    chapter: "Acute Care - In the Intensive Care Unit",
+    question: "12. Which of the following is not true about nursing care in the intensive cane unit (ICU)?",
+    options: [
+      "Postendovascular clot retrieval patients require monitoring of groin site",
+      "Temperature monitoring is essential to facilitate treatment to maintain normothermia",
+      "Systolic blood pressure (SP) parameters for ischemic and intracere bral hemotrhage patients are 140 to 220 mmHg",
+      "Average patient load is one to two patients per nurse"
+    ],
+    answer: ["Systolic blood pressure (SP) parameters for ischemic and intracere bral hemotrhage patients are 140 to 220 mmHg"],
+    multipleAnswer: false,
+  },{
+    chapter: "Acute Care - In the Intensive Care Unit",
+    question: "13. Reperfusion syndrome is best described by which of the following?",
+    options: [
+      "Acute neurologic change after tissue plasminogen activator (tPA) infusion during second stroke event",
+      "Ipsilateral headache or contralateral neurologic deficit after successful clot retrieval",
+      "Acute onset hypotension following second pass of mechanical retrieval device",
+      "Ipsilateral seizure following successful embolization of aneurysm"
+    ],
+    answer: ["Ipsilateral headache or contralateral neurologic deficit after successful clot retrieval"],
+    multipleAnswer: false,
+  },{
+    chapter: "Acute Care - In the Intensive Care Unit",
+    question: "14. What is the landmark for leveling an external ventricular drainage (EVD) catheter in a supine patient?",
+    options: [
+      "Tip of the nose",
+      "Clavicular notch",
+      "Tragus of the ear",
+      "Temporal window"
+    ],
+    answer: ["Tragus of the ear"],
+    multipleAnswer: false,
+  },{
+    chapter: "Acute Care - In the Intensive Care Unit",
+    question: "15. A 58-year-old female patient was admitted yesterday with a small subarachnoid hemorrhage (SAH). Her medical history includes metabolic syndrome for which she was on a strict diet, having refused any other medical treatment. Her current vital signs are blood pressure (BP) 134/78, heart rate (HR) 86, respiratory rate (RR) 16, temperature 37°C, and pulse oxygen 88% on room air. What should be your next action?",
+    options: [
+      "Remove pulse oxygen sensor as she looks comfortable and vitals are stable",
+      "Recheck pulse oxygen and notify provider for oxygen order",
+      "Recheck pulse oxygen with next scheduled check of vital signs and neurologic status",
+      "Confirm that the patient is not feeling short of breath and document"
+    ],
+    answer: ["Recheck pulse oxygen and notify provider for oxygen order"],
+    multipleAnswer: false,
+  },{
+    chapter: "Acute Care - In the Intensive Care Unit",
+    question: "16. One of your patients is a married, 32-year-old mother of 10-year-old twins. She suffered a hemorrhagic stroke a week ago, and things are looking grim. The patient's sister refuses to accept the fact that she may not survive; her husband is saying that she would not have wanted live this way, and is frankly talking about whether he should discontinue. What is your role as a bedside nurse?",
+    options: [
+      "Avoid the topic each time either of them mentions it, as it is up to the",
+      "Communicate the situation to the health care team and participate in social worker to deal with this",
+      "Sit the sister down and get her to understand how unlikely recovery",
+      "A family meeting is needed to discuss the situation",
+      "None of the above"
+    ],
+    answer: ["Communicate the situation to the health care team and participate in social worker to deal with this"],
+    multipleAnswer: false,
+  },{
+    chapter: "Acute Care - In the Intensive Care Unit",
+    question: "17. Most deaths following middle cerebral artery (MCA) occlusion in older patients occur during what time period?",
+    options: [
+      "During the first 24 hours",
+      "3 to 4 days",
+      "7 to 10 days",
+      "30 to 60 days"
+    ],
+    answer: ["3 to 4 days"],
+    multipleAnswer: false,
+  },{
+    chapter: "Acute Care - In the Intensive Care Unit",
+    question: "18. Mr. Poole, your patient in Room 408, is proving to be quite challenging to keep in bed. He is impulsive and does not seem to be aware of one side of his body. In what area did his stroke occur?",
+    options: [
+      "Left cerebellum",
+      "Right basal ganglia",
+      "Right parietal lobe",
+      "Left temporal lobe"
+    ],
+    answer: ["Right parietal lobe"],
+    multipleAnswer: false,
+  },{
+    chapter: "Acute Care - In the Stroke Unit",
+    question: "1. On Day 7 postcoiling, your aneurysmal subarachnoid hemorrhage 5ak. patient says she felis good enougy to go home and wonde why he dist tor said she has to stay another 3 to 4 davs. Your answer would be which of the following?",
+    options: [
+      " Her stroke education has not been completed yet",
+      "She is at high risk of rebleed",
+      "She is at high risk of vasospasm",
+      "Her anticoagulant has not yet reached therapeutic level"
+    ],
+    answer: ["She is at high risk of vasospasm"],
+    multipleAnswer: false,
+  },{
+    chapter: "Acute Care - In the Stroke Unit",
+    question: "2. Your patient with left hemisphere stroke complains of right arm pain and scores it as 3 of 10 on the pain scale. What would your next nursing action",
+    options: [
+      "Educate the patient that pain is a good sign that sensation is intact",
+      "Notify the provider and anticipate repeat CT scan",
+      "Document as new pain and include in report to next shift",
+      "Reposition the patient, ensuring that the affected arm is well supported"
+    ],
+    answer: ["Reposition the patient, ensuring that the affected arm is well supported"],
+    multipleAnswer: false,
+  },{
+    chapter: "Acute Care - In the Stroke Unit",
+    question: "3. Your new patient complains of headache and you have an order for acetaminophen PO. You are about to administer a dose when you remember that you were not told whether the patient had a dysphagia screen done in the emergency department (ED). Your next step is to which of the following?",
+    options: [
+      "Give the medication anyway because the patient seems alert and able to swallow okay",
+      "Call the ED and leave a message for the nurse to call you back with the answer",
+      "Perform the dysphagia screen now",
+      "Apologize and explain that you will be back in a few minutes after you check the patient's chart"
+    ],
+    answer: ["Perform the dysphagia screen now"],
+    multipleAnswer: false,
+  },{
+    chapter: "Acute Care - In the Stroke Unit",
+    question: "4. Ontounds, Dr. Hamilton, the stroke neurologist, is reviewing Mrs. Smith's medical record. It is Day 2 for this 72-year-old with a lacunar stroke. What would have made the provider quiz the patient about family history of diabetes?",
+    options: [
+      "Hgb A1C of 9%",
+      "Fasting glucose of 122",
+      "Small vessel disease on CT",
+      "Remembering another current patient-same last name-with diabetes"
+    ],
+    answer: ["Hgb A1C of 9%"],
+    multipleAnswer: false,
+  },{
+    chapter: "Acute Care - In the Stroke Unit",
+    question: "5. During rounds, your stroke patient begs Dr. Harms to let him have water, despite the thorough explanation you provided to the patient earlier that he failed the bedside swallow screen and the speech and language pathologist (SLP) will need to do a more thorough evaluation before he can have anything to drink. Dr. Harms states that as this patient can speak clearly and is alert, he must be able to swallow adequately. The provider orders the patient to have liquids as dela Your best response would be to:",
+    options: [
+      "Repeat the evidence-based dysphagia screen",
+      "Accept that the provider is a doctor and in charge, so you get the patient some ice water",
+      "Ignore the provider's order, and refuse to give the patient water",
+      "Page the SLP stat to come and evaluate the patient"
+    ],
+    answer: ["Page the SLP stat to come and evaluate the patient"],
+    multipleAnswer: false,
+  },{
+    chapter: "Acute Care - In the Stroke Unit",
+    question: "6. Postural (orthostatic) hypotension is considered when which of the following conditions is present?",
+    options: [
+      "A 10-mmhg drop in systolic blood pressure (SBP) after 2 hours of sit ting out of bed in a chair",
+      "A 20-mmHg drop in SBP within 5 minutes of standing atter supine rest",
+      "Hemorrhagic stroke-postural hypotension is not applicable to ise.emic stroke",
+      "A 20-mmHg drop in SBP after initiation of new antihypertensine medication"
+    ],
+    answer: ["A 20-mmHg drop in SBP within 5 minutes of standing after supine rest"],
+    multipleAnswer: false,
+  },{
+    chapter: "Acute Care - In the Stroke Unit",
+    question: "7. Which of the following is not a recommended treatment for prevention of venous thrombosis?",
+    options: [
+      "Low-molecular weight heparin",
+      "Elastic compression stockings, also called thromboembolic disease (TED) stockings",
+      "Intermittent pneumatic compression (IPC) devices, also called sequential compression devices (SCD)",
+      "Heparinoids"
+    ],
+    answer: ["Elastic compression stockings, also called thromboembolic disease (TED) stockings"],
+    multipleAnswer: false,
+  },{
+    chapter: "Acute Care - In the Stroke Unit",
+    question: "8. For which of the following conditions would you be most concern about complications with use of anticoagulation for deep venous thrombosis (DVT) prophylaxis?",
+    options: [
+      "Anterior cerebral artery ischemic stroke",
+      "Secured aneurysmal subarachnoid hemorrhage (SAH)",
+      "Basal ganglia ischemic stroke",
+      "Subcortical intracerebral hemorrhage (ICH)"
+    ],
+    answer: ["Subcortical intracerebral hemorrhage (ICH)"],
+    multipleAnswer: false,
+  },{
+    chapter: "Acute Care - In the Stroke Unit",
+    question: "9. Which nursing measure would best reduce the risk of urinary tract infection (UT) poststroke?",
+    options: [
+      "Encouragement of oral fluid intake",
+      "Regular schedule of bladder elimination",
+      "Administration of as-needed acetaminophen",
+      "Close monitoring of intake and output"
+    ],
+    answer: ["Regular schedule of bladder elimination"],
+    multipleAnswer: false,
+  },{
+    chapter: "Acute Care - In the Stroke Unit",
+    question: "10. Why are stroke patients at higher risk for urinary tract infection (UTI)?",
+    options: [
+      "High incidence of urinary incontinence and retention due to neuro-logic insult",
+      "Poor hygiene associated with hemiparesis results in increased risk",
+      "Intolerance of prophylactic antibiotics increases risk",
+      "Inadequate bladder catheter care by neuroscience staff increases risk"
+    ],
+    answer: ["High incidence of urinary incontinence and retention due to neuro-logic insult"],
+    multipleAnswer: false,
+  },{
+    chapter: "Acute Care - In the Stroke Unit",
+    question: "11. Nursing care for stroke patients includes ensuring that they are repositioned frequently. The reason that this is more critical for stroke patients than for other patients is that",
+    options: [
+      "In addition to neurologic damage with an infarct, there is also dermatologic damage resulting in increased susceptibility to skin breakdown",
+      "There are regulatory requirements for reporting skin breakdown related to stroke that significantly impact reimbursements",
+      "Due to motor and sensory deficits, stroke patients often cannot reposition themselves off pressure points or feel the pain associated with early skin breakdown",
+      "Repositioning of stroke patients is not a nursing care priority"
+    ],
+    answer: ["Due to motor and sensory deficits, stroke patients often cannot reposition themselves off pressure points or feel the pain associated with early skin breakdown"],
+    multipleAnswer: false,
+  },{
+    chapter: "Acute Care - In the Stroke Unit",
+    question: "12. In the report, you are told that Mr. Todd, a 58-year-old with a right middle cerebral artery (MCA) stroke is experiencing neglect. How will you incorporate this information into your nursing plan of care?",
+    options: [
+      "Turn bed around so that the patient's left side is facing the door",
+      "Approach Mr. Todd from the right side",
+      "Place a sign over the bed indicating that all activities are to be initiated from the left side",
+      "Place the bedside table on the left side"
+    ],
+    answer: ["Approach Mr. Todd from the right side"],
+    multipleAnswer: false,
+  },{
+    chapter: "Acute Care - In the Stroke Unit",
+    question: "13. Your patient's neurologist documented that the patient had a cryptogenic stroke. You are unfamiliar with this term and look it up. Which of the following is true about what you learned?",
+    options: [
+      "The patient has a familial tendency toward stroke from a distant relative",
+      "The likelihood of death within 1 year is 80%",
+      "The cause of the stroke is unknown despite a full workup",
+      "The patient had no symptoms prior to the stroke"
+    ],
+    answer: ["The cause of the stroke is unknown despite a full workup"],
+    multipleAnswer: false,
+  },{
+    chapter: "Acute Care - In the Stroke Unit",
+    question: "14. Which of the following examples illustrates aphasia?",
+    options: [
+      "A patient who refers to a fork as a ring, and a call bell as a muffin",
+      "A patient whose speech is slurred and unintelligible",
+      "A patient who cannot initiate a sentence, but can repeat commands after you",
+      "A patient who refuses to speak"
+    ],
+    answer: ["A patient who refers to a fork as a ring, and a call bell as a muffin"],
+    multipleAnswer: false,
+  },{
+    chapter: "Acute Care - In the Stroke Unit",
+    question: "15. Your ischemic patient had mechanical thrombectomy. The report states that the patient was recanalized. You know that this means",
+    options: [
+      "A second circulatory path was able to be established",
+      "Blood flow was restored to the arterial occlusion site",
+      "Their groin site was closed with the plug-style device",
+      "Both groins were punctured so assessment of both sites is essential"
+    ],
+    answer: ["Blood flow was restored to the arterial occlusion site"],
+    multipleAnswer: false,
+  },{
+    chapter: "Acute Care - In the Stroke Unit",
+    question: "16. Your ischemic patient was admitted from the emergency department (ED) to the stroke unit at 10:00 p.m. yesterday (Thursday, after recei ing IV tissue plasminogen activator (tPA) at 9:00 p.m. It is now Friday 9:00 p.m. and you know that for your patient to have the best outcome according to evidence-based guidelines, you need to accomplish whach of the following?",
+    options: [
+      "Documentation of vital signs and neurologic checks every 15 minutes until midnight",
+      "Risk factor education prior to midnight",
+      "Documentation of dysphagia screen prior to each medication administration",
+      "Administration of aspirin between 9:00 p.m. and midnight"
+    ],
+    answer: ["Administration of aspirin between 9:00 p.m. and midnight"],
+    multipleAnswer: false,
+  },{
+    chapter: "Acute Care - In the Stroke Unit",
+    question: "17. You recently attended the International Stroke Conference (ISC) and leamed about the different levels and classes of evidence and what they mean. You are preparing to do an in service for your colleagues. Which of the failowing is correct information to include?",
+    options: [
+      "A. 'Level' refers to the estimate of certainty based on size of population studied, and 'class' refers to the estimate of benefit versus risk",
+      "B. Class 1, Level A recommendations have the highest likelihood of benefit",
+      "C. Both A and B are correct",
+      "D. The terms 'level' and 'class' both refer to the degree of expertise of the investigators"
+    ],
+    answer: ["C. Both A and B are correct"],
+    multipleAnswer: false,
+  },{
+    chapter: "Acute Care - In the Stroke Unit",
+    question: "18. You receive a 50-year-old ischemic stroke patient from the neurologic intensive care unit (ICU) who is in a wheelchair and wearing a helmet. You know that the patient will wear the helmet at all times except for which situation?",
+    options: [
+      "During daily hygiene",
+      "During occupational therapy",
+      "During visiting hours",
+      "At meal times"
+    ],
+    answer: ["During daily hygiene"],
+    multipleAnswer: false,
+  },{
+    chapter: "Acute Care - In the Stroke Unit",
+    question: "19. Your 80-year-old patient and his family have just elected for do not resuscitate (DNR) status due to his diagnosis 6 months ago of metastatic lung cancer and now this ischemic stroke. Which of the following describes the changes to his care?",
+    options: [
+      "Cessation of daily lab work",
+      "Reduction of frequency of vital signs and neurologic checks to once daily",
+      "Cessation of therapy services",
+      "None of the above"
+    ],
+    answer: ["None of the above"],
+    multipleAnswer: false,
+  },{
+    chapter: "Acute Care - In the Stroke Unit",
+    question: "20. Right before lunch, the patient care assistant mentions that a patient coughed a lot while being fed breakfast. Your best next action would be which of the following?",
+    options: [
+      "Monitor the patient's temperature and breath sounds for the next 24 hours",
+      "Repeat the swallow screen right away before any more medications or lunch",
+      "Ask the patient if there are any other symptoms of a cold",
+      "Remind the patient care assistant to have the patient tuck the chin with each swallow"
+    ],
+    answer: ["Repeat the swallow screen right away before any more medications or lunch"],
+    multipleAnswer: false,
+  },{
+    chapter: "Acute Care - In the Stroke Unit",
+    question: "21. Your stroke patient's monitor shows atrial fibrillation. She says she feds fine and does not mind that rhythm so does not want any procedures ta treat it, and does not like blood thinners. What is your best response?",
+    options: [
+      "Explain that untreated atrial fibrillation results in extreme fatigue that inhibits rehabilitation",
+      "Explain that untreated atrial fibrillation can deteriorate to ventricular fibrillation",
+      "Explain that untreated atrial fibrillation puts the patient at risk for another stroke, and is likely the cause of this stroke",
+      "Accept the patient's right to choose the treatment plan and document that choice"
+    ],
+    answer: ["Explain that untreated atrial fibrillation puts the patient at risk for another stroke, and is likely the cause of this stroke"],
+    multipleAnswer: false,
+  },{
+    chapter: "Acute Care - In the Stroke Unit",
+    question: "22. In reviewing your patient's medical history, you note a risk factor for ischemic stroke. Which of the following did you see?",
+    options: [
+      "Factor V Leiden",
+      "Thrombocytopenia",
+      "Elevated creatinine",
+      "Hypokalemia"
+    ],
+    answer: ["Factor V Leiden"],
+    multipleAnswer: false,
+  },{
+    chapter: "Acute Care - In the Stroke Unit",
+    question: "23. In providing education to your transient ischemic attack (TIA) patient, which of the statements by the patient indicates that an understanding of the information?",
+    options: [
+      "TIAs are usually caused by small bleeds in the brain that resolve on their own.",
+      "It is important to call 911 immediately if I experience these symptoms again because it could mean that I am having a stroke.",
+      "Because TIAs don't cause permanent damage, I do not need to worry if I have another one.",
+      "TIAs are usually caused by brief synaptic gaps in the brain during extreme physical activity."
+    ],
+    answer: ["It is important to call 911 immediately if I experience these symptoms again because it could mean that I am having a stroke."],
+    multipleAnswer: false,
+  },{
+    chapter: "Acute Care - In the Stroke Unit",
+    question: "24. The provider is reviewing the international normalized ratio (INR) results of a patient with a history of embolic stroke who is now on warfarin. Which of the following indicates a therapeutic value for this patient?",
+    options: [
+      "1.4",
+      "4.5",
+      "2.5",
+      "0.5"
+    ],
+    answer: ["2.5"],
+    multipleAnswer: false,
+  },{
+    chapter: "Acute Care - In the Stroke Unit",
+    question: "25. A 61-year-old female subarachnoid hemorrhagic patient is getting ready to be discharged to home. As you are reviewing instructions with her son for what to do if she develops stroke symptoms, which response indicates that he needs more teaching?",
+    options: [
+      "I should take her to the emergency room right away.",
+      "I should note the time that the symptoms started.",
+      "I should call 911 right away.",
+      "I should make sure that I have her medication list."
+    ],
+    answer: ["I should take her to the emergency room right away."],
+    multipleAnswer: false,
+  },{
+    chapter: "Acute Care - In the Stroke Unit",
+    question: "26. Which of the following would be included in the discharge education of an ischemic stroke patient going home?",
+    options: [
+      "Make every effort to keep all follow-up appointments scheduled.",
+      "Eat a diet low in saturated fat and high in sodium.",
+      "Both A and B.",
+      "Neither A nor B."
+    ],
+    answer: ["Make every effort to keep all follow-up appointments scheduled."],
+    multipleAnswer: false,
+  },{
+    chapter: "Acute Care - In the Stroke Unit",
+    question: "27. Your stroke patient has been found to have 85% right carotid stenosis and is scheduled for carotid endarterectomy tomorrow. Your patient asks if vision will return to normal postop. What is your best response?",
+    options: [
+      "Removal of the plaque sometimes results in reversal of symptoms",
+      "Carotid endarterectomy is for prevention of another stroke; it will not change the damage done already from a stroke",
+      "The patient will receive extensive vision therapy after surgery that will restore vision",
+      "Excuse yourself and notify the provider that the patient is not back to baseline, so surgery will need to be delayed"
+    ],
+    answer: ["Carotid endarterectomy is for prevention of another stroke; it will not change the damage done already from a stroke"],
+    multipleAnswer: false,
+  },{
+    chapter: "Acute Care - In the Stroke Unit",
+    question: "28. It is Day 3 for your left middle cerebral artery MCA) stroke patient. You observe the patient care assistant working with the patient. For which of the following would you need to intervene?",
+    options: [
+      "The patient care assistant assists the patient to ambulate to the bathroom and back to bed",
+      "The patient care assistant assists the patient with a bath",
+      "The patient care assistant sets up the patient's lunch tray and leaves the room",
+      "The patient care assistant places the blood pressure cuff on the left arm"
+    ],
+    answer: ["The patient care assistant sets up the patient's lunch tray and leaves the room"],
+    multipleAnswer: false,
+  },{
+    chapter: "Acute Care - In the Stroke Unit",
+    question: "29. A small patent foramen ovale (PFO) is discovered on an ischemic stroke patient's echocardiography. Minimal right to left shunting is seen with the Valsalva maneuver. Which of the following is the most appropriate treatment for this patient?",
+    options: [
+      "Aspirin 325 mg/day",
+      "Warfarin with a target international normalized ratio (INR) of 1.5 to 2.5",
+      "Warfarin with a target INR of 1.5 to 2.5 and aspirin 81 mg/day",
+      "Warfarin with a target INR of 1.5 to 2.5 and referral for PFO closure"
+    ],
+    answer: ["Aspirin 325 mg/day"],
+    multipleAnswer: false,
   }
 ];
