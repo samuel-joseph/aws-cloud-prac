@@ -2292,5 +2292,1045 @@ export const questions: Question[] = [
     ],
     answer: ["Aspirin 325 mg/day"],
     multipleAnswer: false,
+  },{
+    chapter: "Medications",
+    question: "1. Of the following antiplatelet agents, one is indicated for primary preven-o, while others are indicated for secondary prevention. Which is the primary prevention agent?",
+    options: [
+      "Dipyridamole/aspirin (Aggrenox)",
+      "Aspirin",
+      "Clopidogrel (Plavix)",
+      "Ticlopidine (Ticlid)"
+    ],
+    answer: ["Aspirin"],
+    multipleAnswer: false,
+  },{
+    chapter: "Medications",
+    question: "2. The term 'antiplatelet' agent is used because the mechanism of action is to",
+    options: [
+      "Increase platelet resistance of the blood-brain barrier",
+      "Inhibit platelet production in the liver",
+      "Decrease platelet passage through the cell membrane",
+      "Decrease platelet aggregation in the bloodstream"
+    ],
+    answer: ["Decrease platelet aggregation in the bloodstream"],
+    multipleAnswer: false,
+  },{
+    chapter: "Medications",
+    question: "3. Your patient with atrial fibrillation has just been started on warfarin. What will be part of your medication education for them?",
+    options: [
+      "Eliminate salads and foods rich in vitamin K",
+      "Intake of salads and foods rich in vitamin K should be consistent",
+      "Never take medication on an empty stomach",
+      "Avoid physical activity to limit bruising risk"
+    ],
+    answer: ["Intake of salads and foods rich in vitamin K should be consistent"],
+    multipleAnswer: false,
+  },{
+    chapter: "Medications",
+    question: "4. Your patient has just had a nasogastric (NG) tube inserted for enteral feed-ing. You have received confirmation of correct placement in the stomach, and initiated feeding hours ago. Which of the following is now safe to administer via this route?",
+    options: [
+      "Rivaroxaban (Xarelto)",
+      "Dabigatran (Pradaxa)",
+      "Apixaban (Eliquis)",
+      "Abciximab (ReoPro)"
+    ],
+    answer: ["Rivaroxaban (Xarelto)"],
+    multipleAnswer: false,
+  },{
+    chapter: "Medications",
+    question: "5. Which of the statements below best describes the action of alteplase?",
+    options: [
+      "Promotes fibrinolysis of fibrin clots",
+      "Directly inhibits free and fibrin-bound thrombin",
+      "Directly inhibits free and clot-bound factor Xa",
+      "Inhibits activation of vitamin K-dependent clotting factors"
+    ],
+    answer: ["Promotes fibrinolysis of fibrin clots"],
+    multipleAnswer: false,
+  },{
+    chapter: "Medications",
+    question: "6. In the emergency department (ED), alteplase has been ordered for Mr.Paine. The following is the patient's home medication list. Which of the medications would make you more alert for orolingual angioedema?",
+    options: [
+      "Metformin",
+      "Simvastatin",
+      "Lisinopril",
+      "Aspirin"
+    ],
+    answer: ["Lisinopril"],
+    multipleAnswer: false,
+  },{
+    chapter: "Medications",
+    question: "7. For Mr. Paine, which of these home medications might be responsible for his dry, nonproductive cough?",
+    options: [
+      "Metformin (Glucophage)",
+      "Simvastatin (Zocor)",
+      "Lisinopril (Prinivil, Zestril)",
+      "Aspirin"
+    ],
+    answer: ["Lisinopril (Prinivil, Zestril)"],
+    multipleAnswer: false,
+  },{
+    chapter: "Medications",
+    question: "8. Which of these lipid-lowering agents has the best primary and secondary risk reduction?",
+    options: [
+      "Atorvastatin (Lipitor)",
+      "Gemfibrozil (Lopid)",
+      "Fenofibrate (Tricor)",
+      "Niacin"
+    ],
+    answer: ["Atorvastatin (Lipitor)"],
+    multipleAnswer: false,
+  },{
+    chapter: "Medications",
+    question: "9. Your patient has been ordered to receive 23.4% saline, 30 ml, over 20 minutes. What do you tell the patient and family about the treatment?",
+    options: [
+      "The patient will need to be transferred to the long-term acute caretreatment (LTAC) unit in order for insurance to cover this therapy",
+      "Reducing blood viscosity reduces risk of seizure",
+      "Saline is equivalent to blood viscosity and it helps to hydrate",
+      "Concentrated saline helps to reduce brain swelling"
+    ],
+    answer: ["Concentrated saline helps to reduce brain swelling"],
+    multipleAnswer: false,
+  },{
+    chapter: "Medications",
+    question: "10. For which of the lipid-lowering agents would you include education about a possible side effect of flushing?",
+    options: [
+      "Atorvastatin (Lipitor)",
+      "Niacin",
+      "Cholestyramine (Questran)",
+      "Simvastatin (Zocor)"
+    ],
+    answer: ["Niacin"],
+    multipleAnswer: false,
+  },{
+    chapter: "Medications",
+    question: "11. Your patient's list of home medications includes a long-acting insulin. Which of the following would that be?",
+    options: [
+      "Insulin lispro (Humalog)",
+      "Insulin aspart (NovoLog)",
+      "Insulin glargine (Lantus)",
+      "Insulin glulisine (Apidra)"
+    ],
+    answer: ["Insulin glargine (Lantus)"],
+    multipleAnswer: false,
+  },{
+    chapter: "Medications",
+    question: "12. Your patient just returned from having a CT angiogram. You might have an order to hold which of the following medications for 48 hours?",
+    options: [
+      "Simvastatin (Zocor)",
+      "Metformin (Glucophage)",
+      "Aspirin",
+      "Cardizem (Diltiazem)"
+    ],
+    answer: ["Metformin (Glucophage)"],
+    multipleAnswer: false,
+  },{
+    chapter: "Medications",
+    question: "13. During the morning assessment, Mr. Smith tells you that he does not think recovery will be sufficient to make him want to keep living. What is your responsibility? Choose all that apply.",
+    options: [
+      "Reassure Mr. Smith that his feelings are not unusual, and that he will have help to deal with these feelings",
+      "Report this conversation to the provider",
+      "Realize that stroke patients often say things like this and it is best to let it pass quietly to avoid embarrassing them",
+      "Monitor Mr. Smith's mood and behavior for further changes"
+    ],
+    answer: [
+      "Reassure Mr. Smith that his feelings are not unusual, and that he will have help to deal with these feelings",
+      "Report this conversation to the provider",
+      "Monitor Mr. Smith's mood and behavior for further changes"],
+    multipleAnswer: true,
+  },{
+    chapter: "Medications",
+    question: "14. Which medication do you anticipate to be ordered for a patient withsigns of depression?",
+    options: [
+      "Escitalopram (Lexapro)",
+      "Paroxetine (Paxil)",
+      "Sertraline (Zoloft)",
+      "Any of the above"
+    ],
+    answer: ["Any of the above"],
+    multipleAnswer: false,
+  },{
+    chapter: "Medications",
+    question: "15. When you bring the first dose of antidepressant to your patient, and she says she does not want to take 'crazy people pills,' what is your best response?",
+    options: [
+      "Antidepressants may enhance neurogenesis and thus functional recovery",
+      "Antidepressants facilitate pain management and will make therapy less painful",
+      "Antidepressants inhibit appetite which may result in weight loss",
+      "If you do not take this medication, your doctor will be angry"
+    ],
+    answer: ["Antidepressants may enhance neurogenesis and thus functional recovery"],
+    multipleAnswer: false,
+  },{
+    chapter: "Medications",
+    question: "16. Your 20-year-old right-middle cerebral artery (MCA) territory stroke patient is awake and complaining of left shoulder pain. He has a history of a severe back injury from a snow boarding accident last year. He asks for his lollipop. What is he referring to?",
+    options: [
+      "Fentanyl buccal route",
+      "Dilaudid oral solution frozen",
+      "Oxycontin oral solution frozen",
+      "MS Contin buccal route"
+    ],
+    answer: ["Fentanyl buccal route"],
+    multipleAnswer: false,
+  },{
+    chapter: "Medications",
+    question: "17. Which antipyretic could be given to your febrile, postoperative patient without concern for antiplatelet effect?",
+    options: [
+      "Ibuprofen (Advil, Motrin)",
+      "Aspirin",
+      "Acetaminophen (Tylenol)",
+      "None, they all impact platelet aggregation"
+    ],
+    answer: ["Acetaminophen (Tylenol)"],
+    multipleAnswer: false,
+  },{
+    chapter: "Medications",
+    question: "18. Which of the followin medications dissolves blood clots?",
+    options: [
+      "Warfarin (Coumadin)",
+      "Alteplase (Activase)",
+      "IV heparin",
+      "Rivaroxaban (Xarelto)"
+    ],
+    answer: ["Alteplase (Activase)"],
+    multipleAnswer: false,
+  },{
+    chapter: "Medications",
+    question: "19. Your emergency department (ED) patient has arrived at 2 hours 30 minutes from symptom onset and Dr. Jones says to get the IV alteplase ready as a bolus? stat. The patient's weight is 250 Ibs. How much of the dose will be given",
+    options: [
+      "10 mg",
+      "14 mg",
+      "9 mg",
+      "20 mg"
+    ],
+    answer: ["9 mg"],
+    multipleAnswer: false,
+  },{
+    chapter: "Medications",
+    question: "20. In the sign-off report at 7 p.m., the nurse tells you that the patient arrived at 2 p.m. to the stroke unit with a diagnosis of middle cerebral artery (MCA) stroke. Aspirin 81 mg orally was ordered, but was held owing to the patient failing the dysphagia screen. How do you respond?",
+    options: [
+      "Antithrombotics are to be administered by end of hospital day 2 or the length of stay will be extended",
+      "Antithrombotics need to be given early for best patient outcomes, so you will get an order for suppository right away",
+      "Antithrombotics are really only important in lacunar strokes, so a delay is not a problem",
+      "If this patient got alteplase, antithrombotics need to be given within 24 hours of alteplase dose"
+    ],
+    answer: ["Antithrombotics need to be given early for best patient outcomes, so you will get an order for suppository right away"],
+    multipleAnswer: false,
+  },{
+    chapter: "Medications",
+    question: "21. In the emergency department (ED), a patient became somnolent after complaining of a headache. After reviewing the CT and labs (intrace. rebral hemorrhage and international normalized ratio (INR) 25), the provider orders stat fresh frozen plasma (FFP). Which oral anticoagulant was the patient taking prior to admission?",
+    options: [
+      "Apixaban (Eliquis)",
+      "Dabigatran (Pradaxa)",
+      "Rivaroxaban (Xareito)",
+      "Warfarin (Coumadin)"
+    ],
+    answer: ["Warfarin (Coumadin)"],
+    multipleAnswer: false,
+  },{
+    chapter: "Medications",
+    question: "22. In the stroke clinic, Mr. Small and his wife are arguing when you enter the room. He has recently been started on wartarin and they cannot agree about whether it is important to mention the following item. When you hear what it is, you tell them that it is important.",
+    options: [
+      "He started taking gingko for memory help",
+      "He has developed an appetite for peaches",
+      "He is regaining sensation in his left thumb",
+      "He has been having unusual dreams about cats"
+    ],
+    answer: ["He started taking gingko for memory help"],
+    multipleAnswer: false,
+  },{
+    chapter: "Medications",
+    question: "23. Headache occurs in up to 40% of patients taking which medication?",
+    options: [
+      "Dipyridamole/aspirin (Aggrenox)",
+      "Metoprolol (Lopressor)",
+      "Rivaroxaban (Xarelto)",
+      "Nicardipine (Cardene)"
+    ],
+    answer: ["Dipyridamole/aspirin (Aggrenox)"],
+    multipleAnswer: false,
+  },{
+    chapter: "Medications",
+    question: "24. The neuroscience ICU nurse notified the intensivist team that the patient just had three seizures, each of 50 seconds' duration. Which medication is the first-line agent for this situation?",
+    options: [
+      "Levetiracetam (Keppra)",
+      "Valproic acid (Depakote)",
+      "Lorazepam (Ativan)",
+      "Pentobarbital (Nembutal)"
+    ],
+    answer: ["Lorazepam (Ativan)"],
+    multipleAnswer: false,
+  },{
+    chapter: "Medications",
+    question: "25. How often should patients with insulin drips have their blood glucose",
+    options: [
+      "Every 3 to 6 hours",
+      "Every 2 to 4 hours",
+      "Every 1 to 2 hours",
+      "Every other day"
+    ],
+    answer: ["Every 1 to 2 hours"],
+    multipleAnswer: false,
+  },{
+    chapter: "Medications",
+    question: "26. Which is true of the U.S. Food and Drug Administration's (FDA) approval of alteplase (Activase)?",
+    options: [
+      "It was based on the National Institute of Neurological Disorders and Stroke (NINDS) recombinant tissue plasminogen activator (rt-PA) Stroke Trial of 1995",
+      "It was approved despite a 12% intracerebral hemorrhage rate",
+      "It was approved for 3 to 4.5 hours from onset in select populations",
+      "It was approved for 3 hours from onset"
+    ],
+    answer: ["It was approved for 3 hours from onset"],
+    multipleAnswer: false,
+  },{
+    chapter: "Medications",
+    question: "27. The appropriate administration of alteplase includes which of the following?",
+    options: [
+      "It should be given with an 18-gauge or larger needle",
+      "10% is given as a bolus over 1 minute",
+      "Shaking the vial vigorously enhances the dissolution of the powder",
+      "If anaphylaxis is suspected, the rate should be reduced by 50% and the provider notified"
+    ],
+    answer: ["10% is given as a bolus over 1 minute"],
+    multipleAnswer: false,
+  },{
+    chapter: "Medications",
+    question: "28. Which medication is Class I, Level of Evidence A for use in aneurysmal subarachnoid hemorrhage?",
+    options: [
+      "IV magnesium sulfate",
+      "Oral nimodipine",
+      "Oral papaverine",
+      "Oral amlodipine"
+    ],
+    answer: ["Oral nimodipine"],
+    multipleAnswer: false,
+  },{
+    chapter: "Medications",
+    question: "29. On what schedule will a patient who receives alteplase have vital signs and neurologic checks monitored?",
+    options: [
+      "Every 15 minutes for 2 hours, then every 30 minutes for 6 hours, then hourly for 16 hours",
+      "Every 15 minutes for 1 hour, then every 30 minutes for 3 hours, then hourly for 20 hours",
+      "Every 15 minutes for 2 hours, then every 30 mins for 2 hours, then hourly for 8 hours",
+      "Every 15 minutes for 3 hours, then every 30 minutes for 3 hours, then hourly for 3 hours"
+    ],
+    answer: ["Every 15 minutes for 2 hours, then every 30 minutes for 6 hours, then hourly for 16 hours"],
+    multipleAnswer: false,
+  },{
+    chapter: "Medications",
+    question: "30. Which medication is not indicated for the control of shivering during therapeutic cooling?",
+    options: [
+      "Buspirone",
+      "Magnesium",
+      "Meperidine",
+      "Botulinum toxin"
+    ],
+    answer: ["Botulinum toxin"],
+    multipleAnswer: false,
+  },{
+    chapter: "Postacute Care",
+    question: "1. Name the leading cause of institutionalization of stroke survivors who had been discharged to go home from the hospital after their stroke.",
+    options: [
+      "Noncompliance with medications resulting in complications",
+      "Recurrent stroke",
+      "New onset seizure disorder",
+      "Family members unable to sustain care needs"
+    ],
+    answer: ["Family members unable to sustain care needs"],
+    multipleAnswer: false,
+  },{
+    chapter: "Postacute Care",
+    question: "2. A 70-year-old hemiparetic patient who demonstrates ability to tolerate 3 hours of therapy a day, can eat with assistance, and has two sons who live next door can anticipate which discharge disposition?",
+    options: [
+      "Inpatient rehabilitation facility (IRF)",
+      "Skilled nursing facility (SNF)",
+      "Long-term acute care (LTAC) facility",
+      "Home"
+    ],
+    answer: ["Inpatient rehabilitation facility (IRF)"],
+    multipleAnswer: false,
+  },{
+    chapter: "Postacute Care",
+    question: "3. Botulinum toxin injection has proven effective poststroke for which condition?",
+    options: [
+      "Urinary incontinence",
+      "Focal spasticity",
+      "Facial palsy",
+      "Balance deficit"
+    ],
+    answer: ["Focal spasticity"],
+    multipleAnswer: false,
+  },{
+    chapter: "Postacute Care",
+    question: "4. Your neighbor was discharged to go home after her stroke. When you visit, she tells you that two therapists had come earlier in the day. The fine showed her tips on using an adapted spoon for eating cereal/ soup, and the second showed her practical tips for using her walker in the house. What types of therapists were they?",
+    options: [
+      "Occupational therapist and physical therapist",
+      "Recreational therapist and physical therapist",
+      "Physical therapist and occupational therapist",
+      "Vocational therapist and occupational therapist"
+    ],
+    answer: ["Occupational therapist and physical therapist"],
+    multipleAnswer: false,
+  },{
+    chapter: "Postacute Care",
+    question: "5. Which is true of the Barthel Index?",
+    options: [
+      "There are 10 items that measure independence and self-care ability",
+      "It does not adequately quantify disability in high-functioning stroke patients",
+      "Normal score is 100",
+      "All of the above"
+    ],
+    answer: ["All of the above"],
+    multipleAnswer: false,
+  },{
+    chapter: "Postacute Care",
+    question: "6. Which of the following is also called a subacute rehabilitation facility?",
+    options: [
+      "Inpatient rehabilitation facility (IRF)",
+      "Skilled nursing facility (SNF)",
+      "Long-term acute care hospital (LTACH)",
+      "Home health care agency (HHCA)"
+    ],
+    answer: ["Skilled nursing facility (SNF)"],
+    multipleAnswer: false,
+  },{
+    chapter: "Postacute Care",
+    question: "7. Up to 70% of stroke patients will experience this during the first 6 months after discharge from the hospital or rehabilitation facility:",
+    options: [
+      "Shoulder subluxation",
+      "Urinary tract infection",
+      "Dysphagia",
+      "Falling"
+    ],
+    answer: ["Falling"],
+    multipleAnswer: false,
+  },{
+    chapter: "Postacute Care",
+    question: "8. Which is not true regarding seizures after an ischemic stroke (Winsten et al., 2016)?",
+    options: [
+      "Prophylactic administration of antiepileptic drugs is recommended",
+      "Seizures are classified as early (within the first few days) or late",
+      "Seizures with lacunar strokes are rare",
+      "Seizures are more common in strokes involving the cerebral cortex"
+    ],
+    answer: ["Prophylactic administration of antiepileptic drugs is recommended"],
+    multipleAnswer: false,
+  },{
+    chapter: "Postacute Care",
+    question: "9. Which functional measurement tool is the only one used by the Centers or Medicare & Medicaid Services (CMS) related to its prospective payment system?",
+    options: [
+      "Barthel Index (BI)",
+      "Functional Independence Measure (FIM*)",
+      "Modified Rankin Score (mRS)",
+      "National Institutes of Health Stroke Scale (NIHSS)"
+    ],
+    answer: ["Functional Independence Measure (FIM*)"],
+    multipleAnswer: false,
+  },{
+    chapter: "Postacute Care",
+    question: "10. Your patient, Mr. White, has been in your acute rehabilitation hospital for 1 week now. He continues to eat only the food on the right half of his tray best nursing despite his wife's insistence that he should clean his plate. What is your response to this situation?",
+    options: [
+      "Establish a behavioral contract with Mr. White that if he finishes his tray completely, he gets an extra dessert",
+      "Place all his food on the right half of the tray",
+      "Report this behavior to the provider and suggest a behavioral medicine consult",
+      "Educate/reeducate the wife and patient about inattention/ neglect and reinforce the strategies provided by the occupational therapist"
+    ],
+    answer: ["Educate/reeducate the wife and patient about inattention/ neglect and reinforce the strategies provided by the occupational therapist"],
+    multipleAnswer: false,
+  },{
+    chapter: "Postacute Care",
+    question: "11. After 10 days in the acute rehabilitation hospital, Mrs. Talbot says she just wants to go home to her apartment to her two cats and her canary. The care team has just discussed with her that her progress has not been as much as anticipated. Which of the following would make it more likely that she would be able to go home as she desires?",
+    options: [
+      "Doubling therapy times for the next week",
+      "Increasing doses of antidepressant",
+      "Daughter's ability to move in with her for 6 months",
+      "Patient's neighbor committing to check on her every day"
+    ],
+    answer: ["Daughter's ability to move in with her for 6 months"],
+    multipleAnswer: false,
+  },{
+    chapter: "Postacute Care",
+    question: "12. Poststroke spasticity occurs in 25% to 43% of stroke survivors and these patients get aggressive therapy. What is the outcome that these therapies are attempting to prevent?",
+    options: [
+      "Contractures",
+      "Hypoperfusion",
+      "Flaccid limb",
+      "Wrinkling"
+    ],
+    answer: ["Contractures"],
+    multipleAnswer: false,
+  },{
+    chapter: "Postacute Care",
+    question: "13. Your patient had an intracerebral hemorrhage (ICH) 10 days ago. The patient's history of renal failure requiring dialysis and labile hypertension has complicated his hospital stay. The patient is able to participate in therapy services, and has made progress with swallowing, but still requires tube feed support. He is being discharged tomorrow; what is the most likely discharge disposition?",
+    options: [
+      "Inpatient rehabilitation facility (IRF)",
+      "Assisted living facility",
+      "Long-term acute care hospital (LTACH)",
+      "Skilled nursing facility (SNF)"
+    ],
+    answer: ["Long-term acute care hospital (LTACH)"],
+    multipleAnswer: false,
+  },{
+    chapter: "Postacute Care",
+    question: "14. For Mr. White, a 74-year-old ischemic stroke patient to qualify for home health care, what condition must be present?",
+    options: [
+      "He must have supplemental insurance that covers home health care",
+      "He must be homebound",
+      "He must require at least two therapies and one nursing care need",
+      "He must be able to answer the door when the staff arrive"
+    ],
+    answer: ["He must be homebound"],
+    multipleAnswer: false,
+  },{
+    chapter: "Postacute Care",
+    question: "15. In what setting would a physiatrist most likely be employed full time to oversee the functional recovery of a stroke patient?",
+    options: [
+      "Inpatient rehabilitation facility (IRF)",
+      "Assisted living facility",
+      "Home health care agency",
+      "Skilled nursing facility (SNF)"
+    ],
+    answer: ["Inpatient rehabilitation facility (IRF)"],
+    multipleAnswer: false,
+  },{
+    chapter: "Postacute Care",
+    question: "16. The role of a rehabilitation nurse in an inpatient rehabilitation facility (IRF) would include",
+    options: [
+      "Coordinating care team activities",
+      "Reinforcing the care provided by other team members",
+      "Advocating for both the client and caregiver",
+      "All of the above"
+    ],
+    answer: ["All of the above"],
+    multipleAnswer: false,
+  },{
+    chapter: "Postacute Care",
+    question: "17. During his acute rehabilitation stay, Mr. Smith receives cognitive therapy. Which care team member would provide him with this therapy?",
+    options: [
+      "Neuropsychologist",
+      "Occupational therapist",
+      "Speech and language pathologist",
+      "All of the above"
+    ],
+    answer: ["All of the above"],
+    multipleAnswer: false,
+  },{
+    chapter: "Postacute Care",
+    question: "18. Which of the following is true regarding rehabilitation nurses?",
+    options: [
+      "Certification programs for rehabilitation nursing require a bachelor of science in nursing (BSN) and 5 years rehabilitation experience",
+      "A 1% increase in the number of certified rehabilitation nurses on a unit is associated with a 6% decrease in length of stay",
+      "Rehabilitation nurses provide home visits after discharge from acute rehabilitation",
+      "None of the above"
+    ],
+    answer: ["A 1% increase in the number of certified rehabilitation nurses on a unit is associated with a 6% decrease in length of stay"],
+    multipleAnswer: false,
+  },{
+    chapter: "Postacute Care",
+    question: "19. You suspect that your patient is showing signs of depression. You know this is not uncommon poststroke, and that it is likely the result of which of the following?",
+    options: [
+      "Organic, related to the neuronal damage of the stroke",
+      "Premorbid, related to having risk factors for depression prior to stroke",
+      "Reactive, related to the loss of prestroke independence",
+      "All of the above"
+    ],
+    answer: ["All of the above"],
+    multipleAnswer: false,
+  },{
+    chapter: "Postacute Care",
+    question: "20. Fecal incontinence and constipation are common after stroke and are attributable to which of the following?",
+    options: [
+      "Polypharmacy resulting in decreased bowel motilty",
+      "Frequent therapy sessions resulting in irritable bowe!",
+      "Decreased mobilization and limited access to toilet",
+      "Spasticity of the smooth muscles of the bowel"
+    ],
+    answer: ["Decreased mobilization and limited access to toilet"],
+    multipleAnswer: false,
+  },{
+    chapter: "Systems and Quality Care",
+    question: "1. The Recommendations for Establishment of Primary Stroke Centers were published in 2001. Who wrote these recommendations?",
+    options: [
+      "The Joint Commission (TJC)",
+      "American Stroke Association",
+      "National Stroke Association",
+      "Brain Attack Coalition (BAC)"
+    ],
+    answer: ["Brain Attack Coalition (BAC)"],
+    multipleAnswer: false,
+  },{
+    chapter: "Systems and Quality Care",
+    question: "2. Which of the following cannot provide review and certification of Primary Stroke Centers?",
+    options: [
+      "Healthcare Facilities Accreditation Program (HFAP)",
+      "Det Norse Veritas (DNV)",
+      "National Quality Forum (NQF)",
+      "State of Texas"
+    ],
+    answer: ["National Quality Forum (NQF)"],
+    multipleAnswer: false,
+  },{
+    chapter: "Systems and Quality Care",
+    question: "3. Benchmarking refers to the process of",
+    options: [
+      "Seeking out best practices and building performance improvement goals to attain them",
+      "Comparing your current internal performance data against past performance data, or comparison among nursing units",
+      "Comparing your facility's aspiration pneumonia rates with those oh the stroke centers in your region",
+      "All of the above"
+    ],
+    answer: ["All of the above"],
+    multipleAnswer: false,
+  },{
+    chapter: "Systems and Quality Care",
+    question: "4. Which is not true of stroke databases?",
+    options: [
+      "Stroke center certification requires use of Microsoft Excel™M for databases",
+      "Stroke database content varies and can include a few data points or hundreds of data points",
+      "Stroke databases are sometimes homegrown and sometimes external, contracted systems",
+      "The advantage of most external databases is the ability to benchmark"
+    ],
+    answer: ["Stroke center certification requires use of Microsoft Excel™M for databases"],
+    multipleAnswer: false,
+  },{
+    chapter: "Systems and Quality Care",
+    question: "5. Which is true of the Plan, Do, Study, Act (PDSA) process?",
+    options: [
+      "There must be a specific timeframe determined, with a specific volume of participants or observations for the process to be reliable",
+      "An example could be a bedside nurse noting that Mr. X is still having shoulder pain on Day 4. The nurse reviews previous treatments and nursing interventions, agrees with Mr. X of a new approach for today, provides positioning support and back rub, checks back shortly after-ward, notes relief of pain and documents that.",
+      "It is a single cycle process that supports meeting or exceeding goals",
+      "All of the above"
+    ],
+    answer: ["An example could be a bedside nurse noting that Mr. X is still having shoulder pain on Day 4. The nurse reviews previous treatments and nursing interventions, agrees with Mr. X of a new approach for today, provides positioning support and back rub, checks back shortly after-ward, notes relief of pain and documents that."],
+    multipleAnswer: false,
+  },{
+    chapter: "Systems and Quality Care",
+    question: "6. According to the American Heart Association, which of the following is not a key component of stroke systems of care?",
+    options: [
+      "Prehospital care and triage",
+      "National Institutes of Health Stroke Scale (NIHS) certification for nursing staff",
+      "Stroke center certification",
+      "Rehabilitation strategies"
+    ],
+    answer: ["National Institutes of Health Stroke Scale (NIHS) certification for nursing staff"],
+    multipleAnswer: false,
+  },{
+    chapter: "Systems and Quality Care",
+    question: "7. Hospitals with the capability to perform mechanical endovascular reper-fusion (MER) would have which stroke center certification?",
+    options: [
+      "Primary Stroke Center (PSC)",
+      "Comprehensive Stroke Center (CSC)",
+      "Acute Stroke Ready Hospital (ASRH)",
+      "Either PSC or CSC"
+    ],
+    answer: ["Either PSC or CSC"],
+    multipleAnswer: false,
+  },{
+    chapter: "Systems and Quality Care",
+    question: "8. A key distinction between Comprehensive Stroke Center (CSC) and Primary Stroke Center (PSC) is which of the following!",
+    options: [
+      "24/7 MR1/magnetic resonance angiography (MRA)",
+      "Neurocritical care unit led by neurocritical care specialist",
+      "The ability to mix and administer IV tissue plasminogen activator (tPA) in less than 60 minutes",
+      "The ability to care for hemorrhagic stroke patients"
+    ],
+    answer: ["Neurocritical care unit led by neurocritical care specialist"],
+    multipleAnswer: false,
+  },{
+    chapter: "Systems and Quality Care",
+    question: "9. Clinical practice guidelines can most accurately be described as",
+    options: [
+      "Statements that include recommendations to optimize care, that are informed by a systematic review of evidence",
+      "Recommendations that have been approved by the American Heart Association/ American Stroke Association",
+      "Order sets based on the preferences of the stroke neurologist or vascular neurosurgeon",
+      "Recommendations provided by The Joint Commission after a certification visit"
+    ],
+    answer: ["Statements that include recommendations to optimize care, that are informed by a systematic review of evidence"],
+    multipleAnswer: false,
+  },{
+    chapter: "Systems and Quality Care",
+    question: "10. Which of the following are the benefits of having a stroke unit where the majority of stroke patients are cared for? (Choose all that apply.)",
+    options: [
+      "Reduced in-hospital mortalityy",
+      "Reduced bladder incontinence",
+      "Reduced length of stay",
+      "Increased discharges to home"
+    ],
+    answer: ["Reduced in-hospital mortalityy", "Reduced length of stay", "Increased discharges to home"],
+    multipleAnswer: true,
+  },{
+    chapter: "Systems and Quality Care",
+    question: "11. As the stroke program coordinator, you have noticed a trend of increased door-to-needle times over the past quarter. The consistent factor that stands out is the involvement of a new emergency department (ED) pro-vider, Dr. X, who has been vocal in her 'disapproval' of the use of tissue plasminogen activator (tPA). The ED nurses have described being berated and bullied if they attempt to activate a stroke alert while Dr. X is on duty. What is your best action?",
+    options: [
+      "Discuss this situation with all the ED nurses and reassure them that Dr. X is incorrect and outdated in her opinion",
+      "Ask the ED medical director to limit Dr. X's involvement in stroke patient cases",
+      "Present data to your program medical director and suggest they review with Dr. X",
+      "At next stroke alert, ask Dr. A why she does not like tPA"
+    ],
+    answer: ["Present data to your program medical director and suggest they review with Dr. X"],
+    multipleAnswer: false,
+  },{
+    chapter: "Systems and Quality Care",
+    question: "12. The reduction in stroke mortality in the United States has been attributed to many factors. Which one of them has been credited with the broadest impact?",
+    options: [
+      "Reduced salt intake",
+      "Treatment of hypertension",
+      "Reduced soda consumption",
+      "Treatment of diabetes"
+    ],
+    answer: ["Treatment of hypertension"],
+    multipleAnswer: false,
+  },{
+    chapter: "Systems and Quality Care",
+    question: "13. The definition of transient ischemic attack (TIA) has evolved from its original definition of any focal cerebral ischemic event with symptoms lasting less than 24 hours. What is the reason for the change in definition to a tissue-based criterion rather than a time-based criterion?",
+    options: [
+      "Laboratory testing on animal models",
+      "Retrospective review of records from large academic medical centers",
+      "Enhanced imaging capabilities enabling more accurate identification of infarct even with symptom resolution in under 24 hours",
+      "None of the above"
+    ],
+    answer: ["Enhanced imaging capabilities enabling more accurate identification of infarct even with symptom resolution in under 24 hours"],
+    multipleAnswer: false,
+  },{
+    chapter: "Systems and Quality Care",
+    question: "14. There are many standards and metrics for stroke center certification. The key feature of a successful stroke center is",
+    options: [
+      "Collection, analysis, and use of data for performance improvement",
+      "Administrative support",
+      "Appropriate and up-to-date order sets, protocols, and policies",
+      "Annual staff education and competency documentation"
+    ],
+    answer: ["Collection, analysis, and use of data for performance improvement"],
+    multipleAnswer: false,
+  },{
+    chapter: "Systems and Quality Care",
+    question: "15. One of your stroke patients was found unconscious on the floor of the bathroom, with a fresh scalp laceration. An in-depth internal review of all factors related to this event is being conducted. Which type of performance improvement process is being used?",
+    options: [
+      "Plan, Do, Study, Act (PDSA)",
+      "Six Sigma",
+      "Define, Measure, Analyze, Improve, Control (DMAIC)",
+      "Root cause analysis"
+    ],
+    answer: ["Root cause analysis"],
+    multipleAnswer: false,
+  },{
+    chapter: "Case Studies",
+    question: "Questions 1 and 2 are based on the following case: Bill Black, a 65-year-old patient, had his symptom onset witnessed by his daughter to be at 9:00 a.m.; it is now 12:30 p.m. His medical history includes heart failure and diabetes. Emergency medical services (EMS) reported a blood glucose of 188.\xa0\xa0\xa01. You receive an order for IV tissue plasminogen activator (tPA) to be administered to Mr. Black. Which of the following is correct?",
+    options: [
+      "You proceed with administration knowing it is safe to give as ordered",
+      "You withhold the drug and notify the provider of the exclusion criteria for the extended time window",
+      "You wait for lab glucose results to confirm the EMS report",
+      "You review the patient's past medical record, note that HgA1c last year was less than 6, and therefore administer tPA"
+    ],
+    answer: [""],
+    multipleAnswer: false,
+  },{
+    chapter: "Case Studies",
+    question: "Questions 1 and 2 are based on the following case: Bill Black, a 65-year-old patient, had his symptom onset witnessed by his daughter to be at 9:00 a.m.; it is now 12:30 p.m. His medical history includes heart failure and diabetes. Emergency medical services (EMS) reported a blood glucose of 188.\xa0\xa0\xa02. At 1:02 p.m. the decision is made to transfer Mr. Black to a Compresense Stroke Center for possible thrombectomy. How much time remains in be window for initiation of endovascular intervention for anterior ternary stroke?",
+    options: [
+      "Approximately 2 hours",
+      "Approximately 4 hours",
+      "Approximately 8 hours",
+      "Approximately 20 hours"
+    ],
+    answer: [""],
+    multipleAnswer: false,
+  },{
+    chapter: "Case Studies",
+    question: "Questions 3 to 6 are based on the following case: The Southeast emergency medical services (EMS) crew brings Mr. Smith, age 82 years, to the emergency department (ED) on a stretcher. He has become lethargic, is snoring loudly, and slumped to the right. They report his last blood pressure (BP) to be 177/86, heart rate (H) 90, respiratory rate (RR) 22. They also report right upper extremity weakness and difficulty speaking His Glasgow Coma Scale (GCS) is 3. Home medications include dabigatran, atorvastatin, and levothyroxine.\xa0\xa0\xa03. Which is your first action?",
+    options: [
+      "Obtain an EKG",
+      "Prepare to intubate",
+      "Straighten Mr. Smith's posture",
+      "Draw lab work"
+    ],
+    answer: [""],
+    multipleAnswer: false,
+  },{
+    chapter: "Case Studies",
+    question: "Questions 3 to 6 are based on the following case: The Southeast emergency medical services (EMS) crew brings Mr. Smith, age 82 years, to the emergency department (ED) on a stretcher. He has become lethargic, is snoring loudly, and slumped to the right. They report his last blood pressure (BP) to be 177/86, heart rate (H) 90, respiratory rate (RR) 22. They also report right upper extremity weakness and difficulty speaking His Glasgow Coma Scale (GCS) is 3. Home medications include dabigatran, atorvastatin, and levothyroxine.\xa0\xa0\xa04. Mr. Smith's CT showed intracerebral hemorrhage (ICH), and the provider ordered coagulation correction. What do you expect to administer?",
+    options: [
+      "20 mL prothrombin complex concentrate (PCC) IV",
+      "2 units fresh frozen plasma (FFP) IV",
+      "10 mg vitamin K IV",
+      "5 g idarucizumab (Praxbind) IV"
+    ],
+    answer: [""],
+    multipleAnswer: false,
+  },{
+    chapter: "Case Studies",
+    question: "Questions 3 to 6 are based on the following case: The Southeast emergency medical services (EMS) crew brings Mr. Smith, age 82 years, to the emergency department (ED) on a stretcher. He has become lethargic, is snoring loudly, and slumped to the right. They report his last blood pressure (BP) to be 177/86, heart rate (H) 90, respiratory rate (RR) 22. They also report right upper extremity weakness and difficulty speaking His Glasgow Coma Scale (GCS) is 3. Home medications include dabigatran, atorvastatin, and levothyroxine.\xa0\xa0\xa05. Mr. Smith is getting restless, trying to pull out his IV and swinging at you. You are concerned when the provider orders lorazepam because",
+    options: [
+      "You doubt you can get close enough to administer it without getting hit",
+      "You are concerned about drug dependency",
+      "You noted a long list of medication allergies on his chart, and wonder if this was on it",
+      "You know it will make further neurologic assessments more difficult"
+    ],
+    answer: [""],
+    multipleAnswer: false,
+  },{
+    chapter: "Case Studies",
+    question: "Questions 3 to 6 are based on the following case: The Southeast emergency medical services (EMS) crew brings Mr. Smith, age 82 years, to the emergency department (ED) on a stretcher. He has become lethargic, is snoring loudly, and slumped to the right. They report his last blood pressure (BP) to be 177/86, heart rate (H) 90, respiratory rate (RR) 22. They also report right upper extremity weakness and difficulty speaking His Glasgow Coma Scale (GCS) is 3. Home medications include dabigatran, atorvastatin, and levothyroxine.\xa0\xa0\xa06. You are present when the provider calculates Mr. Smith's ICH score. His score is 3. Which of the following is not true of the ICH score?",
+    options: [
+      "It includes Glasgow Coma Scale score",
+      "It includes age",
+      "The score is predictive of 30-day mortality risk",
+      "It is based on history of diabetes"
+    ],
+    answer: [""],
+    multipleAnswer: false,
+  },{
+    chapter: "Case Studies",
+    question: "In the Intensive Care Unit Questions 7 to 11 are based on the following case: Mr. Dobbs is a 66-year-old male who had a left middle cerebral artery (MCA) stroke 2 days ago for which he received IV tissue plasminogen activator (tPA) and mechanical thrombectomy. He has a history of hypertension, and remote cigarette smoking, having quit 5 years ago.\xa0\xa0\xa07. You are told that Mr. Dobbs had a thrombolysis in cerebral infarction (TICI) score of 2a with his thrombectomy. What does this indicate about the success of the procedure?",
+    options: [
+      "It was only partially successful, with less than two thirds of vascular territory perfused",
+      "It was only partially successful, but more successful than a 2b result",
+      "It was not successful at all",
+      "It was a complete success with over 85% reperfusion"
+    ],
+    answer: [""],
+    multipleAnswer: false,
+  },{
+    chapter: "Case Studies",
+    question: "In the Intensive Care Unit Questions 7 to 11 are based on the following case: Mr. Dobbs is a 66-year-old male who had a left middle cerebral artery (MCA) stroke 2 days ago for which he received IV tissue plasminogen activator (tPA) and mechanical thrombectomy. He has a history of hypertension, and remote cigarette smoking, having quit 5 years ago.\xa0\xa0\xa08. The interventionalist indicates that Mr. Dobb's carotid artery was very stenotic and made it difficult to perform the mechanical thrombectomy. What options does the interventionalist have in this type of case?",
+    options: [
+      "Angioplasty and stenting",
+      "Using the contralateral anterior cerebral artery",
+      "Obtain a stat lipid panel",
+      "Use the vertebral arteries"
+    ],
+    answer: [""],
+    multipleAnswer: false,
+  },{
+    chapter: "Case Studies",
+    question: "In the Intensive Care Unit Questions 7 to 11 are based on the following case: Mr. Dobbs is a 66-year-old male who had a left middle cerebral artery (MCA) stroke 2 days ago for which he received IV tissue plasminogen activator (tPA) and mechanical thrombectomy. He has a history of hypertension, and remote cigarette smoking, having quit 5 years ago.\xa0\xa0\xa09. While out of bed in a chair, Mr. Dobbs demonstrates increased difficulty with having a conversation with his wite, and increased difficulty with feeding himself. What do you suspect is occurring?",
+    options: [
+      "Mr. Dobbs is overtired from the exertion of getting out of bed after a long physical therapy/occupational therapy session",
+      "Mr. Dobbs is hypoxic as the brain does not store oxygen, but demands more with exertion",
+      "Mr. Dobbs is experiencing postural hypotension causing exacerbation of stroke symptoms",
+      "Mr. Dobbs is showing signs of depression and cognitive decline"
+    ],
+    answer: [""],
+    multipleAnswer: false,
+  },{
+    chapter: "Case Studies",
+    question: "In the Intensive Care Unit Questions 7 to 11 are based on the following case: Mr. Dobbs is a 66-year-old male who had a left middle cerebral artery (MCA) stroke 2 days ago for which he received IV tissue plasminogen activator (tPA) and mechanical thrombectomy. He has a history of hypertension, and remote cigarette smoking, having quit 5 years ago.\xa0\xa0\xa010. Your response to this observation is to get Mr. Dobbs back into bed immediately because you know that",
+    options: [
+      "Stroke patients require more rest than most people",
+      "Stroke patients can have their cerebral autoregulation impaired making them much more susceptible to deterioration with extreme highs and lows of blood pressure (BP)",
+      "When Mr. Dobbs gets this depressed, he does not cooperate or eat well",
+      "The oxygen tubing does not reach from the wall source to the chair"
+    ],
+    answer: [""],
+    multipleAnswer: false,
+  },{
+    chapter: "Case Studies",
+    question: "In the Intensive Care Unit Questions 7 to 11 are based on the following case: Mr. Dobbs is a 66-year-old male who had a left middle cerebral artery (MCA) stroke 2 days ago for which he received IV tissue plasminogen activator (tPA) and mechanical thrombectomy. He has a history of hypertension, and remote cigarette smoking, having quit 5 years ago.\xa0\xa0\xa011. You check Mr. Dobbs's blood pressure (BP), pulse, and temperature: BP = 120/80, pulse = 84, temperature = 38°C. You take which of the following actions?",
+    options: [
+      "Notify the provider and prepare the patient for a stat MRI and a fluid bolus",
+      "Ask Mr. Dobbs if he is feeling better, position them in 30° semi-Fowler's position, and administer PRN acetaminophen",
+      "Explain to Mr. Dobbs why you needed to get him back into bed quickly, and apply low-dose oxygen",
+      "Ensure that the head of the bed is flat, administer PRN acetamino-phen, and notify the provider"
+    ],
+    answer: [""],
+    multipleAnswer: false,
+  },{
+    chapter: "Case Studies",
+    question: "Questions 12 to 17 are based on the following case: You are caring for Mr. Booth, a 72-year-old subarachnoid hemorrhage (SAH) patient with a saccular anterior cerebral artery aneurysm found on CT angio-gram. On admission his Hunt and Hess score was 2. Today is Day 2 of his stay and his National Institutes of Health Stroke Scale (NIHS) score is 1-drowsy. His medical history includes type 2 diabetes and hypertension for which he took metformin, aspirin, and lisinopril prior to admission. He is scheduled for an endovascular coiling procedure tomorrow (Day 3). His wife and two brothers are visiting now.\xa0\xa0\xa012. As you enter the room, you find Mrs. Booth gently tucking a second blanket up under Mr. Booth's chin and commenting that the draft she feels might give him a chill. What is your best response?",
+    options: [
+      "Say nothing and when she leaves, remove the blanket to avoid hyperthermia",
+      "Apologize for any discomfort they may have experienced and facilitate a therapeutic environment by increasing the temperature",
+      "Explain that hyperthermia is something to be avoided in his case and ask her to help by not putting extra blankets on his bed",
+      "Say nothing, but administer acetaminophen 650 mg with his next medication"
+    ],
+    answer: [""],
+    multipleAnswer: false,
+  },{
+    chapter: "Case Studies",
+    question: "Questions 12 to 17 are based on the following case: You are caring for Mr. Booth, a 72-year-old subarachnoid hemorrhage (SAH) patient with a saccular anterior cerebral artery aneurysm found on CT angio-gram. On admission his Hunt and Hess score was 2. Today is Day 2 of his stay and his National Institutes of Health Stroke Scale (NIHS) score is 1-drowsy. His medical history includes type 2 diabetes and hypertension for which he took metformin, aspirin, and lisinopril prior to admission. He is scheduled for an endovascular coiling procedure tomorrow (Day 3). His wife and two brothers are visiting now.\xa0\xa0\xa013. Mrs. Booth expresses concern over the scheduled procedure for tomor-row, asking why it cannot wait until he is more wide awake. What should you include in your response?",
+    options: [
+      "A detailed list of all possible treatment options and their success/ complication rates",
+      "An explanation that research evidence supports treatment as early as possible in order to reduce the risk of rebleed",
+      "A suggestion that she ask her primary care provider PCP) to prescribe something to relax her as she seems overanxious",
+      "A reminder that she should have been present at morning rounds in order to ask the doctor that question"
+    ],
+    answer: [""],
+    multipleAnswer: false,
+  },{
+    chapter: "Case Studies",
+    question: "Questions 12 to 17 are based on the following case: You are caring for Mr. Booth, a 72-year-old subarachnoid hemorrhage (SAH) patient with a saccular anterior cerebral artery aneurysm found on CT angio-gram. On admission his Hunt and Hess score was 2. Today is Day 2 of his stay and his National Institutes of Health Stroke Scale (NIHS) score is 1-drowsy. His medical history includes type 2 diabetes and hypertension for which he took metformin, aspirin, and lisinopril prior to admission. He is scheduled for an endovascular coiling procedure tomorrow (Day 3). His wife and two brothers are visiting now.\xa0\xa0\xa014. Mrs. Booth overhears you administering Mr. Booth's morning medica-tions. She questions the drug nimodipine and asks for an explanation of why that was started. You explain by stating that",
+    options: [
+      "This medication was added to help control his blood pressure",
+      "This is to prevent vasospasms following a subarachnoid hemorrhage",
+      "It is to help shrink the size of the aneurysm",
+      "It will be discontinued 24 hours after his procedure"
+    ],
+    answer: [""],
+    multipleAnswer: false,
+  },{
+    chapter: "Case Studies",
+    question: "Questions 12 to 17 are based on the following case: You are caring for Mr. Booth, a 72-year-old subarachnoid hemorrhage (SAH) patient with a saccular anterior cerebral artery aneurysm found on CT angio-gram. On admission his Hunt and Hess score was 2. Today is Day 2 of his stay and his National Institutes of Health Stroke Scale (NIHS) score is 1-drowsy. His medical history includes type 2 diabetes and hypertension for which he took metformin, aspirin, and lisinopril prior to admission. He is scheduled for an endovascular coiling procedure tomorrow (Day 3). His wife and two brothers are visiting now.\xa0\xa0\xa015. What does a Hunt and Hess score of 2 indicate about Mr. Booth's situation?",
+    options: [
+      "That he was asymptomatic on presentation",
+      "That he has intraventricular extension of hemorrhage",
+      "That he has two distinct areas of subarachnoid hemorrhage",
+      "That he presented with moderate to severe headache, but no focal neurologic deficits"
+    ],
+    answer: [""],
+    multipleAnswer: false,
+  },{
+    chapter: "Case Studies",
+    question: "Questions 12 to 17 are based on the following case: You are caring for Mr. Booth, a 72-year-old subarachnoid hemorrhage (SAH) patient with a saccular anterior cerebral artery aneurysm found on CT angio-gram. On admission his Hunt and Hess score was 2. Today is Day 2 of his stay and his National Institutes of Health Stroke Scale (NIHS) score is 1-drowsy. His medical history includes type 2 diabetes and hypertension for which he took metformin, aspirin, and lisinopril prior to admission. He is scheduled for an endovascular coiling procedure tomorrow (Day 3). His wife and two brothers are visiting now.\xa0\xa0\xa016. Mrs. Booth asks what to expect when her husband returns from his pro- cedure tomorrow. What do you tell her?",
+    options: [
+      "He will probably be more sleepy and will be having his vital signs and groin checked frequently for several hours",
+      "There should be no difference in his condition or routine noted",
+      "He will go to the stroke unit immediately postprocedure; no need for the intensive care unit (ICU) once an aneurysm is secured",
+      "He will likely be intubated with multiple IV fluids infusing for support of cerebral perfusion pressure"
+    ],
+    answer: [""],
+    multipleAnswer: false,
+  },{
+    chapter: "Case Studies",
+    question: "Questions 12 to 17 are based on the following case: You are caring for Mr. Booth, a 72-year-old subarachnoid hemorrhage (SAH) patient with a saccular anterior cerebral artery aneurysm found on CT angio-gram. On admission his Hunt and Hess score was 2. Today is Day 2 of his stay and his National Institutes of Health Stroke Scale (NIHS) score is 1-drowsy. His medical history includes type 2 diabetes and hypertension for which he took metformin, aspirin, and lisinopril prior to admission. He is scheduled for an endovascular coiling procedure tomorrow (Day 3). His wife and two brothers are visiting now.\xa0\xa0\xa017. When you check Mr. Booth's vital signs, you note a rise in systolic blood pressure (SBP) from 138 to 148, with no change in pulse rate or tempera-ture. Your next action should be which of the following?",
+    options: [
+      "Assess for neurologic change and recheck BP",
+      "Explain the importance of keeping the environment quiet and calm and ask visitors to leave",
+      "Notify the provider and prepare for stat CT scan",
+      "Both A and B"
+    ],
+    answer: [""],
+    multipleAnswer: false,
+  },{
+    chapter: "Case Studies",
+    question: "Questions 18 to 22 are based on the following case: Ms. Clark is a 23-year-old intracerebral hemorrhage (ICH) patient who was admitted yesterday after being found on the floor at work. She was awake but dazed on admission, with an ICH score of 1, and an National Institutes of Health Stroke Scale (NIHSS) score of 0, Glasgow Coma Scale (GCS) score of 15. Her medical history includes only smoking 1 to 2 packs/day for the past 8 years. Imaging has revealed a moderate subcortical arteriovenous malformation (AVM) in the right temporal lobe. She has a family history of her maternal grandmother dying from a brain hemorrhage—cause unknown. The next five questions pertain to this case.\xa0\xa0\xa018. What components are involved in the intracerebral hemorrhage (ICH)",
+    options: [
+      "Glasgow Coma Scale",
+      "ICH volume",
+      "Age",
+      "All of the above"
+    ],
+    answer: [""],
+    multipleAnswer: false,
+  },{
+    chapter: "Case Studies",
+    question: "Questions 18 to 22 are based on the following case: Ms. Clark is a 23-year-old intracerebral hemorrhage (ICH) patient who was admitted yesterday after being found on the floor at work. She was awake but dazed on admission, with an ICH score of 1, and an National Institutes of Health Stroke Scale (NIHSS) score of 0, Glasgow Coma Scale (GCS) score of 15. Her medical history includes only smoking 1 to 2 packs/day for the past 8 years. Imaging has revealed a moderate subcortical arteriovenous malformation (AVM) in the right temporal lobe. She has a family history of her maternal grandmother dying from a brain hemorrhage—cause unknown. The next five questions pertain to this case.\xa0\xa0\xa019. What does the intracerebral hemorrhage (ICH) score of 1 tell you about Ms. Clark's prognosis?",
+    options: [
+      "She has a high likelihood of dying from her stroke within 30 days",
+      "She may survive but with a high likelihood of disability",
+      "She has a high likelihood of surviving her stroke",
+      "She is lucky to have arrived at the hospital alive"
+    ],
+    answer: [""],
+    multipleAnswer: false,
+  },{
+    chapter: "Case Studies",
+    question: "Questions 18 to 22 are based on the following case: Ms. Clark is a 23-year-old intracerebral hemorrhage (ICH) patient who was admitted yesterday after being found on the floor at work. She was awake but dazed on admission, with an ICH score of 1, and an National Institutes of Health Stroke Scale (NIHSS) score of 0, Glasgow Coma Scale (GCS) score of 15. Her medical history includes only smoking 1 to 2 packs/day for the past 8 years. Imaging has revealed a moderate subcortical arteriovenous malformation (AVM) in the right temporal lobe. She has a family history of her maternal grandmother dying from a brain hemorrhage—cause unknown. The next five questions pertain to this case.\xa0\xa0\xa020. Which complication will you most likely see with this patient?",
+    options: [
+      "Aspiration pneumonia",
+      "Seizures",
+      "Urinary tract infection",
+      "Skin breakdown"
+    ],
+    answer: [""],
+    multipleAnswer: false,
+  },{
+    chapter: "Case Studies",
+    question: "Questions 18 to 22 are based on the following case: Ms. Clark is a 23-year-old intracerebral hemorrhage (ICH) patient who was admitted yesterday after being found on the floor at work. She was awake but dazed on admission, with an ICH score of 1, and an National Institutes of Health Stroke Scale (NIHSS) score of 0, Glasgow Coma Scale (GCS) score of 15. Her medical history includes only smoking 1 to 2 packs/day for the past 8 years. Imaging has revealed a moderate subcortical arteriovenous malformation (AVM) in the right temporal lobe. She has a family history of her maternal grandmother dying from a brain hemorrhage—cause unknown. The next five questions pertain to this case.\xa0\xa0\xa021. By the end of Day 2 Ms. Clark has become less responsive and has required intubation. There is also concern for rising intracranial pressure (ICP). Her systemic blood pressure (BP) has been 130 to 140/82 to 88, temperature 37.8°C. Which procedure do you anticipate being done next?",
+    options: [
+      "Insertion of nasogastric tube for enteral feeding",
+      "Initiation of therapeutic hypothermia",
+      "Placement of ventricular catheter for cerebrospinal fluid (CSF) drainage",
+      "Stat craniotomy for clot evacuation"
+    ],
+    answer: [""],
+    multipleAnswer: false,
+  },{
+    chapter: "Case Studies",
+    question: "Questions 18 to 22 are based on the following case: Ms. Clark is a 23-year-old intracerebral hemorrhage (ICH) patient who was admitted yesterday after being found on the floor at work. She was awake but dazed on admission, with an ICH score of 1, and an National Institutes of Health Stroke Scale (NIHSS) score of 0, Glasgow Coma Scale (GCS) score of 15. Her medical history includes only smoking 1 to 2 packs/day for the past 8 years. Imaging has revealed a moderate subcortical arteriovenous malformation (AVM) in the right temporal lobe. She has a family history of her maternal grandmother dying from a brain hemorrhage—cause unknown. The next five questions pertain to this case.\xa0\xa0\xa022. In addition to monitoring her blood pressure and intracranial pressure (ICP) what other clinical parameters are critical for the ICU nurse to monitor and control?",
+    options: [
+      "Blood glucose and temperature",
+      "Creatinine and Hgb Alc",
+      "INR and partial thromboplastin time (PTT)",
+      "Pupil size and bowel sounds"
+    ],
+    answer: [""],
+    multipleAnswer: false,
+  },{
+    chapter: "Case Studies",
+    question: "Questions 18 to 22 are based on the following case: Ms. Clark is a 23-year-old intracerebral hemorrhage (ICH) patient who was admitted yesterday after being found on the floor at work. She was awake but dazed on admission, with an ICH score of 1, and an National Institutes of Health Stroke Scale (NIHSS) score of 0, Glasgow Coma Scale (GCS) score of 15. Her medical history includes only smoking 1 to 2 packs/day for the past 8 years. Imaging has revealed a moderate subcortical arteriovenous malformation (AVM) in the right temporal lobe. She has a family history of her maternal grandmother dying from a brain hemorrhage—cause unknown. The next five questions pertain to this case.\xa0\xa0\xa0",
+    options: [
+      ""
+    ],
+    answer: [""],
+    multipleAnswer: false,
+  },{
+    chapter: "Case Studies",
+    question: "",
+    options: [
+      ""
+    ],
+    answer: [""],
+    multipleAnswer: false,
+  },{
+    chapter: "Case Studies",
+    question: "",
+    options: [
+      ""
+    ],
+    answer: [""],
+    multipleAnswer: false,
+  },{
+    chapter: "Case Studies",
+    question: "",
+    options: [
+      ""
+    ],
+    answer: [""],
+    multipleAnswer: false,
+  },{
+    chapter: "Case Studies",
+    question: "",
+    options: [
+      ""
+    ],
+    answer: [""],
+    multipleAnswer: false,
+  },{
+    chapter: "Case Studies",
+    question: "",
+    options: [
+      ""
+    ],
+    answer: [""],
+    multipleAnswer: false,
+  },{
+    chapter: "Case Studies",
+    question: "",
+    options: [
+      ""
+    ],
+    answer: [""],
+    multipleAnswer: false,
+  },{
+    chapter: "Case Studies",
+    question: "",
+    options: [
+      ""
+    ],
+    answer: [""],
+    multipleAnswer: false,
+  },{
+    chapter: "Case Studies",
+    question: "",
+    options: [
+      ""
+    ],
+    answer: [""],
+    multipleAnswer: false,
+  },{
+    chapter: "Case Studies",
+    question: "",
+    options: [
+      ""
+    ],
+    answer: [""],
+    multipleAnswer: false,
   }
 ];
